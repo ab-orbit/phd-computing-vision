@@ -51,10 +51,9 @@ api.interceptors.response.use(
  * @returns Resultado completo da análise
  *
  * Explicação:
- * - NOTA: Backend atual implementa apenas UC1 (classificação)
- * - Endpoint real: POST /classify
- * - UC2, UC3, UC4 retornam dados mock até backend implementar /api/v1/analyze
- * - Frontend preparado para quando backend tiver endpoint completo
+ * - Endpoint: POST /api/v1/analyze
+ * - Processa UC1 + UC2 + UC3 + UC4 em uma única chamada
+ * - Frontend adaptado para a estrutura de resposta da API
  */
 export async function analyzeDocument(
   file: File,
@@ -63,18 +62,8 @@ export async function analyzeDocument(
   const formData = new FormData();
   formData.append('file', file);
 
-  // TIFF não é suportado pela API Anthropic (Claude)
-  // Detectar TIFF e desabilitar LLM automaticamente
-  const isTiff = file.type === 'image/tiff' ||
-                 file.name.toLowerCase().endsWith('.tif') ||
-                 file.name.toLowerCase().endsWith('.tiff');
-
-  formData.append('use_llm', isTiff ? 'false' : 'true');
-  formData.append('include_alternatives', 'true');
-  formData.append('extract_metadata', 'true');
-
   try {
-    const response = await api.post('/classify', formData, {
+    const response = await api.post('/api/v1/analyze', formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },

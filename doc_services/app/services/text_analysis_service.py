@@ -20,7 +20,7 @@ import re
 from collections import Counter
 from typing import List, Dict
 
-from app.models import Paragraph, TextAnalysis
+from app.models import Paragraph, TextAnalysis, WordFrequency
 
 logger = logging.getLogger(__name__)
 
@@ -244,7 +244,7 @@ class TextAnalysisService:
         self,
         word_frequencies: Dict[str, int],
         top_n: int
-    ) -> List[Dict[str, int]]:
+    ) -> List[WordFrequency]:
         """
         Obtém N palavras mais frequentes.
 
@@ -253,15 +253,15 @@ class TextAnalysisService:
         - Retorna lista de tuplas: [(palavra, contagem), ...]
         - Já ordenada por contagem decrescente
 
-        Convertemos para lista de dicts para serialização JSON:
-        [{"word": "análise", "count": 45}, ...]
+        Convertemos para lista de objetos WordFrequency:
+        [WordFrequency(word="análise", count=45), ...]
 
         Args:
             word_frequencies: Dicionário de frequências
             top_n: Número de palavras a retornar
 
         Returns:
-            Lista de dicts com palavras mais frequentes
+            Lista de objetos WordFrequency com palavras mais frequentes
         """
         # Criar Counter a partir do dict
         counter = Counter(word_frequencies)
@@ -269,9 +269,9 @@ class TextAnalysisService:
         # Obter top N
         top_items = counter.most_common(top_n)
 
-        # Converter para lista de dicts
+        # Converter para lista de objetos WordFrequency
         top_words = [
-            {"word": word, "count": count}
+            WordFrequency(word=word, count=count)
             for word, count in top_items
         ]
 

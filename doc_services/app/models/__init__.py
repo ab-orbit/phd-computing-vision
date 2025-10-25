@@ -62,6 +62,7 @@ __all__ = [
     "AnalysisResult",
     "TextAnalysis",
     "ComplianceResult",
+    "WordFrequency",
 
     # Relatório
     "ComplianceReportData",
