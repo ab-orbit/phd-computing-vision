@@ -1,0 +1,49 @@
+{
+  "dataset_path": "../rvlp/data/test",
+  "categories": [
+    "email",
+    "advertisement",
+    "scientific_publication"
+  ],
+  "num_samples_requested": 100,
+  "seed": 42,
+  "samples": {
+    "email": [
+      "sample/email/2085116740.tif",
+      "sample/email/531531568+-1573.tif",
+      "sample/email/2075707899a.tif",
+      "sample/email/530974203+-4204.tif",
+      "sample/email/530224454+-4454.tif",
+      "sample/email/530483694+-3698.tif",
+      "sample/email/2708800020_0021.tif",
+      "sample/email/2085757247.tif",
+      "sample/email/528403451+-3453.tif",
+      "sample/email/2072389143c.tif"
+    ],
+    "advertisement": [
+      "sample/advertisement/502610099+-0099.tif",
+      "sample/advertisement/502593752.tif",
+      "sample/advertisement/502610023+-0023.tif",
+      "sample/advertisement/2084511350_1351.tif",
+      "sample/advertisement/2047143568.tif",
+      "sample/advertisement/509132626+-2626.tif",
+      "sample/advertisement/89903865.tif",
+      "sample/advertisement/71896568.tif",
+      "sample/advertisement/11733634.tif",
+      "sample/advertisement/503961429+-1429.tif"
+    ],
+    "scientific_publication": [
+      "sample/scientific_publication/2041252817_2821.tif",
+      "sample/scientific_publication/2063607247_2063607249.tif",
+      "sample/scientific_publication/10142638.tif",
+      "sample/scientific_publication/50486263-6263.tif",
+      "sample/scientific_publication/50720005-0011.tif",
+      "sample/scientific_publication/2057365020_5026.tif",
+      "sample/scientific_publication/50570081-0081.tif",
+      "sample/scientific_publication/87613430_87613442.tif",
+      "sample/scientific_publication/2021588000.tif",
+      "sample/scientific_publication/2501652649.tif"
+    ]
+  },
+  "total_samples": 30
+}
