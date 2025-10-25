@@ -1,0 +1,58 @@
+{
+  "image_path": "sample/advertisement/2047143568.tif",
+  "image_size": {
+    "width": 774,
+    "height": 1000,
+    "area": 774000
+  },
+  "total_detections": 1,
+  "element_counts": {
+    "figure": 1
+  },
+  "element_areas": {
+    "figure": 654164.125
+  },
+  "detections": [
+    {
+      "class": "figure",
+      "confidence": 0.6968824863433838,
+      "bbox": [
+        10.715126037597656,
+        110.0044174194336,
+        745.7346801757812,
+        1000.0
+      ],
+      "area": 654164.125,
+      "area_ratio": 0.8451732881136951
+    }
+  ],
+  "features": {
+    "num_titles": 0,
+    "num_texts": 0,
+    "num_figures": 1,
+    "num_tables": 0,
+    "num_equations": 0,
+    "num_captions": 0,
+    "num_headers": 0,
+    "num_footers": 0,
+    "num_references": 0,
+    "num_lists": 0,
+    "figure_density": 0.8451732881136951,
+    "has_equations": 0.0,
+    "has_tables": 0.0,
+    "has_figures": 1.0,
+    "has_references": 0.0,
+    "text_density_category": 0.0,
+    "avg_confidence": 0.6968824863433838,
+    "total_elements": 1
+  },
+  "true_category": "advertisement",
+  "predicted_category": "email",
+  "confidence": 1.0,
+  "class_scores": {
+    "email": 1.0,
+    "advertisement": 0.8,
+    "scientific_publication": 0.2
+  },
+  "correct": false
+}

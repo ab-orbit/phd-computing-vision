@@ -1,0 +1,85 @@
+{
+  "image_path": "sample/advertisement/503961429+-1429.tif",
+  "image_size": {
+    "width": 754,
+    "height": 1000,
+    "area": 754000
+  },
+  "total_detections": 3,
+  "element_counts": {
+    "figure": 2,
+    "abandon": 1
+  },
+  "element_areas": {
+    "figure": 734809.46875,
+    "abandon": 16985.009765625
+  },
+  "detections": [
+    {
+      "class": "figure",
+      "confidence": 0.5194666385650635,
+      "bbox": [
+        148.16844177246094,
+        124.58282470703125,
+        713.6683349609375,
+        787.7744750976562
+      ],
+      "area": 375034.8125,
+      "area_ratio": 0.497393650530504
+    },
+    {
+      "class": "abandon",
+      "confidence": 0.24766600131988525,
+      "bbox": [
+        713.9282836914062,
+        128.31741333007812,
+        739.597900390625,
+        789.9950561523438
+      ],
+      "area": 16985.009765625,
+      "area_ratio": 0.022526538150696288
+    },
+    {
+      "class": "figure",
+      "confidence": 0.24373584985733032,
+      "bbox": [
+        164.92807006835938,
+        125.51295471191406,
+        707.822021484375,
+        788.2108154296875
+      ],
+      "area": 359774.65625,
+      "area_ratio": 0.47715471651193636
+    }
+  ],
+  "features": {
+    "num_titles": 0,
+    "num_texts": 0,
+    "num_figures": 2,
+    "num_tables": 0,
+    "num_equations": 0,
+    "num_captions": 0,
+    "num_headers": 0,
+    "num_footers": 0,
+    "num_references": 0,
+    "num_lists": 0,
+    "figure_density": 0.9745483670424403,
+    "abandon_density": 0.022526538150696288,
+    "has_equations": 0.0,
+    "has_tables": 0.0,
+    "has_figures": 1.0,
+    "has_references": 0.0,
+    "text_density_category": 0.0,
+    "avg_confidence": 0.33695616324742633,
+    "total_elements": 3
+  },
+  "true_category": "advertisement",
+  "predicted_category": "advertisement",
+  "confidence": 1.0,
+  "class_scores": {
+    "email": 0.6666666666666666,
+    "advertisement": 1.0,
+    "scientific_publication": 0.16666666666666666
+  },
+  "correct": true
+}

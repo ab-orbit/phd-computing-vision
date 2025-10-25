@@ -1,0 +1,130 @@
+{
+  "image_path": "sample/scientific_publication/2501652649.tif",
+  "image_size": {
+    "width": 786,
+    "height": 1000,
+    "area": 786000
+  },
+  "total_detections": 5,
+  "element_counts": {
+    "text": 4,
+    "title": 1
+  },
+  "element_areas": {
+    "text": 130399.09228515625,
+    "title": 10513.4013671875
+  },
+  "num_paragraphs": 1,
+  "paragraph_info": [
+    {
+      "paragraph_id": 1,
+      "num_blocks": 3,
+      "bbox": [
+        325.5047607421875,
+        382.275634765625,
+        703.357177734375,
+        742.2543334960938
+      ],
+      "area": 123106.7431640625,
+      "confidence": 0.7705996235211691
+    }
+  ],
+  "detections": [
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.9539060592651367,
+      "bbox": [
+        326.6964111328125,
+        586.0255737304688,
+        703.357177734375,
+        706.37255859375
+      ],
+      "area": 45329.98828125,
+      "area_ratio": 0.057671740815839694
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.7258923649787903,
+      "bbox": [
+        325.5047607421875,
+        706.9290771484375,
+        693.943603515625,
+        742.2543334960938
+      ],
+      "area": 13015.1962890625,
+      "area_ratio": 0.01655877390465967
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.6320004463195801,
+      "bbox": [
+        339.7118835449219,
+        382.275634765625,
+        683.642578125,
+        570.5739135742188
+      ],
+      "area": 64761.55859375,
+      "area_ratio": 0.08239384045006361
+    },
+    {
+      "class": "title",
+      "original_class": "title",
+      "confidence": 0.2775329649448395,
+      "bbox": [
+        330.7294921875,
+        262.3965759277344,
+        699.7942504882812,
+        290.8831787109375
+      ],
+      "area": 10513.4013671875,
+      "area_ratio": 0.013375828711434478
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.2208729088306427,
+      "bbox": [
+        325.7442932128906,
+        746.60693359375,
+        693.8294067382812,
+        766.4185180664062
+      ],
+      "area": 7292.34912109375,
+      "area_ratio": 0.00927779786398696
+    }
+  ],
+  "features": {
+    "num_titles": 1,
+    "num_texts": 4,
+    "num_figures": 0,
+    "num_tables": 0,
+    "num_equations": 0,
+    "num_captions": 0,
+    "num_headers": 0,
+    "num_footers": 0,
+    "num_references": 0,
+    "num_lists": 0,
+    "num_paragraphs": 1,
+    "text_density": 0.16590215303454994,
+    "title_density": 0.013375828711434478,
+    "has_equations": 0.0,
+    "has_tables": 0.0,
+    "has_figures": 0.0,
+    "has_references": 0.0,
+    "text_density_category": 0.0,
+    "avg_confidence": 0.5620409488677979,
+    "total_elements": 5
+  },
+  "true_category": "scientific_publication",
+  "predicted_category": "email",
+  "confidence": 1.0,
+  "class_scores": {
+    "email": 1.0,
+    "advertisement": 1.0,
+    "scientific_publication": 0.0
+  },
+  "correct": false
+}

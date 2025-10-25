@@ -1,0 +1,101 @@
+{
+  "image_path": "sample/email/2085757247.tif",
+  "image_size": {
+    "width": 754,
+    "height": 1000,
+    "area": 754000
+  },
+  "total_detections": 3,
+  "element_counts": {
+    "text": 3
+  },
+  "element_areas": {
+    "text": 21005.66162109375
+  },
+  "num_paragraphs": 1,
+  "paragraph_info": [
+    {
+      "paragraph_id": 1,
+      "num_blocks": 1,
+      "bbox": [
+        202.20556640625,
+        183.73214721679688,
+        414.70196533203125,
+        236.960693359375
+      ],
+      "area": 11310.8740234375,
+      "confidence": 0.819757342338562
+    }
+  ],
+  "detections": [
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.819757342338562,
+      "bbox": [
+        202.20556640625,
+        183.73214721679688,
+        414.70196533203125,
+        236.960693359375
+      ],
+      "area": 11310.8740234375,
+      "area_ratio": 0.01500115918227785
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.6309398412704468,
+      "bbox": [
+        56.7236213684082,
+        265.216552734375,
+        472.0948486328125,
+        282.417724609375
+      ],
+      "area": 7144.87158203125,
+      "area_ratio": 0.009475957005346486
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.5187722444534302,
+      "bbox": [
+        56.84880828857422,
+        184.26742553710938,
+        104.85566711425781,
+        237.38308715820312
+      ],
+      "area": 2549.916015625,
+      "area_ratio": 0.0033818514796087533
+    }
+  ],
+  "features": {
+    "num_titles": 0,
+    "num_texts": 3,
+    "num_figures": 0,
+    "num_tables": 0,
+    "num_equations": 0,
+    "num_captions": 0,
+    "num_headers": 0,
+    "num_footers": 0,
+    "num_references": 0,
+    "num_lists": 0,
+    "num_paragraphs": 1,
+    "text_density": 0.02785896766723309,
+    "has_equations": 0.0,
+    "has_tables": 0.0,
+    "has_figures": 0.0,
+    "has_references": 0.0,
+    "text_density_category": 0.0,
+    "avg_confidence": 0.6564898093541464,
+    "total_elements": 3
+  },
+  "true_category": "email",
+  "predicted_category": "email",
+  "confidence": 1.0,
+  "class_scores": {
+    "email": 1.0,
+    "advertisement": 0.8,
+    "scientific_publication": 0.0
+  },
+  "correct": true
+}

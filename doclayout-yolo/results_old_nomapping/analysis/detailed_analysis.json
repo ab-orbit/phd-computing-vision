@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "timestamp": "2025-10-25T11:25:40.745425",
+    "overall_accuracy": 0.23333333333333334,
+    "total_samples": 30,
+    "total_correct": 7,
+    "category_stats": {
+      "email": {
+        "total_samples": 10,
+        "correct": 2,
+        "incorrect": 8,
+        "accuracy": 0.2,
+        "avg_confidence": 1.0
+      },
+      "advertisement": {
+        "total_samples": 10,
+        "correct": 5,
+        "incorrect": 5,
+        "accuracy": 0.5,
+        "avg_confidence": 1.0
+      },
+      "scientific_publication": {
+        "total_samples": 10,
+        "correct": 0,
+        "incorrect": 10,
+        "accuracy": 0.0,
+        "avg_confidence": 1.0
+      }
+    },
+    "confusion_matrix": {
+      "email": {
+        "email": 2,
+        "advertisement": 8,
+        "scientific_publication": 0
+      },
+      "advertisement": {
+        "email": 5,
+        "advertisement": 5,
+        "scientific_publication": 0
+      },
+      "scientific_publication": {
+        "email": 2,
+        "advertisement": 8,
+        "scientific_publication": 0
+      }
+    }
+  },
+  "detected_classes": {
+    "plain text": 180,
+    "abandon": 86,
+    "title": 42,
+    "table": 4,
+    "figure": 19,
+    "figure_caption": 6,
+    "isolate_formula": 4,
+    "table_footnote": 1
+  },
+  "error_patterns": {
+    "total_errors": 23,
+    "error_rate": 0.7666666666666667,
+    "errors_by_category": {
+      "advertisement": 5,
+      "email": 8,
+      "scientific_publication": 10
+    },
+    "confusion_pairs": {
+      

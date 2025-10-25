@@ -1,0 +1,26 @@
+# Requirements mínimos para testar apenas a funcionalidade de LLM
+# Use este arquivo se você não precisa das outras funcionalidades ainda
+
+# FastAPI e servidor
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Pydantic para validação
+pydantic==2.5.3
+pydantic-settings==2.1.0
+email-validator==2.1.0
+
+# Processamento básico de arquivos
+Pillow==10.2.0
+
+# LLM Clients
+anthropic>=0.40.0
+httpx>=0.26.0
+
+# Utilidades
+python-dotenv==1.0.1
+
+# Para rodar testes
+pytest==7.4.4
+pytest-asyncio==0.23.4

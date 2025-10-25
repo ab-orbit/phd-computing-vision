@@ -1,0 +1,104 @@
+{
+  "image_path": "sample/advertisement/11733634.tif",
+  "image_size": {
+    "width": 762,
+    "height": 1000,
+    "area": 762000
+  },
+  "total_detections": 3,
+  "element_counts": {
+    "figure": 2,
+    "text": 1
+  },
+  "element_areas": {
+    "figure": 477050.328125,
+    "text": 19152.720703125
+  },
+  "num_paragraphs": 1,
+  "paragraph_info": [
+    {
+      "paragraph_id": 1,
+      "num_blocks": 1,
+      "bbox": [
+        41.05451583862305,
+        637.956787109375,
+        233.80418395996094,
+        737.3225708007812
+      ],
+      "area": 19152.720703125,
+      "confidence": 0.35997527837753296
+    }
+  ],
+  "detections": [
+    {
+      "class": "figure",
+      "original_class": "figure",
+      "confidence": 0.8120664358139038,
+      "bbox": [
+        48.721073150634766,
+        127.2494125366211,
+        665.8603515625,
+        576.0111694335938
+      ],
+      "area": 276948.5,
+      "area_ratio": 0.3634494750656168
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.35997527837753296,
+      "bbox": [
+        41.05451583862305,
+        637.956787109375,
+        233.80418395996094,
+        737.3225708007812
+      ],
+      "area": 19152.720703125,
+      "area_ratio": 0.02513480407234252
+    },
+    {
+      "class": "figure",
+      "original_class": "figure",
+      "confidence": 0.3114815652370453,
+      "bbox": [
+        48.15630340576172,
+        127.75865936279297,
+        497.6142883300781,
+        572.9656372070312
+      ],
+      "area": 200101.828125,
+      "area_ratio": 0.2626008243110236
+    }
+  ],
+  "features": {
+    "num_titles": 0,
+    "num_texts": 1,
+    "num_figures": 2,
+    "num_tables": 0,
+    "num_equations": 0,
+    "num_captions": 0,
+    "num_headers": 0,
+    "num_footers": 0,
+    "num_references": 0,
+    "num_lists": 0,
+    "num_paragraphs": 1,
+    "figure_density": 0.6260502993766405,
+    "text_density": 0.02513480407234252,
+    "has_equations": 0.0,
+    "has_tables": 0.0,
+    "has_figures": 1.0,
+    "has_references": 0.0,
+    "text_density_category": 0.0,
+    "avg_confidence": 0.494507759809494,
+    "total_elements": 3
+  },
+  "true_category": "advertisement",
+  "predicted_category": "advertisement",
+  "confidence": 1.0,
+  "class_scores": {
+    "email": 0.6666666666666666,
+    "advertisement": 1.0,
+    "scientific_publication": 0.16666666666666666
+  },
+  "correct": true
+}

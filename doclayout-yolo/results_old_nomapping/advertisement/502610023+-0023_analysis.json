@@ -1,0 +1,70 @@
+{
+  "image_path": "sample/advertisement/502610023+-0023.tif",
+  "image_size": {
+    "width": 754,
+    "height": 1000,
+    "area": 754000
+  },
+  "total_detections": 2,
+  "element_counts": {
+    "figure": 2
+  },
+  "element_areas": {
+    "figure": 411716.671875
+  },
+  "detections": [
+    {
+      "class": "figure",
+      "confidence": 0.34823039174079895,
+      "bbox": [
+        160.3601531982422,
+        131.1623992919922,
+        638.3704223632812,
+        815.8619995117188
+      ],
+      "area": 327293.4375,
+      "area_ratio": 0.4340761770557029
+    },
+    {
+      "class": "figure",
+      "confidence": 0.22271350026130676,
+      "bbox": [
+        302.4244689941406,
+        197.5015869140625,
+        545.1871337890625,
+        545.261962890625
+      ],
+      "area": 84423.234375,
+      "area_ratio": 0.11196715434350132
+    }
+  ],
+  "features": {
+    "num_titles": 0,
+    "num_texts": 0,
+    "num_figures": 2,
+    "num_tables": 0,
+    "num_equations": 0,
+    "num_captions": 0,
+    "num_headers": 0,
+    "num_footers": 0,
+    "num_references": 0,
+    "num_lists": 0,
+    "figure_density": 0.5460433313992042,
+    "has_equations": 0.0,
+    "has_tables": 0.0,
+    "has_figures": 1.0,
+    "has_references": 0.0,
+    "text_density_category": 0.0,
+    "avg_confidence": 0.28547194600105286,
+    "total_elements": 2
+  },
+  "true_category": "advertisement",
+  "predicted_category": "advertisement",
+  "confidence": 1.0,
+  "class_scores": {
+    "email": 0.6666666666666666,
+    "advertisement": 1.0,
+    "scientific_publication": 0.16666666666666666
+  },
+  "correct": true
+}

@@ -1,0 +1,220 @@
+{
+  "image_path": "sample/email/2072389143c.tif",
+  "image_size": {
+    "width": 754,
+    "height": 1000,
+    "area": 754000
+  },
+  "total_detections": 11,
+  "element_counts": {
+    "text": 9,
+    "title": 2
+  },
+  "element_areas": {
+    "text": 110560.18249511719,
+    "title": 2469.32177734375
+  },
+  "num_paragraphs": 2,
+  "paragraph_info": [
+    {
+      "paragraph_id": 1,
+      "num_blocks": 1,
+      "bbox": [
+        102.57368469238281,
+        144.71493530273438,
+        658.4991455078125,
+        221.99130249023438
+      ],
+      "area": 42959.90234375,
+      "confidence": 0.8526855707168579
+    },
+    {
+      "paragraph_id": 2,
+      "num_blocks": 3,
+      "bbox": [
+        103.03498077392578,
+        311.06976318359375,
+        663.4929809570312,
+        479.979248046875
+      ],
+      "area": 47302.3125,
+      "confidence": 0.6163698782523473
+    }
+  ],
+  "detections": [
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.9043976068496704,
+      "bbox": [
+        103.99329376220703,
+        366.9445495605469,
+        663.4929809570312,
+        410.504638671875
+      ],
+      "area": 24371.857421875,
+      "area_ratio": 0.032323418331399206
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.9004105925559998,
+      "bbox": [
+        103.57999420166016,
+        284.2686462402344,
+        497.6292724609375,
+        300.08038330078125
+      ],
+      "area": 6230.603515625,
+      "area_ratio": 0.008263399888096818
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.8526855707168579,
+      "bbox": [
+        102.57368469238281,
+        144.71493530273438,
+        658.4991455078125,
+        221.99130249023438
+      ],
+      "area": 42959.90234375,
+      "area_ratio": 0.056975997803381966
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.8523542284965515,
+      "bbox": [
+        103.89019012451172,
+        422.5164489746094,
+        174.1344757080078,
+        438.81878662109375
+      ],
+      "area": 1145.1461181640625,
+      "area_ratio": 0.0015187614299258124
+    },
+    {
+      "class": "title",
+      "original_class": "title",
+      "confidence": 0.7299939393997192,
+      "bbox": [
+        103.67979431152344,
+        339.34234619140625,
+        161.92825317382812,
+        355.7572326660156
+      ],
+      "area": 956.141845703125,
+      "area_ratio": 0.0012680926335585211
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.7285893559455872,
+      "bbox": [
+        103.03498077392578,
+        450.51190185546875,
+        545.694580078125,
+        479.979248046875
+      ],
+      "area": 13044.00390625,
+      "area_ratio": 0.017299739928713528
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.5521016120910645,
+      "bbox": [
+        181.81854248046875,
+        311.7021789550781,
+        650.1233520507812,
+        327.491455078125
+      ],
+      "area": 7394.19384765625,
+      "area_ratio": 0.009806623140127653
+    },
+    {
+      "class": "title",
+      "original_class": "title",
+      "confidence": 0.4563957154750824,
+      "bbox": [
+        103.7213363647461,
+        257.7221374511719,
+        206.96022033691406,
+        272.37921142578125
+      ],
+      "area": 1513.179931640625,
+      "area_ratio": 0.0020068699358628977
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.38905036449432373,
+      "bbox": [
+        103.055419921875,
+        228.9910430908203,
+        207.67384338378906,
+        272.69158935546875
+      ],
+      "area": 4571.88232421875,
+      "area_ratio": 0.006063504408778183
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.23268313705921173,
+      "bbox": [
+        103.67979431152344,
+        339.34234619140625,
+        161.92825317382812,
+        355.7572326660156
+      ],
+      "area": 956.141845703125,
+      "area_ratio": 0.0012680926335585211
+    },
+    {
+      "class": "text",
+      "original_class": "plain text",
+      "confidence": 0.21612267196178436,
+      "bbox": [
+        103.5145492553711,
+        311.06976318359375,
+        660.5695190429688,
+        328.8174743652344
+      ],
+      "area": 9886.451171875,
+      "area_ratio": 0.01311200420673077
+    }
+  ],
+  "features": {
+    "num_titles": 2,
+    "num_texts": 9,
+    "num_figures": 0,
+    "num_tables": 0,
+    "num_equations": 0,
+    "num_captions": 0,
+    "num_headers": 0,
+    "num_footers": 0,
+    "num_references": 0,
+    "num_lists": 0,
+    "num_paragraphs": 2,
+    "text_density": 0.14663154177071244,
+    "title_density": 0.003274962569421419,
+    "has_equations": 0.0,
+    "has_tables": 0.0,
+    "has_figures": 0.0,
+    "has_references": 0.0,
+    "text_density_category": 0.0,
+    "avg_confidence": 0.6195258904587139,
+    "total_elements": 11
+  },
+  "true_category": "email",
+  "predicted_category": "advertisement",
+  "confidence": 1.0,
+  "class_scores": {
+    "email": 0.9,
+    "advertisement": 1.0,
+    "scientific_publication": 0.0
+  },
+  "correct": false
+}

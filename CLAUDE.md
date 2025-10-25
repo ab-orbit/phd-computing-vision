@@ -1,0 +1,1 @@
+- "Neste projeto sempre adicione explicações detalhadas com fins de aprendizagem"

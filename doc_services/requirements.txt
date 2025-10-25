@@ -1,0 +1,54 @@
+# FastAPI e servidor
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Pydantic para validação
+pydantic>=2.5.3,<3.0.0
+pydantic-settings>=2.3.0,<3.0.0
+email-validator==2.1.0
+
+# Processamento de arquivos
+Pillow==10.2.0
+PyPDF2==3.0.1
+pdf2image==1.17.0
+
+# DocLayout-YOLO e Docling
+# doclayout-yolo (assumindo instalação via setup local)
+ultralytics==8.1.0
+torch>=2.0.0
+torchvision>=0.15.0
+docling>=1.0.0  # Para UC2 - detecção de parágrafos
+docling-core>=1.0.0
+docling-parse>=1.0.0
+
+# LLM Clients
+anthropic>=0.9.0,<1.0.0
+openai>=1.12.0,<2.0.0
+
+# Utilidades
+python-dotenv==1.0.1
+httpx>=0.26.0,<1.0.0
+
+# Logging e monitoramento
+python-json-logger==2.0.7
+prometheus-fastapi-instrumentator==6.1.0
+
+# Cache
+redis==5.0.1
+aioredis==2.0.1
+
+# Testes
+pytest==7.4.4
+pytest-asyncio==0.23.4
+pytest-cov==4.1.0
+
+# Desenvolvimento
+black==24.1.1
+flake8==7.0.0
+mypy==1.8.0
+pre-commit==3.6.0
+
+# Documentação
+mkdocs==1.5.3
+mkdocs-material==9.5.6

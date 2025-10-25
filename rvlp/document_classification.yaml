@@ -1,0 +1,19 @@
+names:
+  0: advertisement
+  1: budget
+  2: email
+  3: file_folder
+  4: form
+  5: handwritten
+  6: invoice
+  7: letter
+  8: memo
+  9: news_article
+  10: presentation
+  11: questionnaire
+  12: resume
+  13: scientific_publication
+  14: scientific_report
+  15: specification
+path: /Users/jwcunha/Documents/repos/phd-datascience/visao-computacional/rvlp/data
+test: test

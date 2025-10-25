@@ -1,0 +1,126 @@
+version: '3.8'
+
+services:
+  # API Principal
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: doc-classification-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+      - "9090:9090"  # Métricas Prometheus
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - MODEL_PATH=/models/doclayout_yolo_docstructbench_imgsz1024.pt
+      - REDIS_URL=redis://redis:6379/0
+      - LOG_LEVEL=INFO
+      - ENABLE_CACHE=true
+      - ENABLE_METRICS=true
+    volumes:
+      # Código da aplicação (para desenvolvimento com hot reload)
+      - ./app:/app/app
+      # Modelos
+      - ../doclayout-yolo:/models
+      # Logs
+      - ./logs:/app/logs
+    depends_on:
+      - redis
+    networks:
+      - doc-classification-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Redis para cache
+  redis:
+    image: redis:7-alpine
+    container_name: doc-classification-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - doc-classification-network
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+  # Prometheus (opcional - descomente para habilitar)
+  # prometheus:
+  #   image: prom/prometheus:latest
+  #   container_name: doc-classification-prometheus
+  #   restart: unless-stopped
+  #   ports:
+  #     - "9091:9090"
+  #   volumes:
+  #     - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+  #     - prometheus-data:/prometheus
+  #   command:
+  #     - '--config.file=/etc/prometheus/prometheus.yml'
+  #     - '--storage.tsdb.path=/prometheus'
+  #   networks:
+  #     - doc-classification-network
+
+  # Grafana (opcional - descomente para habilitar)
+  # grafana:
+  #   image: grafana/grafana:latest
+  #   container_name: doc-classification-grafana
+  #   restart: unless-stopped
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - GF_SECURITY_ADMIN_PASSWORD=admin
+  #     - GF_INSTALL_PLUGINS=grafana-piechart-panel
+  #   volumes:
+  #     - grafana-data:/var/lib/grafana
+  #     - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+  #     - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+  #   depends_on:
+  #     - prometheus
+  #   networks:
+  #     - doc-classification-network
+
+  # PostgreSQL (opcional - descomente para armazenar histórico)
+  # postgres:
+  #   image: postgres:15-alpine
+  #   container_name: doc-classification-postgres
+  #   restart: unless-stopped
+  #   ports:
+  #     - "5432:5432"
+  #   environment:
+  #     - POSTGRES_USER=docuser
+  #     - POSTGRES_PASSWORD=docpassword
+  #     - POSTGRES_DB=doc_classification
+  #   volumes:
+  #     - postgres-data:/var/lib/postgresql/data
+  #   networks:
+  #     - doc-classification-network
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U docuser"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+
+networks:
+  doc-classification-network:
+    driver: bridge
+
+volumes:
+  redis-data:
+    driver: local
+  # prometheus-data:
+  #   driver: local
+  # grafana-data:
+  #   driver: local
+  # postgres-data:
+  #   driver: local

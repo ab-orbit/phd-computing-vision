@@ -1,0 +1,163 @@
+{
+  "image_path": "sample/advertisement/71896568.tif",
+  "image_size": {
+    "width": 762,
+    "height": 1000,
+    "area": 762000
+  },
+  "total_detections": 9,
+  "element_counts": {
+    "abandon": 5,
+    "figure_caption": 1,
+    "figure": 2,
+    "title": 1
+  },
+  "element_areas": {
+    "abandon": 17560.345336914062,
+    "figure_caption": 2114.783447265625,
+    "figure": 189711.19140625,
+    "title": 9378.9208984375
+  },
+  "detections": [
+    {
+      "class": "abandon",
+      "confidence": 0.8027976155281067,
+      "bbox": [
+        475.5364074707031,
+        850.0025634765625,
+        585.9092407226562,
+        868.7657470703125
+      ],
+      "area": 2070.94580078125,
+      "area_ratio": 0.00271777664144521
+    },
+    {
+      "class": "figure_caption",
+      "confidence": 0.8012425899505615,
+      "bbox": [
+        230.6033935546875,
+        727.4022827148438,
+        426.1858825683594,
+        738.2150268554688
+      ],
+      "area": 2114.783447265625,
+      "area_ratio": 0.0027753063612409776
+    },
+    {
+      "class": "abandon",
+      "confidence": 0.7400347590446472,
+      "bbox": [
+        177.69052124023438,
+        249.76739501953125,
+        302.7774963378906,
+        265.1147766113281
+      ],
+      "area": 1919.757568359375,
+      "area_ratio": 0.0025193668876107283
+    },
+    {
+      "class": "abandon",
+      "confidence": 0.6860095262527466,
+      "bbox": [
+        0.0,
+        951.4903564453125,
+        233.9641876220703,
+        984.3992919921875
+      ],
+      "area": 7699.51220703125,
+      "area_ratio": 0.010104346728387467
+    },
+    {
+      "class": "abandon",
+      "confidence": 0.650254487991333,
+      "bbox": [
+        363.5844421386719,
+        252.36993408203125,
+        493.429931640625,
+        283.4385986328125
+      ],
+      "area": 4034.1259765625,
+      "area_ratio": 0.00529412857816601
+    },
+    {
+      "class": "figure",
+      "confidence": 0.5433003306388855,
+      "bbox": [
+        170.92550659179688,
+        307.99481201171875,
+        489.84466552734375,
+        707.040283203125
+      ],
+      "area": 127263.2421875,
+      "area_ratio": 0.16701212885498687
+    },
+    {
+      "class": "abandon",
+      "confidence": 0.31402719020843506,
+      "bbox": [
+        255.03591918945312,
+        926.8815307617188,
+        435.0953369140625,
+        937.0781860351562
+      ],
+      "area": 1836.0037841796875,
+      "area_ratio": 0.0024094537850127135
+    },
+    {
+      "class": "figure",
+      "confidence": 0.265677273273468,
+      "bbox": [
+        192.03993225097656,
+        350.5182189941406,
+        479.5321350097656,
+        567.734375
+      ],
+      "area": 62447.94921875,
+      "area_ratio": 0.08195268926345145
+    },
+    {
+      "class": "title",
+      "confidence": 0.2085190862417221,
+      "bbox": [
+        193.23294067382812,
+        314.9751892089844,
+        476.6218566894531,
+        348.0707702636719
+      ],
+      "area": 9378.9208984375,
+      "area_ratio": 0.012308295142306431
+    }
+  ],
+  "features": {
+    "num_titles": 1,
+    "num_texts": 0,
+    "num_figures": 2,
+    "num_tables": 0,
+    "num_equations": 0,
+    "num_captions": 0,
+    "num_headers": 0,
+    "num_footers": 0,
+    "num_references": 0,
+    "num_lists": 0,
+    "abandon_density": 0.02304507262062213,
+    "figure_caption_density": 0.0027753063612409776,
+    "figure_density": 0.24896481811843832,
+    "title_density": 0.012308295142306431,
+    "has_equations": 0.0,
+    "has_tables": 0.0,
+    "has_figures": 1.0,
+    "has_references": 0.0,
+    "text_density_category": 0.0,
+    "avg_confidence": 0.556873651014434,
+    "total_elements": 9
+  },
+  "true_category": "advertisement",
+  "predicted_category": "advertisement",
+  "confidence": 1.0,
+  "class_scores": {
+    "email": 0.5,
+    "advertisement": 1.0,
+    "scientific_publication": 0.14285714285714285
+  },
+  "correct": true
+}

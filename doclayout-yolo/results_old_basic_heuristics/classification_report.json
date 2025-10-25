@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-10-25T11:43:56.738079",
+  "overall_accuracy": 0.4666666666666667,
+  "total_samples": 30,
+  "total_correct": 14,
+  "category_stats": {
+    "email": {
+      "total_samples": 10,
+      "correct": 8,
+      "incorrect": 2,
+      "accuracy": 0.8,
+      "avg_confidence": 1.0
+    },
+    "advertisement": {
+      "total_samples": 10,
+      "correct": 5,
+      "incorrect": 5,
+      "accuracy": 0.5,
+      "avg_confidence": 1.0
+    },
+    "scientific_publication": {
+      "total_samples": 10,
+      "correct": 1,
+      "incorrect": 9,
+      "accuracy": 0.1,
+      "avg_confidence": 1.0
+    }
+  },
+  "confusion_matrix": {
+    "email": {
+      "email": 8,
+      "advertisement": 2,
+      "scientific_publication": 0
+    },
+    "advertisement": {
+      "email": 5,
+      "advertisement": 5,
+      "scientific_publication": 0
+    },
+    "scientific_publication": {
+      "email": 9,
+      "advertisement": 0,
+      "scientific_publication": 1
+    }
+  }
+}

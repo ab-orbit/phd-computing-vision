@@ -1,0 +1,160 @@
+{
+  "image_path": "sample/email/530224454+-4454.tif",
+  "image_size": {
+    "width": 754,
+    "height": 1000,
+    "area": 754000
+  },
+  "total_detections": 9,
+  "element_counts": {
+    "abandon": 4,
+    "plain text": 4,
+    "title": 1
+  },
+  "element_areas": {
+    "abandon": 25458.976440429688,
+    "plain text": 69774.640625,
+    "title": 1224.33837890625
+  },
+  "detections": [
+    {
+      "class": "abandon",
+      "confidence": 0.9001882672309875,
+      "bbox": [
+        7.94281005859375,
+        952.134765625,
+        167.04551696777344,
+        986.2741088867188
+      ],
+      "area": 5431.662109375,
+      "area_ratio": 0.007203795901027851
+    },
+    {
+      "class": "plain text",
+      "confidence": 0.7934321761131287,
+      "bbox": [
+        115.14275360107422,
+        88.42784118652344,
+        373.2480163574219,
+        262.2409973144531
+      ],
+      "area": 44862.08984375,
+      "area_ratio": 0.05949879289622016
+    },
+    {
+      "class": "plain text",
+      "confidence": 0.6797273755073547,
+      "bbox": [
+        113.74258422851562,
+        401.14764404296875,
+        593.607666015625,
+        435.18951416015625
+      ],
+      "area": 16335.5048828125,
+      "area_ratio": 0.021665125839273873
+    },
+    {
+      "class": "abandon",
+      "confidence": 0.5486097931861877,
+      "bbox": [
+        688.8638305664062,
+        857.8694458007812,
+        708.0040893554688,
+        954.6322631835938
+      ],
+      "area": 1852.0653076171875,
+      "area_ratio": 0.0024563200366275696
+    },
+    {
+      "class": "abandon",
+      "confidence": 0.521547794342041,
+      "bbox": [
+        113.74258422851562,
+        401.14764404296875,
+        593.607666015625,
+        435.18951416015625
+      ],
+      "area": 16335.5048828125,
+      "area_ratio": 0.021665125839273873
+    },
+    {
+      "class": "abandon",
+      "confidence": 0.49749502539634705,
+      "bbox": [
+        688.59130859375,
+        858.1915893554688,
+        707.5717163085938,
+        955.1201782226562
+      ],
+      "area": 1839.744140625,
+      "area_ratio": 0.002439978966346154
+    },
+    {
+      "class": "plain text",
+      "confidence": 0.2979850172996521,
+      "bbox": [
+        115.16779327392578,
+        279.7391357421875,
+        286.25726318359375,
+        313.97735595703125
+      ],
+      "area": 5857.79931640625,
+      "area_ratio": 0.007768964610618369
+    },
+    {
+      "class": "title",
+      "confidence": 0.2287859469652176,
+      "bbox": [
+        115.25373840332031,
+        279.9968566894531,
+        198.1813201904297,
+        294.76080322265625
+      ],
+      "area": 1224.33837890625,
+      "area_ratio": 0.001623790953456565
+    },
+    {
+      "class": "plain text",
+      "confidence": 0.20427468419075012,
+      "bbox": [
+        115.0779037475586,
+        297.3114013671875,
+        285.51422119140625,
+        313.2660217285156
+      ],
+      "area": 2719.24658203125,
+      "area_ratio": 0.0036064278276276523
+    }
+  ],
+  "features": {
+    "num_titles": 1,
+    "num_texts": 0,
+    "num_figures": 0,
+    "num_tables": 0,
+    "num_equations": 0,
+    "num_captions": 0,
+    "num_headers": 0,
+    "num_footers": 0,
+    "num_references": 0,
+    "num_lists": 0,
+    "abandon_density": 0.03376522074327545,
+    "plain text_density": 0.09253931117374005,
+    "title_density": 0.001623790953456565,
+    "has_equations": 0.0,
+    "has_tables": 0.0,
+    "has_figures": 0.0,
+    "has_references": 0.0,
+    "text_density_category": 0.0,
+    "avg_confidence": 0.5191162311368518,
+    "total_elements": 9
+  },
+  "true_category": "email",
+  "predicted_category": "advertisement",
+  "confidence": 1.0,
+  "class_scores": {
+    "email": 0.9,
+    "advertisement": 1.0,
+    "scientific_publication": 0.0
+  },
+  "correct": false
+}
