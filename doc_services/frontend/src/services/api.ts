@@ -77,53 +77,41 @@ export async function analyzeDocument(
 
     const backendResponse = response.data;
 
-    // Adaptar resposta do /classify para formato esperado por AnalysisResult
-    const isScientificPaper =
-      backendResponse.predicted_type === 'scientific_publication' ||
-      backendResponse.predicted_type === 'scientific_report';
-
-    // Construir AnalysisResult adaptado
+    // A API /api/v1/analyze retorna todos os UCs completos
+    // Apenas precisamos garantir que a estrutura corresponda ao tipo AnalysisResult
     const adaptedResult: AnalysisResult = {
-      // Metadados do documento
-      document_id: backendResponse.request_id,
-      filename: backendResponse.document_metadata?.file_name || file.name,
-      analyzed_at: backendResponse.timestamp,
-      processing_time_ms: backendResponse.document_metadata?.processing_time_ms || 0,
+      document_id: backendResponse.document_id,
+      filename: backendResponse.filename,
+      analyzed_at: backendResponse.analyzed_at,
+      processing_time_ms: backendResponse.processing_time_ms,
 
-      // UC1: Classificação (dados reais do backend)
-      is_scientific_paper: isScientificPaper,
-      classification_confidence: backendResponse.probability,
+      // UC1: Classificação
+      is_scientific_paper: backendResponse.is_scientific_paper,
+      classification_confidence: backendResponse.classification_confidence,
 
-      // UC2: Parágrafos (mock - backend não implementado)
-      paragraphs: [],
+      // UC2: Parágrafos detectados
+      paragraphs: backendResponse.paragraphs || [],
 
-      // UC3: Análise textual (mock - backend não implementado)
+      // UC3: Análise textual
       text_analysis: {
-        total_words: 0,
-        unique_words: 0,
-        word_frequencies: {},
-        top_words: [],
+        total_words: backendResponse.text_analysis?.total_words || 0,
+        unique_words: backendResponse.text_analysis?.unique_words || 0,
+        word_frequencies: backendResponse.text_analysis?.word_frequencies || {},
+        top_words: backendResponse.text_analysis?.top_words || [],
       },
 
-      // UC4: Conformidade (mock - backend não implementado)
+      // UC4: Conformidade
       compliance: {
-        is_compliant: false,
-        words_compliant: false,
-        paragraphs_compliant: false,
-        word_count: 0,
-        paragraph_count: 0,
-        word_difference: 0,
-        paragraph_difference: 0,
-        recommended_actions: [
-          'UC2, UC3 e UC4 não estão implementados no backend ainda.',
-          'Aguarde futuras versões da API.',
-        ],
+        is_compliant: backendResponse.compliance?.is_compliant || false,
+        words_compliant: backendResponse.compliance?.words_compliant || false,
+        paragraphs_compliant: backendResponse.compliance?.paragraphs_compliant || false,
+        word_count: backendResponse.compliance?.word_count || 0,
+        paragraph_count: backendResponse.compliance?.paragraph_count || 0,
+        word_difference: backendResponse.compliance?.word_difference || 0,
+        paragraph_difference: backendResponse.compliance?.paragraph_difference || 0,
+        recommended_actions: backendResponse.compliance?.recommended_actions || [],
       },
-      compliance_report_markdown:
-        '**Análise de conformidade não disponível ainda.**\n\n' +
-        'UC2 (Detecção de Parágrafos), UC3 (Análise Textual) e UC4 (Conformidade) ' +
-        'estão em desenvolvimento no backend.\n\n' +
-        'Quando o endpoint `/api/v1/analyze` for implementado, esta análise estará disponível.',
+      compliance_report_markdown: backendResponse.compliance_report_markdown || '',
     };
 
     return adaptedResult;

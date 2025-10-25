@@ -14,6 +14,7 @@ import { ParagraphsList } from './components/ParagraphsList';
 import { TextAnalysisView } from './components/TextAnalysisView';
 import { ComplianceReportView } from './components/ComplianceReportView';
 import { DocumentPreview } from './components/DocumentPreview';
+import { OverallFeedback, OverallFeedbackData } from './components/OverallFeedback';
 import { analyzeDocument } from './services/api';
 import { AnalysisResult, AnalysisStage } from './types';
 import parseyLogo from './images/parsey.png';
@@ -27,6 +28,15 @@ function App() {
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
+
+  // Estado de feedbacks
+  const [feedbacks, setFeedbacks] = useState<{
+    uc1?: { rating: 'positive' | 'negative'; comment?: string };
+    uc2?: { rating: 'positive' | 'negative'; comment?: string };
+    uc3?: { rating: 'positive' | 'negative'; comment?: string };
+    uc4?: { rating: 'positive' | 'negative'; comment?: string };
+    overall?: OverallFeedbackData;
+  }>({});
 
   /**
    * Adapta resultado da API para formato esperado pelos componentes
@@ -141,6 +151,71 @@ function App() {
     setError(null);
     setUploadProgress(0);
     setSelectedFile(null);
+    setFeedbacks({});
+  };
+
+  /**
+   * Handler para feedback do UC1
+   */
+  const handleUC1Feedback = (rating: 'positive' | 'negative', comment?: string) => {
+    const feedback = { rating, comment };
+    setFeedbacks((prev) => ({ ...prev, uc1: feedback }));
+
+    console.log('Feedback UC1 (Classificação):', feedback);
+
+    // Aqui você pode enviar para API
+    // await api.post('/feedback/uc1', { ...feedback, document_id: result?.document_id });
+  };
+
+  /**
+   * Handler para feedback do UC2
+   */
+  const handleUC2Feedback = (rating: 'positive' | 'negative', comment?: string) => {
+    const feedback = { rating, comment };
+    setFeedbacks((prev) => ({ ...prev, uc2: feedback }));
+
+    console.log('Feedback UC2 (Parágrafos):', feedback);
+
+    // Aqui você pode enviar para API
+    // await api.post('/feedback/uc2', { ...feedback, document_id: result?.document_id });
+  };
+
+  /**
+   * Handler para feedback do UC3
+   */
+  const handleUC3Feedback = (rating: 'positive' | 'negative', comment?: string) => {
+    const feedback = { rating, comment };
+    setFeedbacks((prev) => ({ ...prev, uc3: feedback }));
+
+    console.log('Feedback UC3 (Análise Textual):', feedback);
+
+    // Aqui você pode enviar para API
+    // await api.post('/feedback/uc3', { ...feedback, document_id: result?.document_id });
+  };
+
+  /**
+   * Handler para feedback do UC4
+   */
+  const handleUC4Feedback = (rating: 'positive' | 'negative', comment?: string) => {
+    const feedback = { rating, comment };
+    setFeedbacks((prev) => ({ ...prev, uc4: feedback }));
+
+    console.log('Feedback UC4 (Conformidade):', feedback);
+
+    // Aqui você pode enviar para API
+    // await api.post('/feedback/uc4', { ...feedback, document_id: result?.document_id });
+  };
+
+  /**
+   * Handler para feedback geral
+   */
+  const handleOverallFeedback = (feedback: OverallFeedbackData) => {
+    setFeedbacks((prev) => ({ ...prev, overall: feedback }));
+
+    console.log('Feedback Geral:', feedback);
+
+    // Aqui você pode enviar para API
+    // await api.post('/feedback/overall', { ...feedback, document_id: result?.document_id });
   };
 
   return (
@@ -268,7 +343,10 @@ function App() {
             <>
               {/* UC1: Classification */}
               <section className="lg:mr-72">
-                <ClassificationResult classification={adaptedResult.classification} />
+                <ClassificationResult
+                  classification={adaptedResult.classification}
+                  onFeedback={handleUC1Feedback}
+                />
               </section>
 
               {/* Mostrar resultados subsequentes apenas se for artigo científico */}
@@ -276,17 +354,31 @@ function App() {
                 <>
                   {/* UC2: Paragraphs */}
                   <section className="lg:mr-72">
-                    <ParagraphsList paragraphs={adaptedResult.paragraphs} />
+                    <ParagraphsList
+                      paragraphs={adaptedResult.paragraphs}
+                      onFeedback={handleUC2Feedback}
+                    />
                   </section>
 
                   {/* UC3: Text Analysis */}
                   <section className="lg:mr-72">
-                    <TextAnalysisView analysis={adaptedResult.text_analysis} />
+                    <TextAnalysisView
+                      analysis={adaptedResult.text_analysis}
+                      onFeedback={handleUC3Feedback}
+                    />
                   </section>
 
                   {/* UC4: Compliance Report */}
                   <section className="lg:mr-72">
-                    <ComplianceReportView report={adaptedResult.compliance_report} />
+                    <ComplianceReportView
+                      report={adaptedResult.compliance_report}
+                      onFeedback={handleUC4Feedback}
+                    />
+                  </section>
+
+                  {/* Feedback Geral - Após todos os UCs */}
+                  <section className="lg:mr-72">
+                    <OverallFeedback onSubmit={handleOverallFeedback} />
                   </section>
                 </>
               ) : (
@@ -352,7 +444,7 @@ function App() {
               Sistema de Análise de Documentos Científicos
             </p>
             <p className="mt-2 text-xs text-text-muted">
-              UC1: Classificação (API) • UC2: Detecção (Docling) • UC3: Análise Textual • UC4: Conformidade
+              UC1: Classificação • UC2: Detecção de Parágrafos • UC3: Análise Textual • UC4: Conformidade
             </p>
           </div>
         </div>

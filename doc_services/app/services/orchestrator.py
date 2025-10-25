@@ -32,6 +32,7 @@ from app.services.classification_service import ClassificationService
 from app.services.paragraph_service import ParagraphDetectionService
 from app.services.text_analysis_service import TextAnalysisService
 from app.services.compliance_service import ComplianceService
+from app.services.image_preprocessor import ImagePreprocessor
 
 logger = logging.getLogger(__name__)
 
@@ -101,13 +102,15 @@ class DocumentAnalysisOrchestrator:
         self.paragraph_service = paragraph_service
         self.text_analysis_service = text_analysis_service
         self.compliance_service = compliance_service
+        self.image_preprocessor = ImagePreprocessor()
 
         logger.info("DocumentAnalysisOrchestrator inicializado")
 
     async def analyze_document(
         self,
         file_path: Path,
-        document_id: Optional[str] = None
+        document_id: Optional[str] = None,
+        original_filename: Optional[str] = None
     ) -> AnalysisResult:
         """
         Executa análise completa de um documento.
@@ -129,6 +132,7 @@ class DocumentAnalysisOrchestrator:
         Args:
             file_path: Caminho do arquivo a analisar
             document_id: ID opcional do documento
+            original_filename: Nome original do arquivo (antes de salvar temporariamente)
 
         Returns:
             AnalysisResult com todos os resultados agregados
@@ -142,11 +146,47 @@ class DocumentAnalysisOrchestrator:
         if document_id is None:
             document_id = str(uuid.uuid4())
 
-        filename = file_path.name
+        # Usar nome original se fornecido, caso contrário usar nome do arquivo temporário
+        filename = original_filename if original_filename else file_path.name
 
         logger.info(f"Iniciando análise de {filename} (ID: {document_id})")
 
+        # Variável para rastrear se criamos arquivo temporário corrigido
+        corrected_file_path = None
+        file_was_corrected = False
+
         try:
+            # ================================================================
+            # STEP 0: PRÉ-PROCESSAMENTO DE IMAGEM
+            # ================================================================
+            # EXPLICAÇÃO EDUCATIVA:
+            # Antes de processar, verificamos se é uma imagem (não PDF)
+            # e corrigimos a orientação se necessário.
+            # Problema: Imagens escaneadas podem estar rotacionadas (0°, 90°, 180°, 270°)
+            # causando OCR ilegível. Corrigimos automaticamente usando EXIF.
+
+            image_extensions = {'.png', '.jpg', '.jpeg', '.tif', '.tiff'}
+            if file_path.suffix.lower() in image_extensions:
+                logger.info("[STEP 0] Verificando orientação da imagem...")
+
+                corrected_file_path, file_was_corrected = self.image_preprocessor.correct_orientation(
+                    file_path
+                )
+
+                if file_was_corrected:
+                    logger.info(
+                        f"[STEP 0] Imagem corrigida! Usando versão com orientação ajustada"
+                    )
+                    # Usar arquivo corrigido no resto do pipeline
+                    processing_file = corrected_file_path
+                else:
+                    logger.info("[STEP 0] Imagem já está na orientação correta")
+                    processing_file = file_path
+            else:
+                # PDF não precisa de correção de orientação
+                logger.info("[STEP 0] PDF detectado - pular pré-processamento de imagem")
+                processing_file = file_path
+
             # ================================================================
             # UC1: CLASSIFICAÇÃO
             # ================================================================
@@ -173,7 +213,8 @@ class DocumentAnalysisOrchestrator:
             # ================================================================
             logger.info("[UC2] Detectando parágrafos...")
 
-            paragraphs = self.paragraph_service.detect_paragraphs(file_path)
+            # IMPORTANTE: Usar processing_file (pode ser versão corrigida)
+            paragraphs = self.paragraph_service.detect_paragraphs(processing_file)
 
             logger.info(f"[UC2] Detectados {len(paragraphs)} parágrafos")
 
@@ -247,6 +288,20 @@ class DocumentAnalysisOrchestrator:
         except Exception as e:
             logger.error(f"Erro durante análise: {e}", exc_info=True)
             raise RuntimeError(f"Falha na análise do documento: {str(e)}")
+
+        finally:
+            # ================================================================
+            # LIMPEZA: Remover arquivo temporário corrigido
+            # ================================================================
+            # EXPLICAÇÃO EDUCATIVA:
+            # Se criamos uma versão corrigida da imagem, precisamos removê-la
+            # para não acumular arquivos temporários no sistema.
+            if file_was_corrected and corrected_file_path and corrected_file_path.exists():
+                try:
+                    corrected_file_path.unlink()
+                    logger.debug(f"Arquivo temporário corrigido removido: {corrected_file_path.name}")
+                except Exception as cleanup_error:
+                    logger.warning(f"Não foi possível remover arquivo temporário: {cleanup_error}")
 
     async def close(self):
         """

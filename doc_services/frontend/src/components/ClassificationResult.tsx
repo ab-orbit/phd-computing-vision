@@ -8,12 +8,14 @@
 import { CheckCircle, XCircle, FileText } from 'lucide-react';
 import { ClassificationResult as ClassificationData } from '@/types';
 import { clsx } from 'clsx';
+import { FeedbackRating } from './FeedbackRating';
 
 interface ClassificationResultProps {
   classification: ClassificationData;
+  onFeedback?: (rating: 'positive' | 'negative', comment?: string) => void;
 }
 
-export function ClassificationResult({ classification }: ClassificationResultProps) {
+export function ClassificationResult({ classification, onFeedback }: ClassificationResultProps) {
   const { is_scientific_paper, document_type, confidence } = classification;
 
   return (
@@ -98,6 +100,16 @@ export function ClassificationResult({ classification }: ClassificationResultPro
           </div>
         </div>
       </div>
+
+      {/* Feedback */}
+      {onFeedback && (
+        <div className="mt-4">
+          <FeedbackRating
+            title="Este resultado de classificação foi útil?"
+            onSubmit={(rating, comment) => onFeedback(rating, comment)}
+          />
+        </div>
+      )}
     </div>
   );
 }

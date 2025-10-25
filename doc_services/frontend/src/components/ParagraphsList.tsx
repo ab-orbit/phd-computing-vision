@@ -8,12 +8,14 @@
 import { FileText, Hash, Type } from 'lucide-react';
 import { Paragraph } from '@/types';
 import { useState } from 'react';
+import { FeedbackRating } from './FeedbackRating';
 
 interface ParagraphsListProps {
   paragraphs: Paragraph[];
+  onFeedback?: (rating: 'positive' | 'negative', comment?: string) => void;
 }
 
-export function ParagraphsList({ paragraphs }: ParagraphsListProps) {
+export function ParagraphsList({ paragraphs, onFeedback }: ParagraphsListProps) {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const totalWords = paragraphs.reduce((sum, p) => sum + p.word_count, 0);
@@ -132,6 +134,16 @@ export function ParagraphsList({ paragraphs }: ParagraphsListProps) {
         <div className="text-center py-8">
           <FileText className="w-12 h-12 text-gray-400 mx-auto mb-3" />
           <p className="text-sm text-gray-600">Nenhum parágrafo detectado</p>
+        </div>
+      )}
+
+      {/* Feedback */}
+      {onFeedback && paragraphs.length > 0 && (
+        <div className="mt-6">
+          <FeedbackRating
+            title="A detecção de parágrafos foi precisa?"
+            onSubmit={(rating, comment) => onFeedback(rating, comment)}
+          />
         </div>
       )}
     </div>

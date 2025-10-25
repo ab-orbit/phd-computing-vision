@@ -57,7 +57,35 @@ class TextAnalysisService:
         # EXPLICAÇÃO: [^\w\s] significa "não é letra/número/underscore e não é espaço"
         self.punctuation_pattern = re.compile(r'[^\w\s]')
 
-        logger.info("TextAnalysisService inicializado")
+        # Lista de stopwords (palavras comuns sem significado relevante)
+        # EXPLICAÇÃO EDUCATIVA:
+        # Stopwords são palavras muito frequentes mas com pouco valor informativo
+        # para análise de conteúdo. Exemplos: artigos, preposições, conjunções.
+        # Removemos essas palavras do top_words para destacar termos mais relevantes.
+        self.stopwords = {
+            # Artigos
+            'a', 'an', 'the',
+            # Preposições
+            'of', 'in', 'to', 'for', 'with', 'on', 'at', 'from', 'by', 'about',
+            'as', 'into', 'through', 'during', 'before', 'after', 'above', 'below',
+            'between', 'under', 'over', 'out', 'up', 'down',
+            # Conjunções
+            'and', 'or', 'but', 'so', 'yet', 'nor', 'if', 'then', 'than',
+            # Pronomes
+            'i', 'you', 'he', 'she', 'it', 'we', 'they', 'me', 'him', 'her', 'us', 'them',
+            'my', 'your', 'his', 'its', 'our', 'their', 'this', 'that', 'these', 'those',
+            'what', 'which', 'who', 'whom', 'whose', 'where', 'when', 'why', 'how',
+            # Verbos auxiliares comuns
+            'is', 'am', 'are', 'was', 'were', 'be', 'been', 'being',
+            'have', 'has', 'had', 'do', 'does', 'did',
+            # Outros comuns
+            'not', 'no', 'yes', 'can', 'will', 'would', 'could', 'should',
+            'may', 'might', 'must', 'shall', 'one', 'two', 'first', 'second',
+            'all', 'some', 'any', 'many', 'much', 'more', 'most', 'other', 'such',
+            'only', 'also', 'very', 'too', 'just', 'now', 'here', 'there',
+        }
+
+        logger.info("TextAnalysisService inicializado com filtro de stopwords")
 
     def analyze_text(
         self,
@@ -246,27 +274,42 @@ class TextAnalysisService:
         top_n: int
     ) -> List[WordFrequency]:
         """
-        Obtém N palavras mais frequentes.
+        Obtém N palavras mais frequentes, excluindo stopwords.
 
         EXPLICAÇÃO EDUCATIVA:
-        Usa Counter.most_common(n):
-        - Retorna lista de tuplas: [(palavra, contagem), ...]
-        - Já ordenada por contagem decrescente
+        Usa Counter.most_common() com filtragem de stopwords:
+        1. Remove stopwords (the, of, and, etc.) do dicionário
+        2. Ordena por contagem decrescente
+        3. Retorna top N palavras relevantes
 
-        Convertemos para lista de objetos WordFrequency:
-        [WordFrequency(word="análise", count=45), ...]
+        Stopwords são palavras muito comuns mas sem valor informativo
+        (artigos, preposições, conjunções). Ao removê-las, destacamos
+        termos mais significativos do conteúdo.
+
+        Exemplo: Ao invés de top_words = ["the", "of", "and"],
+        obtemos palavras relevantes como ["research", "data", "analysis"]
 
         Args:
-            word_frequencies: Dicionário de frequências
+            word_frequencies: Dicionário de frequências (com stopwords)
             top_n: Número de palavras a retornar
 
         Returns:
             Lista de objetos WordFrequency com palavras mais frequentes
+            (sem stopwords)
         """
-        # Criar Counter a partir do dict
-        counter = Counter(word_frequencies)
+        # Filtrar stopwords do dicionário de frequências
+        # EXPLICAÇÃO: Dict comprehension que mantém apenas palavras
+        # que NÃO estão na lista de stopwords
+        filtered_frequencies = {
+            word: count
+            for word, count in word_frequencies.items()
+            if word.lower() not in self.stopwords
+        }
 
-        # Obter top N
+        # Criar Counter a partir do dict filtrado
+        counter = Counter(filtered_frequencies)
+
+        # Obter top N (agora sem stopwords)
         top_items = counter.most_common(top_n)
 
         # Converter para lista de objetos WordFrequency
@@ -274,5 +317,10 @@ class TextAnalysisService:
             WordFrequency(word=word, count=count)
             for word, count in top_items
         ]
+
+        logger.debug(
+            f"Top {len(top_words)} palavras (sem stopwords): "
+            f"{[w.word for w in top_words[:5]]}"
+        )
 
         return top_words

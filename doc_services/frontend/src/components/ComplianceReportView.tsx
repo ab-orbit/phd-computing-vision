@@ -9,12 +9,14 @@ import { CheckCircle, XCircle, AlertTriangle, FileCheck, Download } from 'lucide
 import { ComplianceReport } from '@/types';
 import ReactMarkdown from 'react-markdown';
 import { clsx } from 'clsx';
+import { FeedbackRating } from './FeedbackRating';
 
 interface ComplianceReportViewProps {
   report: ComplianceReport;
+  onFeedback?: (rating: 'positive' | 'negative', comment?: string) => void;
 }
 
-export function ComplianceReportView({ report }: ComplianceReportViewProps) {
+export function ComplianceReportView({ report, onFeedback }: ComplianceReportViewProps) {
   const {
     file_name,
     word_count,
@@ -264,6 +266,16 @@ export function ComplianceReportView({ report }: ComplianceReportViewProps) {
           <ReactMarkdown>{report_markdown}</ReactMarkdown>
         </div>
       </div>
+
+      {/* Feedback */}
+      {onFeedback && (
+        <div className="mt-6">
+          <FeedbackRating
+            title="O relatório de conformidade foi claro?"
+            onSubmit={(rating, comment) => onFeedback(rating, comment)}
+          />
+        </div>
+      )}
     </div>
   );
 }

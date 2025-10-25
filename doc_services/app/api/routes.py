@@ -65,8 +65,13 @@ async def analyze_document(
     try:
         logger.info(f"Analisando arquivo: {file.filename}")
 
-        # Executar análise
-        result = await orchestrator.analyze_document(tmp_path)
+        # Executar análise passando o nome original do arquivo
+        # EXPLICAÇÃO: tmp_path.name seria "tmpXYZ.pdf", mas queremos exibir
+        # o nome original que o usuário enviou (ex: "artigo.pdf")
+        result = await orchestrator.analyze_document(
+            tmp_path,
+            original_filename=file.filename
+        )
 
         logger.info(f"Análise concluída: {file.filename}")
 

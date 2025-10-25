@@ -8,21 +8,26 @@
 import { BarChart3, TrendingUp, Type } from 'lucide-react';
 import { TextAnalysis } from '@/types';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
+import { FeedbackRating } from './FeedbackRating';
 
 interface TextAnalysisViewProps {
   analysis: TextAnalysis;
+  onFeedback?: (rating: 'positive' | 'negative', comment?: string) => void;
 }
 
-export function TextAnalysisView({ analysis }: TextAnalysisViewProps) {
+export function TextAnalysisView({ analysis, onFeedback }: TextAnalysisViewProps) {
   const { total_words, top_words } = analysis;
 
   /**
    * Preparar dados para o gráfico
    * Limitar aos top 15 para melhor visualização
+   *
+   * Explicação:
+   * - top_words vem como array de objetos: [{word: "in", count: 25}, ...]
    */
-  const chartData = top_words.slice(0, 15).map(([word, count]) => ({
-    word,
-    count,
+  const chartData = top_words.slice(0, 15).map((item) => ({
+    word: item.word,
+    count: item.count,
   }));
 
   /**
@@ -77,11 +82,11 @@ export function TextAnalysisView({ analysis }: TextAnalysisViewProps) {
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
-              {top_words.slice(0, 15).map(([word, count], index) => {
-                const percentage = ((count / total_words) * 100).toFixed(2);
+              {top_words.slice(0, 15).map((item, index) => {
+                const percentage = ((item.count / total_words) * 100).toFixed(2);
 
                 return (
-                  <tr key={word} className="hover:bg-gray-50 transition-colors">
+                  <tr key={item.word} className="hover:bg-gray-50 transition-colors">
                     <td className="px-4 py-3 whitespace-nowrap">
                       <div className="flex items-center">
                         <span
@@ -96,10 +101,10 @@ export function TextAnalysisView({ analysis }: TextAnalysisViewProps) {
                       </div>
                     </td>
                     <td className="px-4 py-3 whitespace-nowrap">
-                      <p className="text-sm font-medium text-gray-900">{word}</p>
+                      <p className="text-sm font-medium text-gray-900">{item.word}</p>
                     </td>
                     <td className="px-4 py-3 whitespace-nowrap text-right">
-                      <p className="text-sm text-gray-900">{count.toLocaleString()}</p>
+                      <p className="text-sm text-gray-900">{item.count.toLocaleString()}</p>
                     </td>
                     <td className="px-4 py-3 whitespace-nowrap text-right">
                       <p className="text-sm text-gray-500">{percentage}%</p>
@@ -158,13 +163,23 @@ export function TextAnalysisView({ analysis }: TextAnalysisViewProps) {
         </div>
         <div className="bg-gray-50 rounded-lg p-4 text-center">
           <p className="text-xs text-gray-600 mb-1">Palavra mais comum</p>
-          <p className="text-lg font-bold text-gray-900">{top_words[0]?.[0] || '-'}</p>
+          <p className="text-lg font-bold text-gray-900">{top_words[0]?.word || '-'}</p>
         </div>
         <div className="bg-gray-50 rounded-lg p-4 text-center">
           <p className="text-xs text-gray-600 mb-1">Frequência máxima</p>
-          <p className="text-lg font-bold text-gray-900">{top_words[0]?.[1].toLocaleString() || 0}</p>
+          <p className="text-lg font-bold text-gray-900">{top_words[0]?.count.toLocaleString() || 0}</p>
         </div>
       </div>
+
+      {/* Feedback */}
+      {onFeedback && (
+        <div className="mt-6">
+          <FeedbackRating
+            title="A análise textual foi útil?"
+            onSubmit={(rating, comment) => onFeedback(rating, comment)}
+          />
+        </div>
+      )}
     </div>
   );
 }
