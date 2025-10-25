@@ -5,6 +5,7 @@
  * Mostra se o documento atende às regras (2000 palavras, 8 parágrafos)
  */
 
+import { useRef, useEffect } from 'react';
 import { CheckCircle, XCircle, AlertTriangle, FileCheck, Download } from 'lucide-react';
 import { ComplianceReport } from '@/types';
 import ReactMarkdown from 'react-markdown';
@@ -14,9 +15,10 @@ import { FeedbackRating } from './FeedbackRating';
 interface ComplianceReportViewProps {
   report: ComplianceReport;
   onFeedback?: (rating: 'positive' | 'negative', comment?: string) => void;
+  onReportSectionVisibility?: (isVisible: boolean) => void;
 }
 
-export function ComplianceReportView({ report, onFeedback }: ComplianceReportViewProps) {
+export function ComplianceReportView({ report, onFeedback, onReportSectionVisibility }: ComplianceReportViewProps) {
   const {
     file_name,
     word_count,
@@ -30,6 +32,41 @@ export function ComplianceReportView({ report, onFeedback }: ComplianceReportVie
     recommended_actions,
     report_markdown,
   } = report;
+
+  // Ref para a seção do relatório completo
+  const reportSectionRef = useRef<HTMLDivElement>(null);
+
+  /**
+   * IntersectionObserver para detectar quando a seção "Relatório Completo" fica visível
+   *
+   * Explicação:
+   * - Observa quando o elemento entra/sai da viewport
+   * - Threshold 0.3 significa que 30% do elemento precisa estar visível
+   * - Chama o callback onReportSectionVisibility para mudar o avatar
+   */
+  useEffect(() => {
+    if (!reportSectionRef.current || !onReportSectionVisibility) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // entry.isIntersecting é true quando o elemento está visível
+          onReportSectionVisibility(entry.isIntersecting);
+        });
+      },
+      {
+        threshold: 0.3, // 30% do elemento visível
+        rootMargin: '0px',
+      }
+    );
+
+    observer.observe(reportSectionRef.current);
+
+    // Cleanup quando o componente é desmontado
+    return () => {
+      observer.disconnect();
+    };
+  }, [onReportSectionVisibility]);
 
   /**
    * Calcular diferenças das metas
@@ -256,7 +293,7 @@ export function ComplianceReportView({ report, onFeedback }: ComplianceReportVie
       )}
 
       {/* Relatório Markdown */}
-      <div className="border border-gray-200 rounded-lg p-5 bg-gray-50">
+      <div ref={reportSectionRef} className="border border-gray-200 rounded-lg p-5 bg-gray-50">
         <div className="flex items-center space-x-2 mb-4">
           <FileCheck className="w-5 h-5 text-primary-600" />
           <h4 className="text-base font-semibold text-gray-900">Relatório Completo</h4>

@@ -49,6 +49,16 @@ from .schemas import (
     HealthResponse,
 )
 
+# Modelos de avaliação
+from .evaluation import (
+    SectionType,
+    SectionEvaluation,
+    EvaluationRequest,
+    EvaluationRecord,
+    EvaluationResponse,
+    EvaluationStatistics
+)
+
 __all__ = [
     # Documento
     "Document",
@@ -79,4 +89,12 @@ __all__ = [
     "ErrorDetail",
     "ErrorResponse",
     "HealthResponse",
+
+    # Avaliação
+    "SectionType",
+    "SectionEvaluation",
+    "EvaluationRequest",
+    "EvaluationRecord",
+    "EvaluationResponse",
+    "EvaluationStatistics",
 ]

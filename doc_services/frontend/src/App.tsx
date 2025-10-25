@@ -38,6 +38,9 @@ function App() {
     overall?: OverallFeedbackData;
   }>({});
 
+  // Estado do avatar (muda quando scroll chega no "Relatório Completo")
+  const [isLayedAvatar, setIsLayedAvatar] = useState<boolean>(false);
+
   /**
    * Adapta resultado da API para formato esperado pelos componentes
    *
@@ -218,18 +221,23 @@ function App() {
     // await api.post('/feedback/overall', { ...feedback, document_id: result?.document_id });
   };
 
+  /**
+   * Handler para visibilidade da seção "Relatório Completo"
+   * Muda o avatar para parsey_layed quando a seção fica visível
+   */
+  const handleReportSectionVisibility = (isVisible: boolean) => {
+    setIsLayedAvatar(isVisible);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-parsey-bg via-parsey-white to-bg-surface">
       {/* Mascote Parsey Fixa no Lado Direito */}
       <div className="hidden lg:block fixed right-8 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
-        <div className="relative">
-          <div className="absolute -inset-8 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent rounded-full opacity-15 blur-2xl animate-pulse"></div>
-          <img
-            src={parseyLogo}
-            alt="Parsey"
-            className="relative w-64 h-64 object-contain animate-bounce-soft drop-shadow-2xl"
-          />
-        </div>
+        <img
+          src={isLayedAvatar ? parseyLayed : parseyLogo}
+          alt="Parsey"
+          className="w-96 h-96 object-contain drop-shadow-2xl transition-all duration-500"
+        />
       </div>
 
       {/* Header */}
@@ -373,12 +381,21 @@ function App() {
                     <ComplianceReportView
                       report={adaptedResult.compliance_report}
                       onFeedback={handleUC4Feedback}
+                      onReportSectionVisibility={handleReportSectionVisibility}
                     />
                   </section>
 
                   {/* Feedback Geral - Após todos os UCs */}
                   <section className="lg:mr-72">
-                    <OverallFeedback onSubmit={handleOverallFeedback} />
+                    <OverallFeedback
+                      onSubmit={handleOverallFeedback}
+                      existingFeedbacks={{
+                        uc1: feedbacks.uc1,
+                        uc2: feedbacks.uc2,
+                        uc3: feedbacks.uc3,
+                        uc4: feedbacks.uc4,
+                      }}
+                    />
                   </section>
                 </>
               ) : (
