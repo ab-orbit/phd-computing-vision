@@ -1,0 +1,5126 @@
+[
+  {
+    "image_id": "20710",
+    "image_file": "20710.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "38771",
+    "image_file": "38771.png",
+    "caption": "A professional product photo of khaki casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Khaki",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "36431",
+    "image_file": "36431.png",
+    "caption": "A professional product photo of beige casual shoes , spring collection , men , Spinn brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Beige",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "26530",
+    "image_file": "26530.png",
+    "caption": "A professional product photo of purple casual shoes , spring collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Purple",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "35793",
+    "image_file": "35793.png",
+    "caption": "A professional product photo of purple casual shoes , summer collection , women , Enroute Women brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Purple",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "18658",
+    "image_file": "18658.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "35565",
+    "image_file": "35565.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Arrow brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "4743",
+    "image_file": "4743.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , women , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "44743",
+    "image_file": "44743.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Globalite brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "21210",
+    "image_file": "21210.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Quiksilver brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "15266",
+    "image_file": "15266.png",
+    "caption": "A professional product photo of other casual shoes , fall collection , women , ADIDAS Originals brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Other",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "57469",
+    "image_file": "57469.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , unisex , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "37246",
+    "image_file": "37246.png",
+    "caption": "A professional product photo of charcoal casual shoes , summer collection , men , United Colors of Benetton brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Charcoal",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "32494",
+    "image_file": "32494.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "8981",
+    "image_file": "8981.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "22870",
+    "image_file": "22870.png",
+    "caption": "A professional product photo of olive casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Olive",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "17037",
+    "image_file": "17037.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "41831",
+    "image_file": "41831.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "11974",
+    "image_file": "11974.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "2502",
+    "image_file": "2502.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "38542",
+    "image_file": "38542.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "39993",
+    "image_file": "39993.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "15224",
+    "image_file": "15224.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , ADIDAS Originals brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "57478",
+    "image_file": "57478.png",
+    "caption": "A professional product photo of yellow casual shoes , fall collection , men , ID brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Yellow",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "4066",
+    "image_file": "4066.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Crocs brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "5908",
+    "image_file": "5908.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "7377",
+    "image_file": "7377.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "22704",
+    "image_file": "22704.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "13384",
+    "image_file": "13384.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "15503",
+    "image_file": "15503.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , women , Carlton London brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "13370",
+    "image_file": "13370.png",
+    "caption": "A professional product photo of grey casual shoes , fall collection , men , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "59342",
+    "image_file": "59342.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Gliders brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "13187",
+    "image_file": "13187.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "44493",
+    "image_file": "44493.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Gliders brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "42273",
+    "image_file": "42273.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , unisex , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "39342",
+    "image_file": "39342.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "49381",
+    "image_file": "49381.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "31941",
+    "image_file": "31941.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , women , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "6373",
+    "image_file": "6373.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , women , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "5343",
+    "image_file": "5343.png",
+    "caption": "A professional product photo of blue casual shoes , winter collection , women , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "2508",
+    "image_file": "2508.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "44769",
+    "image_file": "44769.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Globalite brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "36468",
+    "image_file": "36468.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Spinn brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "11821",
+    "image_file": "11821.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Playboy brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "6733",
+    "image_file": "6733.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , unisex , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "4734",
+    "image_file": "4734.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "10178",
+    "image_file": "10178.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , United Colors of Benetton brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "6709",
+    "image_file": "6709.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , unisex , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "21736",
+    "image_file": "21736.png",
+    "caption": "A professional product photo of grey casual shoes , fall collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "26638",
+    "image_file": "26638.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "35687",
+    "image_file": "35687.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , men , U.S. Polo Assn. brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "36466",
+    "image_file": "36466.png",
+    "caption": "A professional product photo of white casual shoes , spring collection , men , Spinn brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "4118",
+    "image_file": "4118.png",
+    "caption": "A professional product photo of green casual shoes , summer collection , unisex , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "11957",
+    "image_file": "11957.png",
+    "caption": "A professional product photo of tan casual shoes , summer collection , men , Ganuchi brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Tan",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "14577",
+    "image_file": "14577.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "22103",
+    "image_file": "22103.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Flying Machine brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "24260",
+    "image_file": "24260.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "7716",
+    "image_file": "7716.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "38537",
+    "image_file": "38537.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "40468",
+    "image_file": "40468.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "41838",
+    "image_file": "41838.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "7045",
+    "image_file": "7045.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "18673",
+    "image_file": "18673.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "4077",
+    "image_file": "4077.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , women , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "5871",
+    "image_file": "5871.png",
+    "caption": "A professional product photo of green casual shoes , summer collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "43885",
+    "image_file": "43885.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , women , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "39300",
+    "image_file": "39300.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Chief brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "5924",
+    "image_file": "5924.png",
+    "caption": "A professional product photo of green casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "56722",
+    "image_file": "56722.png",
+    "caption": "A professional product photo of maroon casual shoes , fall collection , men , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Maroon",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "24300",
+    "image_file": "24300.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , men , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "22916",
+    "image_file": "22916.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "24691",
+    "image_file": "24691.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Lee Cooper brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "35571",
+    "image_file": "35571.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Arrow brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "44500",
+    "image_file": "44500.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Force 10 brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "13085",
+    "image_file": "13085.png",
+    "caption": "A professional product photo of pink casual shoes , fall collection , unisex , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Pink",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "14554",
+    "image_file": "14554.png",
+    "caption": "A professional product photo of black casual shoes , spring collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "57483",
+    "image_file": "57483.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , men , ID brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "16976",
+    "image_file": "16976.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "3574",
+    "image_file": "3574.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , women , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "49420",
+    "image_file": "49420.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "34745",
+    "image_file": "34745.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "49511",
+    "image_file": "49511.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "42270",
+    "image_file": "42270.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , unisex , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "4135",
+    "image_file": "4135.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "15416",
+    "image_file": "15416.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "43873",
+    "image_file": "43873.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "17747",
+    "image_file": "17747.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "9383",
+    "image_file": "9383.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , women , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "15233",
+    "image_file": "15233.png",
+    "caption": "A professional product photo of blue casual shoes , fall collection , men , ADIDAS Originals brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "38648",
+    "image_file": "38648.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "9213",
+    "image_file": "9213.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "18477",
+    "image_file": "18477.png",
+    "caption": "A professional product photo of red casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "32194",
+    "image_file": "32194.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "26662",
+    "image_file": "26662.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "4138",
+    "image_file": "4138.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , women , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "22817",
+    "image_file": "22817.png",
+    "caption": "A professional product photo of khaki casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Khaki",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "47122",
+    "image_file": "47122.png",
+    "caption": "A professional product photo of red casual shoes , winter collection , boys , Marvel brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Boys",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "33686",
+    "image_file": "33686.png",
+    "caption": "A professional product photo of other casual shoes , winter collection , men , Cobblerz brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Other",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "47681",
+    "image_file": "47681.png",
+    "caption": "A professional product photo of navy blue casual shoes , spring collection , men , Carlton London brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "35708",
+    "image_file": "35708.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "15270",
+    "image_file": "15270.png",
+    "caption": "A professional product photo of pink casual shoes , fall collection , women , ADIDAS Originals brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Pink",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "44764",
+    "image_file": "44764.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Globalite brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "42269",
+    "image_file": "42269.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "46332",
+    "image_file": "46332.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Reebok brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "38775",
+    "image_file": "38775.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "22244",
+    "image_file": "22244.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , men , ID brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "39305",
+    "image_file": "39305.png",
+    "caption": "A professional product photo of khaki casual shoes , winter collection , men , Red Chief brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Khaki",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "15903",
+    "image_file": "15903.png",
+    "caption": "A professional product photo of white casual shoes , winter collection , unisex , Warner Bros brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Unisex",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "17659",
+    "image_file": "17659.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , women , Catwalk brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "21740",
+    "image_file": "21740.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , unisex , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "20711",
+    "image_file": "20711.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Smart Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "1594",
+    "image_file": "1594.png",
+    "caption": "A professional product photo of grey casual shoes , fall collection , unisex , Newfeel brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "44658",
+    "image_file": "44658.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , unisex , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22833",
+    "image_file": "22833.png",
+    "caption": "A professional product photo of olive casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Olive",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "53734",
+    "image_file": "53734.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22861",
+    "image_file": "22861.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "18542",
+    "image_file": "18542.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , women , Catwalk brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "14489",
+    "image_file": "14489.png",
+    "caption": "A professional product photo of blue casual shoes , fall collection , men , Flying Machine brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "35465",
+    "image_file": "35465.png",
+    "caption": "A professional product photo of blue casual shoes , fall collection , men , Franco Leone brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "4076",
+    "image_file": "4076.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , women , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "44494",
+    "image_file": "44494.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , men , Gliders brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "5342",
+    "image_file": "5342.png",
+    "caption": "A professional product photo of green casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "5680",
+    "image_file": "5680.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "8962",
+    "image_file": "8962.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "22818",
+    "image_file": "22818.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "37249",
+    "image_file": "37249.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , United Colors of Benetton brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "35532",
+    "image_file": "35532.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , girls , Enroute Teens brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Girls",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "50375",
+    "image_file": "50375.png",
+    "caption": "A professional product photo of olive casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Olive",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "38659",
+    "image_file": "38659.png",
+    "caption": "A professional product photo of purple casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Purple",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "9199",
+    "image_file": "9199.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , women , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "5289",
+    "image_file": "5289.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Lee Cooper brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "3695",
+    "image_file": "3695.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Lotto brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "44738",
+    "image_file": "44738.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Globalite brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "12920",
+    "image_file": "12920.png",
+    "caption": "A professional product photo of blue casual shoes , spring collection , men , ID brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "34755",
+    "image_file": "34755.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , women , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "12421",
+    "image_file": "12421.png",
+    "caption": "A professional product photo of beige casual shoes , fall collection , women , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Beige",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "11842",
+    "image_file": "11842.png",
+    "caption": "A professional product photo of beige casual shoes , summer collection , men , Playboy brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Beige",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "10127",
+    "image_file": "10127.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Rockport brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "40450",
+    "image_file": "40450.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "5320",
+    "image_file": "5320.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "57509",
+    "image_file": "57509.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Provogue brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "34531",
+    "image_file": "34531.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "8997",
+    "image_file": "8997.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "2509",
+    "image_file": "2509.png",
+    "caption": "A professional product photo of grey casual shoes , fall collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "47235",
+    "image_file": "47235.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Playboy brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "1544",
+    "image_file": "1544.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "15852",
+    "image_file": "15852.png",
+    "caption": "A professional product photo of grey casual shoes , fall collection , unisex , Warner Bros brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "17832",
+    "image_file": "17832.png",
+    "caption": "A professional product photo of navy blue casual shoes , fall collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "13069",
+    "image_file": "13069.png",
+    "caption": "A professional product photo of green casual shoes , fall collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "39944",
+    "image_file": "39944.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "3648",
+    "image_file": "3648.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "3249",
+    "image_file": "3249.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , women , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "42020",
+    "image_file": "42020.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "33112",
+    "image_file": "33112.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , women , Catwalk brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "25446",
+    "image_file": "25446.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22877",
+    "image_file": "22877.png",
+    "caption": "A professional product photo of olive casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Olive",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "24188",
+    "image_file": "24188.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "15884",
+    "image_file": "15884.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , unisex , Warner Bros brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Unisex",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "7828",
+    "image_file": "7828.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , women , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "20825",
+    "image_file": "20825.png",
+    "caption": "A professional product photo of white casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "42019",
+    "image_file": "42019.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "25489",
+    "image_file": "25489.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "13540",
+    "image_file": "13540.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Carlton London brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "17700",
+    "image_file": "17700.png",
+    "caption": "A professional product photo of blue casual shoes , fall collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "44768",
+    "image_file": "44768.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Globalite brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "44817",
+    "image_file": "44817.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Clarks brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "40791",
+    "image_file": "40791.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Quiksilver brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "15515",
+    "image_file": "15515.png",
+    "caption": "A professional product photo of grey casual shoes , fall collection , men , Rockport brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "29562",
+    "image_file": "29562.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22821",
+    "image_file": "22821.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Sports",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "13363",
+    "image_file": "13363.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "22832",
+    "image_file": "22832.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "20877",
+    "image_file": "20877.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "6804",
+    "image_file": "6804.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "14575",
+    "image_file": "14575.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "7710",
+    "image_file": "7710.png",
+    "caption": "A professional product photo of blue casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "22723",
+    "image_file": "22723.png",
+    "caption": "A professional product photo of red casual shoes , fall collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "13646",
+    "image_file": "13646.png",
+    "caption": "A professional product photo of beige casual shoes , fall collection , men , Carlton London brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Beige",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "15232",
+    "image_file": "15232.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , ADIDAS Originals brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "12870",
+    "image_file": "12870.png",
+    "caption": "A professional product photo of black casual shoes , spring collection , men , Lee Cooper brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "17705",
+    "image_file": "17705.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , unisex , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "38652",
+    "image_file": "38652.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , women , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "5676",
+    "image_file": "5676.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "44237",
+    "image_file": "44237.png",
+    "caption": "A professional product photo of green casual shoes , summer collection , women , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "4736",
+    "image_file": "4736.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "12520",
+    "image_file": "12520.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "20704",
+    "image_file": "20704.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Buckaroo brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "31692",
+    "image_file": "31692.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Ganuchi brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "38650",
+    "image_file": "38650.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "39967",
+    "image_file": "39967.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "39982",
+    "image_file": "39982.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "21471",
+    "image_file": "21471.png",
+    "caption": "A professional product photo of purple casual shoes , winter collection , women , roxy brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Purple",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "50753",
+    "image_file": "50753.png",
+    "caption": "A professional product photo of other casual shoes , winter collection , men , Red Chief brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Other",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "12905",
+    "image_file": "12905.png",
+    "caption": "A professional product photo of purple casual shoes , fall collection , women , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Purple",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "39249",
+    "image_file": "39249.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Chief brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "26664",
+    "image_file": "26664.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "36479",
+    "image_file": "36479.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Spinn brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "44657",
+    "image_file": "44657.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , unisex , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "6344",
+    "image_file": "6344.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2014
+    }
+  },
+  {
+    "image_id": "57494",
+    "image_file": "57494.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Lee Cooper brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "19053",
+    "image_file": "19053.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , unisex , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "43220",
+    "image_file": "43220.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "19902",
+    "image_file": "19902.png",
+    "caption": "A professional product photo of red casual shoes , fall collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "57480",
+    "image_file": "57480.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , ID brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "29571",
+    "image_file": "29571.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "44418",
+    "image_file": "44418.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "2219",
+    "image_file": "2219.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "20891",
+    "image_file": "20891.png",
+    "caption": "A professional product photo of green casual shoes , fall collection , men , Basics brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "44437",
+    "image_file": "44437.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Gliders brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "4739",
+    "image_file": "4739.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "15255",
+    "image_file": "15255.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , women , ADIDAS Originals brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "21067",
+    "image_file": "21067.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Clarks brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "49434",
+    "image_file": "49434.png",
+    "caption": "A professional product photo of blue casual shoes , fall collection , unisex , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "6426",
+    "image_file": "6426.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , unisex , Lotto brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "14500",
+    "image_file": "14500.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Flying Machine brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "34082",
+    "image_file": "34082.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Clarks brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "3506",
+    "image_file": "3506.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , women , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "10159",
+    "image_file": "10159.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "26671",
+    "image_file": "26671.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22842",
+    "image_file": "22842.png",
+    "caption": "A professional product photo of khaki casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Khaki",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "39741",
+    "image_file": "39741.png",
+    "caption": "A professional product photo of olive casual shoes , summer collection , men , Arrow brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Olive",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "5866",
+    "image_file": "5866.png",
+    "caption": "A professional product photo of green casual shoes , summer collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "22197",
+    "image_file": "22197.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "5703",
+    "image_file": "5703.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "22172",
+    "image_file": "22172.png",
+    "caption": "A professional product photo of tan casual shoes , fall collection , men , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Tan",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "34529",
+    "image_file": "34529.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "23338",
+    "image_file": "23338.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "45619",
+    "image_file": "45619.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , men , Arrow brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "15885",
+    "image_file": "15885.png",
+    "caption": "A professional product photo of navy blue casual shoes , winter collection , unisex , Warner Bros brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Unisex",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "14565",
+    "image_file": "14565.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "22094",
+    "image_file": "22094.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "3467",
+    "image_file": "3467.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , women , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "4022",
+    "image_file": "4022.png",
+    "caption": "A professional product photo of green casual shoes , summer collection , unisex , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "35531",
+    "image_file": "35531.png",
+    "caption": "A professional product photo of red casual shoes , winter collection , girls , Enroute Teens brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Girls",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2008
+    }
+  },
+  {
+    "image_id": "33852",
+    "image_file": "33852.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , women , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "3647",
+    "image_file": "3647.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "44745",
+    "image_file": "44745.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Globalite brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "15249",
+    "image_file": "15249.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , ADIDAS Originals brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "3668",
+    "image_file": "3668.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "54066",
+    "image_file": "54066.png",
+    "caption": "A professional product photo of olive casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Olive",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "5926",
+    "image_file": "5926.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "54519",
+    "image_file": "54519.png",
+    "caption": "A professional product photo of navy blue casual shoes , fall collection , men , F Sports brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "24468",
+    "image_file": "24468.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , ID brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "3225",
+    "image_file": "3225.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "32938",
+    "image_file": "32938.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "44422",
+    "image_file": "44422.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "2541",
+    "image_file": "2541.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "6460",
+    "image_file": "6460.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Lotto brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "13387",
+    "image_file": "13387.png",
+    "caption": "A professional product photo of grey casual shoes , fall collection , men , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "42125",
+    "image_file": "42125.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "15510",
+    "image_file": "15510.png",
+    "caption": "A professional product photo of charcoal casual shoes , fall collection , men , Rockport brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Charcoal",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "26646",
+    "image_file": "26646.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "3559",
+    "image_file": "3559.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "41449",
+    "image_file": "41449.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Lee Cooper brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "13196",
+    "image_file": "13196.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "17702",
+    "image_file": "17702.png",
+    "caption": "A professional product photo of yellow casual shoes , fall collection , unisex , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Yellow",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "22911",
+    "image_file": "22911.png",
+    "caption": "A professional product photo of red casual shoes , fall collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "49484",
+    "image_file": "49484.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "24825",
+    "image_file": "24825.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22836",
+    "image_file": "22836.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "9216",
+    "image_file": "9216.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "40316",
+    "image_file": "40316.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "49408",
+    "image_file": "49408.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "7726",
+    "image_file": "7726.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , women , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "49461",
+    "image_file": "49461.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "14568",
+    "image_file": "14568.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "13968",
+    "image_file": "13968.png",
+    "caption": "A professional product photo of navy blue casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "2371",
+    "image_file": "2371.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "5332",
+    "image_file": "5332.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "8982",
+    "image_file": "8982.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "44740",
+    "image_file": "44740.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Globalite brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "24819",
+    "image_file": "24819.png",
+    "caption": "A professional product photo of other casual shoes , summer collection , women , Carlton London brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Other",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "44777",
+    "image_file": "44777.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Lotto brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "28318",
+    "image_file": "28318.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "2380",
+    "image_file": "2380.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "20895",
+    "image_file": "20895.png",
+    "caption": "A professional product photo of other casual shoes , fall collection , men , Basics brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Other",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "17730",
+    "image_file": "17730.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "13139",
+    "image_file": "13139.png",
+    "caption": "A professional product photo of olive casual shoes , spring collection , men , Lee Cooper brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Olive",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "25444",
+    "image_file": "25444.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "57490",
+    "image_file": "57490.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Lee Cooper brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Formal",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "54738",
+    "image_file": "54738.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "44744",
+    "image_file": "44744.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Globalite brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "18480",
+    "image_file": "18480.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "39943",
+    "image_file": "39943.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "7813",
+    "image_file": "7813.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , unisex , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "9028",
+    "image_file": "9028.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Buckaroo brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "5692",
+    "image_file": "5692.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "43872",
+    "image_file": "43872.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "17831",
+    "image_file": "17831.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "33768",
+    "image_file": "33768.png",
+    "caption": "A professional product photo of tan casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Tan",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "40453",
+    "image_file": "40453.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "13685",
+    "image_file": "13685.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "38774",
+    "image_file": "38774.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "14494",
+    "image_file": "14494.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Flying Machine brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "39742",
+    "image_file": "39742.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , men , Arrow brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "2500",
+    "image_file": "2500.png",
+    "caption": "A professional product photo of navy blue casual shoes , fall collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "5868",
+    "image_file": "5868.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "44767",
+    "image_file": "44767.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Globalite brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "25453",
+    "image_file": "25453.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22827",
+    "image_file": "22827.png",
+    "caption": "A professional product photo of green casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "39985",
+    "image_file": "39985.png",
+    "caption": "A professional product photo of olive casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Olive",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "32558",
+    "image_file": "32558.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , men , Playboy brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "34081",
+    "image_file": "34081.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Clarks brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "6800",
+    "image_file": "6800.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "12883",
+    "image_file": "12883.png",
+    "caption": "A professional product photo of green casual shoes , fall collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "22875",
+    "image_file": "22875.png",
+    "caption": "A professional product photo of khaki casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Khaki",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "5679",
+    "image_file": "5679.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "13484",
+    "image_file": "13484.png",
+    "caption": "A professional product photo of white casual shoes , winter collection , women , Rocia brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "37252",
+    "image_file": "37252.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , men , United Colors of Benetton brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "11954",
+    "image_file": "11954.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Ganuchi brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "51349",
+    "image_file": "51349.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "35818",
+    "image_file": "35818.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , women , Enroute Women brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "6799",
+    "image_file": "6799.png",
+    "caption": "A professional product photo of yellow casual shoes , summer collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Yellow",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "12508",
+    "image_file": "12508.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "47245",
+    "image_file": "47245.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Playboy brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "18478",
+    "image_file": "18478.png",
+    "caption": "A professional product photo of navy blue casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "11956",
+    "image_file": "11956.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Ganuchi brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "29561",
+    "image_file": "29561.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "37254",
+    "image_file": "37254.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , men , United Colors of Benetton brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "5911",
+    "image_file": "5911.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , women , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "35656",
+    "image_file": "35656.png",
+    "caption": "A professional product photo of navy blue casual shoes , spring collection , men , U.S. Polo Assn. brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "6446",
+    "image_file": "6446.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Lotto brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "51756",
+    "image_file": "51756.png",
+    "caption": "A professional product photo of blue casual shoes , winter collection , women , Catwalk brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "44501",
+    "image_file": "44501.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Force 10 brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "36484",
+    "image_file": "36484.png",
+    "caption": "A professional product photo of grey casual shoes , spring collection , men , Spinn brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "41477",
+    "image_file": "41477.png",
+    "caption": "A professional product photo of maroon casual shoes , spring collection , men , Carlton London brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Maroon",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "37243",
+    "image_file": "37243.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , United Colors of Benetton brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "24257",
+    "image_file": "24257.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "2374",
+    "image_file": "2374.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "4027",
+    "image_file": "4027.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , unisex , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "33103",
+    "image_file": "33103.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , women , Catwalk brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "22162",
+    "image_file": "22162.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "57517",
+    "image_file": "57517.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Provogue brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "33857",
+    "image_file": "33857.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "7393",
+    "image_file": "7393.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "38785",
+    "image_file": "38785.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "10296",
+    "image_file": "10296.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , men , Clarks brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "34736",
+    "image_file": "34736.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , unisex , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "31946",
+    "image_file": "31946.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "26633",
+    "image_file": "26633.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "36227",
+    "image_file": "36227.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "2397",
+    "image_file": "2397.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "8983",
+    "image_file": "8983.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "39291",
+    "image_file": "39291.png",
+    "caption": "A professional product photo of khaki casual shoes , winter collection , men , Red Chief brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Khaki",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "17483",
+    "image_file": "17483.png",
+    "caption": "A professional product photo of navy blue casual shoes , fall collection , men , Enroute Men brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "5706",
+    "image_file": "5706.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "3549",
+    "image_file": "3549.png",
+    "caption": "A professional product photo of white casual shoes , winter collection , men , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "43893",
+    "image_file": "43893.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , unisex , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "15264",
+    "image_file": "15264.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , women , ADIDAS Originals brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "44765",
+    "image_file": "44765.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Globalite brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "6435",
+    "image_file": "6435.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , women , Lotto brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "10177",
+    "image_file": "10177.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , United Colors of Benetton brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "7754",
+    "image_file": "7754.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "13070",
+    "image_file": "13070.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "10152",
+    "image_file": "10152.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Rockport brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "35402",
+    "image_file": "35402.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Stens by Enroute brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "6339",
+    "image_file": "6339.png",
+    "caption": "A professional product photo of red casual shoes , summer collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "5037",
+    "image_file": "5037.png",
+    "caption": "A professional product photo of white casual shoes , winter collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "15865",
+    "image_file": "15865.png",
+    "caption": "A professional product photo of blue casual shoes , winter collection , unisex , Warner Bros brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Unisex",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "59944",
+    "image_file": "59944.png",
+    "caption": "A professional product photo of other casual shoes , spring collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Other",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "22157",
+    "image_file": "22157.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Lee Cooper brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "31687",
+    "image_file": "31687.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , women , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "6436",
+    "image_file": "6436.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Lotto brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "7797",
+    "image_file": "7797.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "26528",
+    "image_file": "26528.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22198",
+    "image_file": "22198.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "59056",
+    "image_file": "59056.png",
+    "caption": "A professional product photo of blue casual shoes , winter collection , women , Carlton London brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "17711",
+    "image_file": "17711.png",
+    "caption": "A professional product photo of beige casual shoes , fall collection , unisex , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Beige",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "22862",
+    "image_file": "22862.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22505",
+    "image_file": "22505.png",
+    "caption": "A professional product photo of grey casual shoes , winter collection , women , Catwalk brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "24256",
+    "image_file": "24256.png",
+    "caption": "A professional product photo of green casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Green",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "20682",
+    "image_file": "20682.png",
+    "caption": "A professional product photo of brown casual shoes , winter collection , men , Buckaroo brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "39280",
+    "image_file": "39280.png",
+    "caption": "A professional product photo of tan casual shoes , summer collection , men , Red Chief brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Tan",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "14281",
+    "image_file": "14281.png",
+    "caption": "A professional product photo of grey casual shoes , fall collection , women , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "15072",
+    "image_file": "15072.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Ganuchi brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "3790",
+    "image_file": "3790.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2014
+    }
+  },
+  {
+    "image_id": "1543",
+    "image_file": "1543.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "35564",
+    "image_file": "35564.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Arrow brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "44424",
+    "image_file": "44424.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , women , Gliders brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "59936",
+    "image_file": "59936.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "4113",
+    "image_file": "4113.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , FILA brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "13132",
+    "image_file": "13132.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Provogue brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "25403",
+    "image_file": "25403.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , unisex , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Unisex",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "6361",
+    "image_file": "6361.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "47644",
+    "image_file": "47644.png",
+    "caption": "A professional product photo of brown casual shoes , spring collection , men , Carlton London brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "5896",
+    "image_file": "5896.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "49369",
+    "image_file": "49369.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "2828",
+    "image_file": "2828.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , men , Lee Cooper brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22864",
+    "image_file": "22864.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "8992",
+    "image_file": "8992.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "26663",
+    "image_file": "26663.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "5929",
+    "image_file": "5929.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "25404",
+    "image_file": "25404.png",
+    "caption": "A professional product photo of red casual shoes , fall collection , women , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Red",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "14450",
+    "image_file": "14450.png",
+    "caption": "A professional product photo of silver casual shoes , summer collection , women , Enroute Women brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Silver",
+      "gender": "Women",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "9815",
+    "image_file": "9815.png",
+    "caption": "A professional product photo of black casual shoes , spring collection , men , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "33767",
+    "image_file": "33767.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , unisex , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "4137",
+    "image_file": "4137.png",
+    "caption": "A professional product photo of white casual shoes , winter collection , women , Skechers brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2015
+    }
+  },
+  {
+    "image_id": "57495",
+    "image_file": "57495.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Lee Cooper brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Formal",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "39981",
+    "image_file": "39981.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "49490",
+    "image_file": "49490.png",
+    "caption": "A professional product photo of maroon casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Maroon",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "7396",
+    "image_file": "7396.png",
+    "caption": "A professional product photo of grey casual shoes , winter collection , men , Red Tape brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "17043",
+    "image_file": "17043.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "10160",
+    "image_file": "10160.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "46100",
+    "image_file": "46100.png",
+    "caption": "A professional product photo of black casual shoes , summer collection , unisex , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22191",
+    "image_file": "22191.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , men , Timberland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "53731",
+    "image_file": "53731.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2014
+    }
+  },
+  {
+    "image_id": "50750",
+    "image_file": "50750.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Red Chief brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "47642",
+    "image_file": "47642.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Carlton London brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "9116",
+    "image_file": "9116.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , women , Puma brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Sports",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "15502",
+    "image_file": "15502.png",
+    "caption": "A professional product photo of brown casual shoes , fall collection , women , Carlton London brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "24183",
+    "image_file": "24183.png",
+    "caption": "A professional product photo of navy blue casual shoes , summer collection , men , Converse brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Navy Blue",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "54520",
+    "image_file": "54520.png",
+    "caption": "A professional product photo of white casual shoes , fall collection , men , F Sports brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "26532",
+    "image_file": "26532.png",
+    "caption": "A professional product photo of beige casual shoes , summer collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Beige",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2013
+    }
+  },
+  {
+    "image_id": "39289",
+    "image_file": "39289.png",
+    "caption": "A professional product photo of black casual shoes , winter collection , men , Red Chief brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Winter",
+      "usage": "Casual",
+      "year": 2018
+    }
+  },
+  {
+    "image_id": "45620",
+    "image_file": "45620.png",
+    "caption": "A professional product photo of brown casual shoes , summer collection , men , Arrow brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Brown",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "22823",
+    "image_file": "22823.png",
+    "caption": "A professional product photo of khaki casual shoes , summer collection , men , Woodland brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Khaki",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2016
+    }
+  },
+  {
+    "image_id": "15223",
+    "image_file": "15223.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , ADIDAS Originals brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "6653",
+    "image_file": "6653.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Nike brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "39676",
+    "image_file": "39676.png",
+    "caption": "A professional product photo of white casual shoes , summer collection , men , Lotto brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "White",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "12927",
+    "image_file": "12927.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , ID brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "3498",
+    "image_file": "3498.png",
+    "caption": "A professional product photo of blue casual shoes , fall collection , women , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2010
+    }
+  },
+  {
+    "image_id": "13072",
+    "image_file": "13072.png",
+    "caption": "A professional product photo of black casual shoes , fall collection , men , Numero Uno brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "6458",
+    "image_file": "6458.png",
+    "caption": "A professional product photo of blue casual shoes , summer collection , unisex , Lotto brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Unisex",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "13726",
+    "image_file": "13726.png",
+    "caption": "A professional product photo of blue casual shoes , fall collection , women , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Blue",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "29572",
+    "image_file": "29572.png",
+    "caption": "A professional product photo of grey casual shoes , summer collection , men , Vans brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Grey",
+      "gender": "Men",
+      "season": "Summer",
+      "usage": "Casual",
+      "year": 2012
+    }
+  },
+  {
+    "image_id": "13533",
+    "image_file": "13533.png",
+    "caption": "A professional product photo of pink casual shoes , fall collection , women , ADIDAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Pink",
+      "gender": "Women",
+      "season": "Fall",
+      "usage": "Casual",
+      "year": 2011
+    }
+  },
+  {
+    "image_id": "26526",
+    "image_file": "26526.png",
+    "caption": "A professional product photo of black casual shoes , spring collection , men , GAS brand , centered on white background, high quality, product photography",
+    "metadata": {
+      "color": "Black",
+      "gender": "Men",
+      "season": "Spring",
+      "usage": "Casual",
+      "year": 2013
+    }
+  }
+]
