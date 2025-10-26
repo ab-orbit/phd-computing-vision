@@ -171,7 +171,7 @@ def parse_args():
     parser.add_argument(
         "--train_data_dir",
         type=str,
-        default="../data/casual_shoes/train",
+        default="../../data/casual_shoes/train",
         help="Diretório com dados de treinamento",
     )
     parser.add_argument(
@@ -335,7 +335,7 @@ def parse_args():
 
     args = parser.parse_args()
 
-    # Converter paths relativos para absolutos
+    # Converter paths relativos para absolutos (relativo ao script)
     script_dir = Path(__file__).parent
     if not Path(args.train_data_dir).is_absolute():
         args.train_data_dir = str((script_dir / args.train_data_dir).resolve())
@@ -343,6 +343,14 @@ def parse_args():
         args.output_dir = str((script_dir / args.output_dir).resolve())
     if not Path(args.logging_dir).is_absolute():
         args.logging_dir = str((script_dir / args.logging_dir).resolve())
+
+    # Validar que train_data_dir existe
+    if not Path(args.train_data_dir).exists():
+        raise FileNotFoundError(
+            f"Dataset não encontrado: {args.train_data_dir}\n"
+            f"Certifique-se de que Task 1.2 foi executada e que o dataset está em:\n"
+            f"  data/casual_shoes/train/"
+        )
 
     return args
 
