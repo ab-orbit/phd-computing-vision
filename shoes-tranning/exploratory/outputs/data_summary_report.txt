@@ -1,0 +1,117 @@
+================================================================================
+RELATÓRIO DE ANÁLISE EXPLORATÓRIA - FASHION PRODUCT IMAGES DATASET
+================================================================================
+
+1. ESTATÍSTICAS BÁSICAS
+--------------------------------------------------------------------------------
+Total de registros: 44,424
+Total de colunas: 10
+Registros duplicados: 0
+IDs únicos: 44,424
+
+Valores faltantes:
+  - baseColour: 15 (0.03%)
+  - season: 21 (0.05%)
+  - year: 1 (0.00%)
+  - usage: 317 (0.71%)
+  - productDisplayName: 7 (0.02%)
+
+2. DISTRIBUIÇÕES DE CATEGORIAS
+--------------------------------------------------------------------------------
+
+GENDER:
+  Men: 22,147 (49.85%)
+  Women: 18,631 (41.94%)
+  Unisex: 2,161 (4.86%)
+  Boys: 830 (1.87%)
+  Girls: 655 (1.47%)
+
+MASTERCATEGORY:
+  Apparel: 21,397 (48.17%)
+  Accessories: 11,274 (25.38%)
+  Footwear: 9,219 (20.75%)
+  Personal Care: 2,403 (5.41%)
+  Free Items: 105 (0.24%)
+  Sporting Goods: 25 (0.06%)
+  Home: 1 (0.00%)
+
+SUBCATEGORY:
+  Topwear: 15,402 (34.67%)
+  Shoes: 7,343 (16.53%)
+  Bags: 3,055 (6.88%)
+  Bottomwear: 2,694 (6.06%)
+  Watches: 2,542 (5.72%)
+  Innerwear: 1,808 (4.07%)
+  Jewellery: 1,079 (2.43%)
+  Eyewear: 1,073 (2.42%)
+  Fragrance: 1,011 (2.28%)
+  Sandal: 963 (2.17%)
+
+ARTICLETYPE:
+  Tshirts: 7,067 (15.91%)
+  Shirts: 3,217 (7.24%)
+  Casual Shoes: 2,845 (6.40%)
+  Watches: 2,542 (5.72%)
+  Sports Shoes: 2,036 (4.58%)
+  Kurtas: 1,844 (4.15%)
+  Tops: 1,762 (3.97%)
+  Handbags: 1,759 (3.96%)
+  Heels: 1,323 (2.98%)
+  Sunglasses: 1,073 (2.42%)
+
+BASECOLOUR:
+  Black: 9,728 (21.90%)
+  White: 5,538 (12.47%)
+  Blue: 4,918 (11.07%)
+  Brown: 3,494 (7.87%)
+  Grey: 2,741 (6.17%)
+  Red: 2,455 (5.53%)
+  Green: 2,115 (4.76%)
+  Pink: 1,860 (4.19%)
+  Navy Blue: 1,789 (4.03%)
+  Purple: 1,640 (3.69%)
+
+SEASON:
+  Summer: 21,472 (48.33%)
+  Fall: 11,431 (25.73%)
+  Winter: 8,517 (19.17%)
+  Spring: 2,983 (6.71%)
+
+USAGE:
+  Casual: 34,406 (77.45%)
+  Sports: 4,025 (9.06%)
+  Ethnic: 3,208 (7.22%)
+  Formal: 2,345 (5.28%)
+  Smart Casual: 67 (0.15%)
+  Party: 29 (0.07%)
+  Travel: 26 (0.06%)
+  Home: 1 (0.00%)
+
+3. ANÁLISE TEMPORAL
+--------------------------------------------------------------------------------
+  2007.0: 2 (0.00%)
+  2008.0: 7 (0.02%)
+  2009.0: 20 (0.05%)
+  2010.0: 846 (1.90%)
+  2011.0: 13,672 (30.78%)
+  2012.0: 16,288 (36.66%)
+  2013.0: 1,212 (2.73%)
+  2014.0: 236 (0.53%)
+  2015.0: 2,780 (6.26%)
+  2016.0: 6,006 (13.52%)
+  2017.0: 2,916 (6.56%)
+  2018.0: 405 (0.91%)
+  2019.0: 33 (0.07%)
+
+4. INTEGRIDADE DOS DADOS
+--------------------------------------------------------------------------------
+Total de IDs em styles.csv: 44,424
+Total de imagens no disco: 44,441
+Total de JSONs no disco: 44,446
+Imagens faltantes: 5
+JSONs faltantes: 0
+Imagens órfãs: 22
+JSONs órfãos: 22
+
+================================================================================
+Relatório gerado com sucesso!
