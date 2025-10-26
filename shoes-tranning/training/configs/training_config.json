@@ -1,0 +1,45 @@
+{
+  "pretrained_model_name_or_path": "runwayml/stable-diffusion-v1-5",
+  "train_data_dir": "../data/casual_shoes/train",
+  "output_dir": "../outputs/lora_casual_shoes",
+  "logging_dir": "../logs",
+
+  "resolution": 512,
+  "train_batch_size": 2,
+  "gradient_accumulation_steps": 8,
+  "num_train_epochs": 1,
+  "max_train_steps": 3000,
+
+  "learning_rate": 1e-4,
+  "lr_scheduler": "cosine",
+  "lr_warmup_steps": 500,
+  "gradient_checkpointing": true,
+
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0,
+
+  "validation_prompt": [
+    "A professional product photo of black casual shoes on white background, high quality, product photography",
+    "A professional product photo of brown leather casual shoes on white background, high quality",
+    "A professional product photo of white casual sneakers on white background, centered, product photography",
+    "A professional product photo of blue casual shoes on white background, modern design, product photography"
+  ],
+  "validation_steps": 500,
+  "num_validation_images": 4,
+
+  "checkpointing_steps": 500,
+  "checkpoints_total_limit": 5,
+
+  "report_to": "tensorboard",
+  "seed": 42,
+  "dataloader_num_workers": 0,
+
+  "_comments": {
+    "batch_settings": "batch_size=2 * grad_accum=8 = effective_batch_size=16",
+    "lora_settings": "rank=8, alpha=16 (conservative for first training)",
+    "training_time": "~3 hours estimated for 3000 steps on M2 Max",
+    "memory_usage": "~10-14 GB expected with float32 + gradient_checkpointing",
+    "float_precision": "Using float32 (not float16) due to MPS NaN issue"
+  }
+}
