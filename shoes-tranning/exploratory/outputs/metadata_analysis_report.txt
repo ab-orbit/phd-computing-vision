@@ -1,0 +1,92 @@
+================================================================================
+RELATÓRIO DE ANÁLISE DE METADADOS JSON
+================================================================================
+
+1. ESTRUTURA DOS METADADOS
+--------------------------------------------------------------------------------
+Total de campos únicos: 47
+
+Completude dos campos (top 30):
+  styleType: 100.0% (44,446 registros)
+  lookGoodAlbum: 100.0% (44,446 registros)
+  brandUserProfile: 100.0% (44,446 registros)
+  styleImages: 100.0% (44,446 registros)
+  year: 100.0% (44,446 registros)
+  price: 100.0% (44,446 registros)
+  style360Images: 100.0% (44,446 registros)
+  weight: 100.0% (44,446 registros)
+  codEnabled: 100.0% (44,446 registros)
+  articleDisplayAttr: 100.0% (44,446 registros)
+  productDescriptors: 100.0% (44,446 registros)
+  brandName: 100.0% (44,446 registros)
+  navigationId: 100.0% (44,446 registros)
+  crossLinks: 100.0% (44,446 registros)
+  baseColour: 100.0% (44,446 registros)
+  colour1: 100.0% (44,446 registros)
+  visualTag: 100.0% (44,446 registros)
+  variantName: 100.0% (44,446 registros)
+  catalogAddDate: 100.0% (44,446 registros)
+  fashionType: 100.0% (44,446 registros)
+  styleOptions: 100.0% (44,446 registros)
+  gender: 100.0% (44,446 registros)
+  colour2: 100.0% (44,446 registros)
+  usage: 100.0% (44,446 registros)
+  discountedPrice: 100.0% (44,446 registros)
+  vat: 100.0% (44,446 registros)
+  articleNumber: 100.0% (44,446 registros)
+  productDisplayName: 100.0% (44,446 registros)
+  id: 100.0% (44,446 registros)
+  subCategory: 100.0% (44,446 registros)
+
+2. DESCRIÇÕES DE PRODUTOS
+--------------------------------------------------------------------------------
+Total de descrições: 88,827
+Total de style notes: 16,539
+Total de materials & care: 15,040
+
+Comprimento das descrições (palavras):
+  Min: 1
+  Max: 1115
+  Média: 47.3
+  Mediana: 9
+
+3. PREÇOS
+--------------------------------------------------------------------------------
+Produtos com preço: 44,446
+Preço mínimo: 0.00
+Preço máximo: 28950.00
+Preço médio: 1690.56
+Preço mediano: 1199.00
+Desconto médio: 5.7%
+
+4. ATRIBUTOS
+--------------------------------------------------------------------------------
+Tipos de atributos: 191
+
+5. MARCAS
+--------------------------------------------------------------------------------
+Total de marcas únicas: 424
+
+Top 20 marcas:
+  Nike: 2,203
+  Puma: 2,098
+  ADIDAS: 1,923
+  United Colors of Benetton: 1,563
+  Fabindia: 751
+  Catwalk: 744
+  Gini and Jony: 721
+  Fastrack: 688
+  Wrangler: 683
+  Lino Perros: 655
+  Baggit: 625
+  Myntra: 476
+  FILA: 474
+  French Connection: 432
+  Jealous 21: 403
+  Jockey: 398
+  Arrow: 388
+  Lotto: 381
+  Lee: 376
+  Murcia: 372
+
+================================================================================

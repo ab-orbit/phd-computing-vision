@@ -1,1 +1,2 @@
 - "Neste projeto sempre adicione explicações detalhadas com fins de aprendizagem"
+- jamais usar emojis neste projeto

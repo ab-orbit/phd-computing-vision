@@ -1,0 +1,31 @@
+# Requisitos para Análise Exploratória
+# Fashion Product Images Dataset
+
+# Core
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualização
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Processamento de Imagens
+Pillow>=10.0.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# Jupyter (para notebooks)
+jupyter>=1.0.0
+ipykernel>=6.20.0
+notebook>=7.0.0
+
+# Análise de texto (opcional, para análises avançadas)
+nltk>=3.8
+spacy>=3.5.0
+
+# Machine Learning (para análises futuras)
+scikit-learn>=1.3.0
+
+# Outros
+python-dotenv>=1.0.0
