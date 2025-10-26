@@ -146,6 +146,27 @@ python json_metadata_analysis.py
 - Atributos de produtos
 - Análise de marcas
 
+#### 4. Preparação de Splits de Dataset
+```bash
+python prepare_dataset_splits.py
+```
+
+**Outputs**:
+- `outputs/splits/train.csv`, `val.csv`, `test.csv`: Splits completos
+- `outputs/splits/train_ids.csv`, `val_ids.csv`, `test_ids.csv`: IDs apenas
+- `outputs/splits/split_metadata.json`: Metadados dos splits
+- `outputs/dataset_splits_report.txt`: Relatório detalhado
+- `figures/split_distributions.png`: Comparação de distribuições
+- `figures/split_article_types.png`: Top tipos por split
+- `figures/split_temporal.png`: Distribuição temporal
+
+**Análises incluídas**:
+- Split estratificado (70% treino, 15% val, 15% teste)
+- Estratificação por `articleType` para distribuição balanceada
+- Verificação de integridade (sem sobreposição)
+- Análise comparativa de distribuições por split
+- Agrupamento automático de categorias raras
+
 ### Configurações
 
 Edite `scripts/config.py` para ajustar:

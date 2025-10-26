@@ -47,6 +47,7 @@ shoes-tranning/
 - ✅ Notebook interativo criado (`01_initial_eda.ipynb`)
 - ✅ Visualizações geradas (distribuições, heatmaps, histogramas)
 - ✅ Relatórios documentados
+- ✅ Dataset splits criados (70/15/15 train/val/test)
 
 #### Insights Principais
 1. **Qualidade do Dataset**:
@@ -57,7 +58,9 @@ shoes-tranning/
 
 2. **Distribuições**:
    - Top 10 categorias cobrem 57% do dataset
-   - Tshirts: ~6,200 produtos (categoria ideal para MVP)
+   - **Casual Shoes: ~2,845 produtos (CATEGORIA MVP ATUAL)**
+   - Tshirts: ~7,067 produtos (futuro)
+   - Shirts: ~3,217 produtos (futuro)
    - Distribuição equilibrada entre estações
    - 76% dos produtos são de uso casual
 
@@ -67,34 +70,47 @@ shoes-tranning/
    - Descrições em 3 formatos: description, style_note, materials_care_desc
    - Comprimento médio de descrições: 15-50 palavras
 
-## 🎯 Próximas Etapas
+### Fase 1.5: Planejamento Otimizado - **CONCLUÍDA** ✅
 
-### Fase 1 (Continuação): Pré-processamento
-- [ ] Implementar pipeline de normalização de imagens
-- [ ] Limpeza de descrições HTML
-- [ ] Criação de embeddings (CLIP, BERT)
-- [ ] Split treino/validação/teste
+#### Hardware e Estratégia de Treinamento
+- ✅ Hardware identificado: Mac Studio M2 Max (32GB RAM)
+- ✅ Modelos selecionados:
+  - Stable Diffusion 1.5 + LoRA (imagens)
+  - Mistral 7B + QLoRA (texto - futuro)
+- ✅ Configurações otimizadas para Apple Silicon
+- ✅ Estimativas de tempo e memória documentadas
+- ✅ Backlog detalhado criado (BACKLOG.md)
 
-### Fase 2: Desenvolvimento de Modelos
-- [ ] Fine-tuning de Stable Diffusion (geração de imagens)
-- [ ] Fine-tuning de LLM (geração de descrições)
-- [ ] Modelo para geração de metadados
-- [ ] Baseline models e métricas
+## 🎯 Próximas Etapas - MVP: Casual Shoes
 
-### Fase 3: Sistema Multimodal
-- [ ] Pipeline integrado de geração
-- [ ] Validação de consistência multimodal
-- [ ] Interface de geração (API + UI)
+### SPRINT 1: Análise e Preparação (Semana 1) - **PRÓXIMO**
+- [ ] Task 1.1: Análise específica de Casual Shoes
+- [ ] Task 1.2: Preparação do subset de treinamento
+- [ ] Task 1.3: Setup do ambiente (PyTorch MPS, Diffusers)
+- [ ] Task 1.4: Download e teste de SD 1.5
+- [ ] Task 1.5: Script de treinamento LoRA
 
-### Fase 4: Avaliação
-- [ ] Implementar métricas (FID, CLIP score, etc.)
-- [ ] Avaliação humana
-- [ ] Refinamento iterativo
+### SPRINT 2: Prototipagem (Semana 2)
+- [ ] Task 2.1: Treinamento protótipo (300-500 imagens)
+- [ ] Task 2.2: Avaliação inicial (CLIP score, visual)
+- [ ] Task 2.3: Ajuste de hiperparâmetros
 
-### Fase 5: Deployment
-- [ ] API de produção
-- [ ] Documentação completa
-- [ ] Casos de uso
+### SPRINT 3: Treinamento Completo (Semana 3)
+- [ ] Task 3.1: Treinamento com 2,845 imagens completas
+- [ ] Task 3.2: Geração de 3,000-5,000 imagens sintéticas
+
+### SPRINT 4: Validação (Semana 4)
+- [ ] Task 4.1: Métricas completas (FID, IS, CLIP)
+- [ ] Task 4.2: Análise de falhas e iteração
+- [ ] Task 4.3: Documentação final do MVP
+
+**Ver BACKLOG.md para detalhes completos de cada task**
+
+### FUTURO (Postponed)
+- [ ] Fine-tuning de Mistral 7B (geração de descrições)
+- [ ] Expansão para outras categorias (Tshirts, Shirts)
+- [ ] Sistema multimodal integrado
+- [ ] Interface web (Gradio)
 
 ## 🚀 Como Começar
 
@@ -142,10 +158,19 @@ Os resultados da análise exploratória estão disponíveis em:
 - **Plano Completo**: `planning/planning.md`
   - Visão geral do projeto
   - Análise inicial do dataset (seção 1.3)
-  - Fases do projeto (5 fases, 18-20 semanas)
+  - Hardware e estratégia (seção 1.4 - M2 Max optimizations)
+  - Fases do projeto (5 fases)
   - Recursos necessários
   - Métricas de sucesso
   - Referências e próximos passos
+
+- **Backlog Detalhado**: `planning/BACKLOG.md`
+  - MVP: Casual Shoes - Geração de Imagens
+  - 4 Sprints (4 semanas)
+  - Tasks detalhadas com estimativas
+  - Definition of Done
+  - Métricas de sucesso
+  - Riscos e mitigações
 
 ## 🎓 Objetivos de Aprendizagem
 
@@ -182,18 +207,37 @@ Este projeto foi desenvolvido com fins educacionais e de pesquisa acadêmica, co
 | **Marcas Únicas** | 2,000+ |
 | **Cores Únicas** | 45+ |
 
-## 🎯 MVP Proposto
+## 🎯 MVP: Geração de Imagens Sintéticas - Casual Shoes
 
-### Categorias Prioritárias
-1. **Tshirts** (~6,200 exemplos) - Fase 1
-2. **Shirts** (~5,700 exemplos) - Fase 2
-3. **Casual Shoes** (~2,500 exemplos) - Fase 2
+### Escopo Atual (Sprint 1-4)
+**Categoria**: Casual Shoes (~2,845 imagens)
+**Foco**: APENAS geração de imagens sintéticas
+**Timeline**: 4 semanas (20-25 dias úteis)
 
 ### Objetivos do MVP
-- Gerar imagens realistas de Tshirts
-- Criar descrições coerentes com metadados
-- Pipeline end-to-end funcional
-- FID < 80 para categoria Tshirts
+- ✅ Treinar Stable Diffusion 1.5 + LoRA em M2 Max
+- ✅ Gerar 3,000-5,000 imagens sintéticas de alta qualidade
+- ✅ Expandir dataset de Casual Shoes
+- ✅ Métricas de qualidade validadas
+
+### Metas Quantitativas
+- **FID Score**: < 50 (target: < 40)
+- **CLIP Score**: > 0.25 (target: > 0.28)
+- **Tempo de geração**: < 6 segundos/imagem
+- **Taxa de sucesso**: > 90% de imagens aceitáveis
+- **Diversidade**: Distribuição similar ao dataset real
+
+### Tecnologias
+- **Hardware**: Mac Studio M2 Max (32GB RAM)
+- **Modelo Base**: Stable Diffusion 1.5
+- **Método**: LoRA fine-tuning (rank=8-16)
+- **Backend**: PyTorch com MPS (Metal Performance Shaders)
+- **Frameworks**: Diffusers, Transformers, PEFT
+
+### Categorias Futuras (Postponed)
+1. **Tshirts** (~7,067 exemplos) - Sprint 5+
+2. **Shirts** (~3,217 exemplos) - Sprint 6+
+3. Geração de texto (Mistral 7B) - Sprint 7+
 
 ## 📖 Recursos
 
@@ -213,5 +257,10 @@ Ver `planning/planning.md` seção 7 para papers e tutoriais recomendados.
 ---
 
 **Última Atualização**: 2025-10-26
-**Status**: Fase 1 (EDA) Concluída ✅
-**Próximo Marco**: Pré-processamento de Dados
+**Status**:
+- Fase 1 (EDA) - CONCLUÍDA ✅
+- Planejamento MVP Casual Shoes - CONCLUÍDO ✅
+- Backlog Sprint 1-4 - PRONTO ✅
+
+**Próximo Marco**: SPRINT 1 - Análise e Preparação Casual Shoes (Task 1.1)
+**Timeline MVP**: 4 semanas (20-25 dias úteis)

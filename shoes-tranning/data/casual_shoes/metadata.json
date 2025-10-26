@@ -1,0 +1,65 @@
+{
+  "dataset_info": {
+    "name": "Casual Shoes - Fashion Product Images",
+    "category": "Casual Shoes",
+    "total_samples": 2845,
+    "image_size": 512,
+    "format": "PNG",
+    "random_seed": 42
+  },
+  "splits": {
+    "train": {
+      "size": 1991,
+      "ratio": 0.7,
+      "processed": 1991
+    },
+    "val": {
+      "size": 427,
+      "ratio": 0.15,
+      "processed": 427
+    },
+    "test": {
+      "size": 427,
+      "ratio": 0.15,
+      "processed": 427
+    }
+  },
+  "distributions": {
+    "train_colors": {
+      "Black": 612,
+      "Brown": 358,
+      "White": 304,
+      "Grey": 130,
+      "Blue": 126,
+      "Navy Blue": 92,
+      "Red": 90,
+      "Green": 55,
+      "Olive": 35,
+      "Beige": 32,
+      "Khaki": 30,
+      "Other": 30,
+      "Purple": 21,
+      "Tan": 18,
+      "Maroon": 15,
+      "Pink": 13,
+      "Yellow": 13,
+      "Charcoal": 10,
+      "Silver": 7
+    },
+    "train_genders": {
+      "Men": 1583,
+      "Women": 230,
+      "Unisex": 151,
+      "Boys": 19,
+      "Girls": 8
+    },
+    "train_seasons": {
+      "Summer": 979,
+      "Fall": 624,
+      "Winter": 296,
+      "Spring": 92
+    }
+  },
+  "caption_template": "A professional product photo of [color] casual shoes, [season] collection, [gender], [brand], centered on white background, high quality, product photography",
+  "preparation_date": "2025-10-26T19:03:10.556829"
+}

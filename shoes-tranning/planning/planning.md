@@ -194,23 +194,248 @@ Desenvolver um sistema de geração de dados sintéticos para produtos de moda (
 
 #### 1.3.8 Oportunidades Estratégicas
 
-1. **Categorias Prioritárias para MVP**:
-   - Fase 1: Tshirts (~6,200 exemplos) - Melhor ponto de partida
-   - Fase 2: Shirts, Casual Shoes, Watches
-   - Fase 3: Top 20 categorias
+1. **Categorias Prioritárias para MVP** (ATUALIZADO):
+   - **Fase 1 (ATUAL)**: Casual Shoes (~2,845 exemplos)
+     - Justificativa: Categoria com boa quantidade de exemplos
+     - Fundo limpo facilita treinamento de modelos generativos
+     - Variação controlada: cores, materiais, estilos
+     - 3ª categoria mais popular do dataset
+   - Fase 2 (FUTURO): Tshirts (~7,067), Shirts (~3,217)
+   - Fase 3 (FUTURO): Top 20 categorias
 
-2. **Vantagens do Dataset**:
+2. **Estratégia de Desenvolvimento Incremental**:
+   - **Sprint 1-2**: Geração de imagens sintéticas (Casual Shoes)
+   - **Sprint 3**: Expansão do dataset com imagens geradas
+   - **Sprint 4**: Validação e métricas de qualidade
+   - **Sprint 5+**: Geração de texto e metadados (futuro)
+
+3. **Vantagens do Dataset**:
    - ✓ Tamanho suficiente para fine-tuning (~44K produtos)
    - ✓ Diversidade de categorias, cores, estilos
    - ✓ Metadados ricos para condicionamento
-   - ✓ Descrições textuais para training de LLMs
+   - ✓ Descrições textuais para training de LLMs (futuro)
    - ✓ Imagens de alta qualidade profissional
 
-3. **Geração Condicional Avançada**:
-   - Possibilidade de condicionamento multi-atributo
-   - Temporal conditioning (por ano/época)
-   - Cross-category style transfer
-   - Controle fino de atributos (cor, fit, pattern, etc.)
+4. **Geração Condicional - Casual Shoes**:
+   - Condicionamento por: cor, gênero, marca
+   - Controle de estilo: esportivo vs casual formal
+   - Variação de materiais: couro, canvas, sintético
+   - Ângulos e poses consistentes
+
+---
+
+## 1.4 Especificações de Hardware e Estratégia de Treinamento Local
+
+### 1.4.1 Hardware Disponível
+**Sistema**: Mac Studio (2023)
+- **Processador**: Apple M2 Max
+- **Memória**: 32 GB RAM unificada (compartilhada entre CPU e GPU)
+- **GPU**: Integrada M2 Max (38-core)
+- **Backend**: PyTorch com Metal Performance Shaders (MPS)
+
+**Capacidades de Treinamento**:
+- ✓ Fine-tuning de modelos até ~13B parâmetros (com quantização)
+- ✓ Stable Diffusion XL e SD 1.5 com LoRA
+- ✓ Batch sizes modestos (2-8 dependendo do modelo)
+- ✓ Mixed precision training (fp16/bf16)
+- ⚠️ Memória compartilhada: ~20-24GB disponíveis para modelos após overhead do sistema
+
+### 1.4.2 Modelos Otimizados para Apple Silicon
+
+#### Geração de Imagens - Stable Diffusion com LoRA
+**Modelo Recomendado**: Stable Diffusion 1.5 ou SDXL com LoRA fine-tuning
+
+**Justificativa**:
+- SD 1.5: ~4GB VRAM, treina bem em M2 Max
+- SDXL: ~8-10GB VRAM com optimizações, melhor qualidade
+- LoRA reduz memória de treinamento em 90%
+- Suporte nativo MPS no PyTorch 2.0+
+
+**Configuração de Treinamento**:
+```python
+# Stable Diffusion 1.5 + LoRA
+Model: runwayml/stable-diffusion-v1-5
+LoRA rank: 8-16 (menor = menos memória)
+Learning rate: 1e-4
+Batch size: 2-4 (com gradient accumulation)
+Resolution: 512x512
+Training steps: 3000-5000
+Mixed precision: fp16 (MPS)
+
+# Otimizações M2 Max
+- Use torch.mps.empty_cache() entre epochs
+- Gradient checkpointing: True
+- Gradient accumulation: 4-8 steps
+- CPU offload para componentes não críticos
+```
+
+**Estimativa de Tempo**:
+- ~2-4 horas para 3000 steps (categoria Tshirts ~6200 imagens)
+- ~6-10 horas para fine-tuning completo de uma categoria
+
+#### Geração de Texto - LLMs Locais
+**Modelos Recomendados**:
+
+1. **Mistral 7B** (Recomendado para MVP)
+   - Tamanho: ~14GB (fp16), ~7GB (4-bit quantizado)
+   - Qualidade: Excelente para descrições de produtos
+   - Velocidade: ~20-30 tokens/seg em M2 Max
+   - Fine-tuning: LoRA ou QLoRA (4-bit)
+
+2. **Llama 3.1 8B**
+   - Tamanho: ~16GB (fp16), ~8GB (4-bit)
+   - Qualidade: Superior para textos longos
+   - Licença: Permissiva para uso comercial
+
+3. **Phi-3 Mini 3.8B** (Alternativa leve)
+   - Tamanho: ~7.5GB (fp16)
+   - Velocidade: Mais rápido que Mistral
+   - Qualidade: Boa para textos curtos
+
+**Configuração de Fine-tuning (QLoRA)**:
+```python
+# Mistral 7B com QLoRA
+Base model: mistralai/Mistral-7B-v0.1
+Quantization: 4-bit (bitsandbytes)
+LoRA config:
+  - r: 16
+  - lora_alpha: 32
+  - lora_dropout: 0.05
+  - target_modules: ["q_proj", "v_proj"]
+
+Training params:
+  - Batch size: 4 (per device)
+  - Gradient accumulation: 4
+  - Learning rate: 2e-4
+  - Epochs: 3-5
+  - Max seq length: 512 tokens
+  - Optimizer: paged_adamw_8bit
+
+Memory usage: ~12-16GB (cabe no M2 Max)
+```
+
+**Estimativa de Tempo**:
+- ~4-6 horas para fine-tuning completo do dataset
+- ~8-12 horas com validação e experimentação
+
+#### Embeddings e Modelos Auxiliares
+**CLIP para Validação Multimodal**:
+```python
+# CLIP ViT-L/14 ou ViT-B/32
+Model: openai/clip-vit-large-patch14
+Memory: ~3GB
+Inference: Rápida em M2 Max (~100 images/sec)
+Uso: Validação de consistência imagem-texto
+```
+
+### 1.4.3 Estratégia de Treinamento Eficiente
+
+#### Pipeline de Desenvolvimento Incremental
+
+**Fase 1 - Prototipagem Rápida - CASUAL SHOES (1 semana)** [PRIORIDADE]:
+1. Analisar subset Casual Shoes (~2,845 imagens)
+2. Testar SD 1.5 + LoRA com 300-500 imagens
+3. Validar pipeline de treinamento MPS
+4. Ajustar hiperparâmetros para M2 Max
+5. Target: FID < 80, tempo de geração < 10s/imagem
+
+**Fase 2 - Fine-tuning Casual Shoes Completo (2 semanas)** [PRIORIDADE]:
+1. Treinar SD 1.5 + LoRA em Casual Shoes completo (~2,845 imagens)
+2. Gerar dataset expandido (3,000-5,000 imagens sintéticas)
+3. Integrar CLIP para validação de qualidade
+4. Target: FID < 50, CLIP score > 0.25
+
+**Fase 3 - Validação e Refinamento (1 semana)** [PRIORIDADE]:
+1. Métricas de qualidade (FID, IS, CLIP score)
+2. Análise visual manual (sample aleatório)
+3. Comparação com imagens reais
+4. Iteração e ajuste fino
+
+**Fase 4 - FUTURO - Expansão Multi-Categoria (postponed)**:
+1. Repetir processo para Tshirts, Shirts
+2. Fine-tune Mistral 7B para descrições (postponed)
+3. Sistema multi-categoria (postponed)
+
+#### Otimizações Específicas para M2 Max
+
+**PyTorch MPS Backend**:
+```python
+# Configuração otimizada
+import torch
+
+# Verificar disponibilidade MPS
+assert torch.backends.mps.is_available()
+
+# Device setup
+device = torch.device("mps")
+
+# Otimizações
+torch.mps.set_per_process_memory_fraction(0.8)  # Reservar 80% da RAM
+torch.backends.mps.allow_tf32 = True
+
+# Durante treinamento
+if epoch % 5 == 0:
+    torch.mps.empty_cache()  # Limpar cache periodicamente
+```
+
+**Gradient Checkpointing**:
+```python
+# Reduzir uso de memória em 40-50%
+model.enable_gradient_checkpointing()
+```
+
+**Mixed Precision Training**:
+```python
+# Acelerar treinamento em 2x
+from torch.amp import autocast, GradScaler
+
+scaler = GradScaler()
+with autocast(device_type='mps'):
+    outputs = model(inputs)
+    loss = criterion(outputs, targets)
+scaler.scale(loss).backward()
+```
+
+### 1.4.4 Limitações e Mitigações
+
+**Limitações Identificadas**:
+1. **Batch Size Reduzido**:
+   - Limitação: 2-4 imagens por batch vs 8-16 em GPUs dedicadas
+   - Mitigação: Gradient accumulation (simular batches maiores)
+
+2. **Velocidade de Treinamento**:
+   - Limitação: ~2-3x mais lento que GPU NVIDIA A100
+   - Mitigação: Treinar overnight, usar checkpoints
+
+3. **Modelos Muito Grandes**:
+   - Limitação: Modelos 30B+ não cabem na memória
+   - Mitigação: Focar em modelos 7B-13B com quantização
+
+4. **Precisão Numérica**:
+   - Limitação: MPS ainda tem algumas limitações vs CUDA
+   - Mitigação: Testar convergência, usar fp32 se necessário
+
+**Alternativas Cloud (Opcional)**:
+- Google Colab Pro (GPU T4/A100): Para experimentos rápidos
+- Lambda Labs / RunPod: Para treinamento de longa duração
+- Manter M2 Max para: Inference, validação, protótipos
+
+### 1.4.5 Benchmarks Esperados no M2 Max
+
+**Stable Diffusion 1.5 + LoRA**:
+- Inferência: ~4-6 segundos/imagem (512x512, 25 steps)
+- Treinamento: ~2.5s/step (batch=2, grad_accum=4)
+- 3000 steps: ~2-3 horas
+
+**SDXL + LoRA**:
+- Inferência: ~12-15 segundos/imagem (1024x1024, 25 steps)
+- Treinamento: ~6-8s/step (batch=1, grad_accum=8)
+- 3000 steps: ~6-8 horas
+
+**Mistral 7B (QLoRA)**:
+- Inferência: ~20 tokens/segundo
+- Treinamento: ~3-4s/step (batch=4, grad_accum=4)
+- 1 epoch (~11K steps): ~10-12 horas
 
 ---
 
@@ -301,45 +526,95 @@ Desenvolver um sistema de geração de dados sintéticos para produtos de moda (
 ---
 
 ### Fase 2: Desenvolvimento de Modelos Base (4-6 semanas)
+**FOCO**: Modelos otimizados para Apple M2 Max (Ver seção 1.4)
 
 #### 2.1 Modelo de Geração de Imagens
-**Abordagem**: Implementar múltiplas arquiteturas e comparar resultados
+**Abordagem**: Stable Diffusion 1.5/SDXL com LoRA (Hardware-Optimized)
 
-##### Opção A: Stable Diffusion Fine-tuning (Recomendada)
-**Justificativa**: Estado da arte, alta qualidade, controle condicional
+##### Implementação Principal: SD 1.5 + LoRA (Recomendada para M2 Max)
+**Justificativa**:
+- Roda nativamente em M2 Max com PyTorch MPS
+- LoRA reduz requisitos de memória em 90%
+- Treinamento viável em 2-4 horas por categoria
+- Qualidade comprovada para produtos de moda
 
-**Implementação**:
+**Arquitetura Otimizada para M2 Max**:
 ```python
-# Arquitetura proposta
-Base: Stable Diffusion v2.1 ou SDXL
-Método: LoRA fine-tuning ou DreamBooth
+# Configuração específica para Apple Silicon
+Base Model: runwayml/stable-diffusion-v1-5
+Fine-tuning Method: LoRA (Low-Rank Adaptation)
+LoRA Config:
+  - rank: 8-16 (8 para menor memória, 16 para melhor qualidade)
+  - alpha: 16-32
+  - target_modules: ["to_k", "to_q", "to_v", "to_out.0"]
 
 # Condicionamento
 Inputs:
-  - Categoria do produto (masterCategory, subCategory)
-  - Atributos (cor, estação, género)
-  - Descrição textual
+  - Categoria: "Tshirt", "Casual Shoes", etc.
+  - Atributos: cor, estação, gênero
+  - Prompt: "A professional product photo of [articleType] in [color], [season] collection, white background"
 
 Output:
-  - Imagem 512x512 ou 1024x1024
+  - Imagem 512x512 (SD 1.5)
+  - Tempo: 4-6 segundos/imagem
 ```
 
-**Processo de Treinamento**:
-1. **Preparação**:
-   - Criar pares (imagem, prompt descritivo)
-   - Formato de prompt: "A [articleType] in [color], [season] collection, [additional_details]"
-   - Dataset mínimo: 1000-5000 imagens por categoria principal
+**Processo de Treinamento M2 Max-Optimized**:
 
-2. **Fine-tuning**:
-   - Learning rate: 1e-5 a 1e-4
-   - Batch size: 4-8 (dependendo da GPU)
-   - Steps: 5000-10000
-   - Gradient accumulation se necessário
+1. **Setup do Ambiente**:
+   ```bash
+   # Instalar dependências otimizadas
+   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+   pip install diffusers transformers accelerate
+   pip install peft bitsandbytes  # Para LoRA
 
-3. **Técnicas Avançadas**:
-   - ControlNet para manter estrutura/pose
-   - IP-Adapter para consistência de estilo
-   - Multi-concept training
+   # Verificar MPS
+   python -c "import torch; print(torch.backends.mps.is_available())"
+   ```
+
+2. **Preparação de Dados**:
+   - Redimensionar imagens para 512x512
+   - Criar captions estruturados:
+     ```
+     "A professional product photo of [Navy Blue Tshirt], Summer collection,
+      [Men's casual wear], centered on white background"
+     ```
+   - Dataset mínimo: 500-1000 imagens para protótipo
+   - Dataset completo: 6200 imagens (Tshirts) para modelo final
+
+3. **Configuração de Treinamento**:
+   ```python
+   # Parâmetros otimizados para M2 Max (32GB RAM)
+   training_args = {
+       "learning_rate": 1e-4,
+       "batch_size": 2,  # Pequeno devido à memória
+       "gradient_accumulation_steps": 8,  # Simula batch=16
+       "num_train_epochs": 10,
+       "mixed_precision": "fp16",  # MPS suporta fp16
+       "gradient_checkpointing": True,  # Economiza 40% memória
+       "save_steps": 500,
+       "eval_steps": 500,
+       "logging_steps": 100,
+   }
+
+   # Otimizações de memória
+   - torch.mps.empty_cache() a cada 5 epochs
+   - Usar xformers ou attention slicing para reduzir memória
+   - CPU offloading para CLIP text encoder (opcional)
+   ```
+
+4. **Técnicas Avançadas (Fase 2.5)**:
+   - **ControlNet** (opcional): Manter estrutura/pose consistente
+   - **Multiple LoRAs**: Um LoRA por categoria top-5
+   - **Textual Inversion**: Aprender tokens específicos de produtos
+
+**Estimativas de Performance - Casual Shoes**:
+- Análise e preparação de dados: ~2-3 horas
+- Treinamento protótipo (300-500 imgs): ~1-1.5 horas
+- Treinamento completo (2,845 imgs): ~1.5-2.5 horas
+- Geração de 1000 imagens sintéticas: ~1.5-2 horas
+- Inferência: 4-6 segundos por imagem
+- Memória: ~8-12GB durante treinamento
 
 ##### Opção B: StyleGAN3 (Alternativa)
 **Justificativa**: Excelente para produtos com fundo limpo
@@ -365,52 +640,158 @@ Conditional: Usar label conditioning ou projection
 - Testar engineering de prompts
 
 #### 2.2 Modelo de Geração de Texto
-**Abordagem**: LLM fine-tuned para descrições de produtos
+**Abordagem**: LLM Local com QLoRA (M2 Max Optimized)
 
-##### Implementação Recomendada: GPT-based ou LLaMA
+##### Implementação Recomendada: Mistral 7B com QLoRA
 
-**Arquitetura**:
+**Justificativa**:
+- Roda localmente em M2 Max (32GB)
+- QLoRA reduz uso de memória em 75%
+- Qualidade superior para textos de produtos
+- Fine-tuning completo em 4-6 horas
+
+**Arquitetura Otimizada para M2 Max**:
 ```python
 # Modelo base
-Opções:
-  - GPT-3.5/4 via fine-tuning API
-  - LLaMA 2 (7B ou 13B) fine-tuned
-  - Mistral 7B fine-tuned
+Base: mistralai/Mistral-7B-Instruct-v0.2
+Quantization: 4-bit (bitsandbytes)
+Method: QLoRA (Quantized Low-Rank Adaptation)
 
-# Input format (condicionamento)
-{
-  "masterCategory": "Apparel",
-  "subCategory": "Topwear",
-  "articleType": "Tshirts",
-  "color": "Navy Blue",
-  "season": "Summer",
-  "year": 2023
-}
+# LoRA Config
+LoRA parameters:
+  - r: 16 (rank)
+  - lora_alpha: 32
+  - lora_dropout: 0.05
+  - target_modules: ["q_proj", "v_proj", "k_proj", "o_proj"]
+  - bias: "none"
+
+# Input format (condicionamento estruturado)
+<s>[INST] Generate a product description for:
+- Category: Apparel > Topwear > Tshirts
+- Color: Navy Blue
+- Season: Summer
+- Gender: Men
+- Brand: Nike
+- Additional: Casual, Cotton fabric
+[/INST]
 
 # Output esperado
-Descrição natural e atraente do produto (50-200 palavras)
+Descrição natural, atraente e informativa (50-150 palavras)
 ```
 
-**Processo de Fine-tuning**:
-1. **Preparação do Dataset**:
-   - Criar pares (metadados → descrição)
-   - Formato instruction-based:
-     ```
-     ### Instruction: Generate a product description
-     ### Input: {metadados JSON}
-     ### Response: {descrição}
-     ```
+**Processo de Fine-tuning M2 Max-Optimized**:
 
-2. **Treinamento**:
-   - Método: LoRA ou QLoRA (eficiente)
-   - Learning rate: 2e-5
-   - Epochs: 3-5
-   - Validation split: 10-15%
+1. **Setup do Ambiente**:
+   ```bash
+   # Instalar dependências
+   pip install transformers accelerate peft bitsandbytes
+   pip install datasets trl  # Para SFTTrainer
 
-3. **Técnicas de Qualidade**:
-   - Temperature sampling (0.7-0.9) para variedade
-   - Top-p (nucleus) sampling
-   - Verificação de consistência com metadados
+   # Verificar disponibilidade
+   python -c "import torch; print(torch.backends.mps.is_available())"
+   ```
+
+2. **Preparação do Dataset**:
+   - Extrair descrições do dataset (44,424 produtos)
+   - Limpar HTML tags das descrições
+   - Formato instruction-following:
+     ```python
+     # Template de treinamento
+     prompt_template = """<s>[INST] Generate a product description for:
+     - Category: {masterCategory} > {subCategory} > {articleType}
+     - Color: {baseColour}
+     - Season: {season}
+     - Gender: {gender}
+     - Brand: {brandName}
+     - Additional: {usage}, {fabric}
+     [/INST]
+     {productDescription}</s>"""
+     ```
+   - Split: 70% treino (31K), 15% val (6.6K), 15% teste (6.6K)
+
+3. **Configuração de Treinamento**:
+   ```python
+   # Parâmetros otimizados para M2 Max
+   from transformers import TrainingArguments
+
+   training_args = TrainingArguments(
+       output_dir="./mistral-7b-fashion-qlora",
+       num_train_epochs=3,
+       per_device_train_batch_size=4,
+       gradient_accumulation_steps=4,  # Batch efetivo = 16
+       learning_rate=2e-4,
+       fp16=False,  # MPS ainda tem issues com fp16 em alguns casos
+       bf16=False,
+       max_grad_norm=0.3,
+       warmup_ratio=0.03,
+       lr_scheduler_type="cosine",
+       save_strategy="epoch",
+       logging_steps=10,
+       optim="paged_adamw_8bit",  # Otimizador eficiente
+   )
+
+   # QLoRA config
+   from peft import LoraConfig
+
+   peft_config = LoraConfig(
+       r=16,
+       lora_alpha=32,
+       lora_dropout=0.05,
+       bias="none",
+       task_type="CAUSAL_LM",
+       target_modules=["q_proj", "v_proj", "k_proj", "o_proj"],
+   )
+
+   # Quantização 4-bit
+   from transformers import BitsAndBytesConfig
+
+   bnb_config = BitsAndBytesConfig(
+       load_in_4bit=True,
+       bnb_4bit_quant_type="nf4",
+       bnb_4bit_compute_dtype=torch.float16,
+       bnb_4bit_use_double_quant=True,
+   )
+   ```
+
+4. **Treinamento**:
+   ```python
+   from trl import SFTTrainer
+
+   trainer = SFTTrainer(
+       model=model,
+       train_dataset=train_dataset,
+       eval_dataset=val_dataset,
+       peft_config=peft_config,
+       args=training_args,
+       max_seq_length=512,
+   )
+
+   # Treinar
+   trainer.train()
+
+   # Salvar apenas adaptadores LoRA (~100MB vs 14GB do modelo completo)
+   trainer.model.save_pretrained("./fashion-lora-adapter")
+   ```
+
+5. **Técnicas de Qualidade**:
+   - **Temperature**: 0.7-0.9 (maior = mais criativo)
+   - **Top-p sampling**: 0.9 (nucleus sampling)
+   - **Repetition penalty**: 1.1
+   - **Max length**: 150-200 tokens
+   - **Validation**: CLIP score para consistência imagem-texto
+
+**Estimativas de Performance M2 Max**:
+- Treinamento (3 epochs): ~4-6 horas
+- Inferência: ~20-30 tokens/segundo (~5-8 segundos/descrição)
+- Memória durante treino: ~14-18GB
+- Memória durante inferência: ~8-10GB
+- Tamanho do LoRA adapter: ~100-200MB
+
+**Alternativa Mais Leve**: Phi-3 Mini 3.8B
+- Treinamento: ~2-3 horas
+- Inferência: ~40-50 tokens/segundo
+- Memória: ~8GB
+- Qualidade: Boa para descrições curtas (<100 palavras)
 
 #### 2.3 Modelo de Geração de Metadados
 **Abordagem**: VAE ou Normalizing Flows para atributos consistentes

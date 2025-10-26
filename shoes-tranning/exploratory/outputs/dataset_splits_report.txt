@@ -1,0 +1,79 @@
+================================================================================
+RELATÓRIO DE SPLITS - FASHION PRODUCT IMAGES DATASET
+================================================================================
+
+1. CONFIGURAÇÃO DOS SPLITS
+--------------------------------------------------------------------------------
+Proporções: Treino=70% | Val=15% | Teste=15%
+Coluna de estratificação: articleType
+Random seed: 42
+
+2. TAMANHOS DOS SPLITS
+--------------------------------------------------------------------------------
+Treino: 31,096 (70.0%)
+Validação: 6,664 (15.0%)
+Teste: 6,664 (15.0%)
+Total: 44,424
+
+3. INTEGRIDADE DOS SPLITS
+--------------------------------------------------------------------------------
+IDs únicos totais: 44,424
+Sobreposição Treino/Val: 0
+Sobreposição Treino/Teste: 0
+Sobreposição Val/Teste: 0
+
+[OK] Splits são completamente disjuntos (sem sobreposição)
+
+4. DISTRIBUIÇÕES POR CATEGORIA
+--------------------------------------------------------------------------------
+
+GENDER:
+  Categoria                      |     Treino |        Val |      Teste
+  ----------------------------------------------------------------------
+  Men                            |     15,498 |      3,311 |      3,338
+  Women                          |     13,019 |      2,799 |      2,813
+  Unisex                         |      1,521 |        324 |        316
+  Boys                           |        602 |        122 |        106
+  Girls                          |        456 |        108 |         91
+
+MASTERCATEGORY:
+  Categoria                      |     Treino |        Val |      Teste
+  ----------------------------------------------------------------------
+  Apparel                        |     14,985 |      3,204 |      3,208
+  Accessories                    |      7,889 |      1,695 |      1,690
+  Footwear                       |      6,453 |      1,383 |      1,383
+  Personal Care                  |      1,675 |        364 |        364
+  Free Items                     |         74 |         15 |         16
+  Sporting Goods                 |         19 |          3 |          3
+  Home                           |          1 |          0 |          0
+
+SUBCATEGORY:
+  Categoria                      |     Treino |        Val |      Teste
+  ----------------------------------------------------------------------
+  Topwear                        |     10,783 |      2,307 |      2,312
+  Shoes                          |      5,139 |      1,102 |      1,102
+  Bags                           |      2,142 |        456 |        457
+  Bottomwear                     |      1,885 |        406 |        403
+  Watches                        |      1,779 |        382 |        381
+  Innerwear                      |      1,267 |        271 |        270
+  Jewellery                      |        756 |        161 |        162
+  Eyewear                        |        751 |        161 |        161
+  Fragrance                      |        709 |        150 |        152
+  Sandal                         |        675 |        144 |        144
+
+ARTICLETYPE:
+  Categoria                      |     Treino |        Val |      Teste
+  ----------------------------------------------------------------------
+  Tshirts                        |      4,947 |      1,060 |      1,060
+  Shirts                         |      2,252 |        483 |        482
+  Casual Shoes                   |      1,991 |        427 |        427
+  Watches                        |      1,779 |        382 |        381
+  Sports Shoes                   |      1,425 |        305 |        306
+  Kurtas                         |      1,291 |        276 |        277
+  Tops                           |      1,233 |        264 |        265
+  Handbags                       |      1,231 |        264 |        264
+  Heels                          |        926 |        199 |        198
+  Sunglasses                     |        751 |        161 |        161
+
+================================================================================
+Relatório gerado com sucesso!

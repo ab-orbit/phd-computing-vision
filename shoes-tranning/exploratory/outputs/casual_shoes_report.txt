@@ -1,0 +1,155 @@
+================================================================================
+RELATÓRIO DE ANÁLISE - CASUAL SHOES
+Dataset: Fashion Product Images
+Objetivo: Preparação para Treinamento de Modelo Generativo
+================================================================================
+
+1. ESTATÍSTICAS BÁSICAS
+--------------------------------------------------------------------------------
+Total de registros: 2,845
+IDs únicos: 2,845
+Registros duplicados: 0
+
+
+2. DISTRIBUIÇÕES DE ATRIBUTOS
+--------------------------------------------------------------------------------
+
+GENDER:
+  Men: 2,247 (78.98%)
+  Women: 333 (11.70%)
+  Unisex: 227 (7.98%)
+  Boys: 24 (0.84%)
+  Girls: 14 (0.49%)
+
+BASECOLOUR:
+  Black: 875 (30.76%)
+  Brown: 511 (17.96%)
+  White: 434 (15.25%)
+  Grey: 185 (6.50%)
+  Blue: 180 (6.33%)
+  Navy Blue: 132 (4.64%)
+  Red: 129 (4.53%)
+  Green: 79 (2.78%)
+  Olive: 50 (1.76%)
+  Beige: 45 (1.58%)
+
+SEASON:
+  Summer: 1,417 (49.81%)
+  Fall: 881 (30.97%)
+  Winter: 423 (14.87%)
+  Spring: 124 (4.36%)
+
+USAGE:
+  Casual: 2,812 (98.84%)
+  Formal: 14 (0.49%)
+  Sports: 12 (0.42%)
+  Smart Casual: 7 (0.25%)
+
+YEAR:
+  2012.0: 1,210 (42.53%)
+  2011.0: 938 (32.97%)
+  2013.0: 233 (8.19%)
+  2018.0: 175 (6.15%)
+  2015.0: 118 (4.15%)
+  2010.0: 86 (3.02%)
+  2016.0: 44 (1.55%)
+  2014.0: 34 (1.20%)
+  2009.0: 5 (0.18%)
+  2007.0: 1 (0.04%)
+
+3. ANÁLISE DE MARCAS
+--------------------------------------------------------------------------------
+Total com marca: 2,845
+Marcas únicas: 62
+
+Top 15 Marcas:
+  Puma: 352 (12.37%)
+  Vans: 195 (6.85%)
+  ADIDAS: 162 (5.69%)
+  Numero Uno: 162 (5.69%)
+  Nike: 154 (5.41%)
+  Converse: 140 (4.92%)
+  Red Tape: 129 (4.53%)
+  FILA: 126 (4.43%)
+  Timberland: 104 (3.66%)
+  Skechers: 98 (3.44%)
+  Woodland: 91 (3.20%)
+  Lotto: 84 (2.95%)
+  GAS: 66 (2.32%)
+  ID: 65 (2.28%)
+  Buckaroo: 57 (2.00%)
+
+4. PROPRIEDADES DAS IMAGENS
+--------------------------------------------------------------------------------
+Total de imagens: 2,845
+Imagens existentes: 2,845
+Imagens faltantes: 0
+
+Dimensões:
+  Largura: 150 - 1800 (média: 1365, mediana: 1080)
+  Altura: 200 - 2400 (média: 1820, mediana: 1440)
+  Aspect Ratio: 0.75 - 0.75 (média: 0.75)
+
+Tamanho de Arquivo:
+  Min: 3.1 KB
+  Max: 1402.3 KB
+  Média: 318.7 KB
+  Mediana: 298.4 KB
+
+5. PADRÕES IDENTIFICADOS PARA TREINAMENTO
+--------------------------------------------------------------------------------
+
+Cores Dominantes (Top 5):
+  Black: 875 (30.8%)
+  Brown: 511 (18.0%)
+  White: 434 (15.3%)
+  Grey: 185 (6.5%)
+  Blue: 180 (6.3%)
+
+Gêneros Predominantes:
+  Men: 2247 (79.0%)
+  Women: 333 (11.7%)
+  Unisex: 227 (8.0%)
+
+Top 10 Combinações (Cor + Gênero):
+  Black + Men: 716
+  Brown + Men: 476
+  White + Men: 332
+  Grey + Men: 144
+  Blue + Men: 122
+  Navy Blue + Men: 114
+  Black + Women: 88
+  Red + Men: 72
+  White + Women: 71
+  Black + Unisex: 66
+
+6. RECOMENDAÇÕES PARA TREINAMENTO
+--------------------------------------------------------------------------------
+1. Estratégia de Condicionamento:
+   - Usar cor como condicionamento principal
+   - Incluir gênero no prompt
+   - Adicionar estação para variação de estilo
+   - Considerar marca para produtos específicos
+
+2. Preparação de Imagens:
+   - Redimensionar para 512x512 (padrão SD 1.5)
+   - Normalizar aspect ratio (padding se necessário)
+   - Manter fundo branco limpo
+
+3. Formato de Prompt Sugerido:
+   "A professional product photo of [color] casual shoes, [season] collection, [gender], centered on white background, high quality"
+
+4. Balanceamento de Dataset:
+   - Sobreamostrar cores raras durante treinamento
+   - Usar data augmentation moderado (flip horizontal)
+   - Evitar augmentation que mude características do produto
+
+5. Métricas de Validação:
+   - FID Score: Target < 50 (< 40 excelente)
+   - CLIP Score: Target > 0.25 (> 0.28 excelente)
+   - Inspeção visual manual de amostras
+   - Verificar consistência de cores e proporções
+
+================================================================================
+Análise concluída com sucesso!
+Próximo passo: Task 1.2 - Preparação do Subset de Treinamento

@@ -1,0 +1,175 @@
+{
+  "statistics": {
+    "total_records": 2845,
+    "total_columns": 10,
+    "missing_values": {
+      "id": 0,
+      "gender": 0,
+      "masterCategory": 0,
+      "subCategory": 0,
+      "articleType": 0,
+      "baseColour": 0,
+      "season": 0,
+      "year": 0,
+      "usage": 0,
+      "productDisplayName": 0
+    },
+    "duplicates": "0",
+    "unique_ids": 2845
+  },
+  "distributions": {
+    "gender": {
+      "Men": 2247,
+      "Women": 333,
+      "Unisex": 227,
+      "Boys": 24,
+      "Girls": 14
+    },
+    "baseColour": {
+      "Black": 875,
+      "Brown": 511,
+      "White": 434,
+      "Grey": 185,
+      "Blue": 180,
+      "Navy Blue": 132,
+      "Red": 129,
+      "Green": 79,
+      "Olive": 50,
+      "Beige": 45,
+      "Khaki": 43,
+      "Purple": 30,
+      "Tan": 26,
+      "Maroon": 21,
+      "Pink": 19,
+      "Yellow": 19,
+      "Charcoal": 14,
+      "Silver": 10,
+      "Orange": 9,
+      "Mushroom Brown": 6,
+      "Cream": 6,
+      "Off White": 4,
+      "Gold": 3,
+      "Coffee Brown": 3,
+      "Multi": 2,
+      "Rust": 2,
+      "Teal": 2,
+      "Burgundy": 2,
+      "Mustard": 1,
+      "Peach": 1,
+      "Taupe": 1,
+      "Magenta": 1
+    },
+    "season": {
+      "Summer": 1417,
+      "Fall": 881,
+      "Winter": 423,
+      "Spring": 124
+    },
+    "usage": {
+      "Casual": 2812,
+      "Formal": 14,
+      "Sports": 12,
+      "Smart Casual": 7
+    },
+    "year": {
+      "2012.0": 1210,
+      "2011.0": 938,
+      "2013.0": 233,
+      "2018.0": 175,
+      "2015.0": 118,
+      "2010.0": 86,
+      "2016.0": 44,
+      "2014.0": 34,
+      "2009.0": 5,
+      "2007.0": 1,
+      "2008.0": 1
+    }
+  },
+  "brands": {
+    "total_with_brand": 2845,
+    "unique_brands": 62,
+    "brand_distribution": {
+      "Puma": 352,
+      "Vans": 195,
+      "ADIDAS": 162,
+      "Numero Uno": 162,
+      "Nike": 154,
+      "Converse": 140,
+      "Red Tape": 129,
+      "FILA": 126,
+      "Timberland": 104,
+      "Skechers": 98,
+      "Woodland": 91,
+      "Lotto": 84,
+      "GAS": 66,
+      "ID": 65,
+      "Buckaroo": 57,
+      "Lee Cooper": 57,
+      "Playboy": 53,
+      "Carlton London": 51,
+      "ADIDAS Originals": 51,
+      "Red Chief": 50
+    }
+  },
+  "image_properties": {
+    "total_images": 2845,
+    "existing_images": 2845,
+    "missing_images": 0,
+    "width_stats": {
+      "min": 150,
+      "max": 1800,
+      "mean": 1365,
+      "median": 1080
+    },
+    "height_stats": {
+      "min": 200,
+      "max": 2400,
+      "mean": 1820,
+      "median": 1440
+    },
+    "aspect_ratio_stats": {
+      "min": 0.75,
+      "max": 0.75,
+      "mean": 0.75,
+      "median": 0.75
+    },
+    "file_size_stats": {
+      "min_kb": 3.1220703125,
+      "max_kb": 1402.2548828125,
+      "mean_kb": 318.717618629174,
+      "median_kb": 298.4130859375
+    }
+  },
+  "patterns": {
+    "top_colors": {
+      "Black": 875,
+      "Brown": 511,
+      "White": 434,
+      "Grey": 185,
+      "Blue": 180
+    },
+    "top_genders": {
+      "Men": 2247,
+      "Women": 333,
+      "Unisex": 227
+    },
+    "season_distribution": {
+      "Summer": 1417,
+      "Fall": 881,
+      "Winter": 423,
+      "Spring": 124
+    },
+    "top_combinations": {
+      "Black_Men": 716,
+      "Brown_Men": 476,
+      "White_Men": 332,
+      "Grey_Men": 144,
+      "Blue_Men": 122,
+      "Navy Blue_Men": 114,
+      "Black_Women": 88,
+      "Red_Men": 72,
+      "White_Women": 71,
+      "Black_Unisex": 66
+    }
+  }
+}

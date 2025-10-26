@@ -1,0 +1,10 @@
+{
+  "train_size": 31096,
+  "val_size": 6664,
+  "test_size": 6664,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "test_ratio": 0.15,
+  "stratify_column": "articleType",
+  "random_seed": 42
+}
