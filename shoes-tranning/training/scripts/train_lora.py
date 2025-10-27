@@ -203,8 +203,8 @@ def parse_args():
     parser.add_argument(
         "--num_train_epochs",
         type=int,
-        default=1,
-        help="Número de épocas de treinamento",
+        default=100,
+        help="Número de épocas de treinamento (valor alto para permitir max_train_steps controlar)",
     )
     parser.add_argument(
         "--max_train_steps",
