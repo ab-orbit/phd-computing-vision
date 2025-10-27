@@ -34,6 +34,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from diffusers import StableDiffusionPipeline
+from dotenv import load_dotenv
+
+# Carregar variáveis de ambiente do .env
+load_dotenv()
 
 # Configurar logging
 logging.basicConfig(
@@ -50,9 +54,13 @@ app = FastAPI(
 )
 
 # Configurar CORS para permitir requests do React
+# Ler origens do .env ou usar padrões
+cors_origins_str = os.getenv("CORS_ORIGINS", "http://localhost:3000,http://localhost:5173,http://localhost:3011")
+cors_origins = [origin.strip() for origin in cors_origins_str.split(",")]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173"],  # Vite e Create React App
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -208,7 +216,7 @@ def load_model(model_name: str) -> StableDiffusionPipeline:
 
     Suporta:
     - "base": Modelo base SD 1.5
-    - "model_name/final": Modelo final treinado
+    - "model_name/final": Modelo final treinado (com LoRA)
     - "model_name/checkpoint-N": Checkpoint intermediário convertido
 
     Args:
@@ -229,6 +237,8 @@ def load_model(model_name: str) -> StableDiffusionPipeline:
 
     try:
         # Determinar caminho do modelo
+        lora_weights_path = None
+
         if model_name == "base":
             model_path = "runwayml/stable-diffusion-v1-5"
 
@@ -239,28 +249,69 @@ def load_model(model_name: str) -> StableDiffusionPipeline:
             variant = parts[1]
 
             if variant == "final":
-                model_path = MODELS_DIR / base_model_name / "final_pipeline"
+                # Para modelos LoRA, usar lora_weights em vez de final_pipeline
+                training_dir = MODELS_DIR / base_model_name
+                lora_weights_path = training_dir / "lora_weights"
+
+                if lora_weights_path.exists():
+                    # Usar modelo base + LoRA weights
+                    model_path = "runwayml/stable-diffusion-v1-5"
+                    logger.info(f"Detectado modelo LoRA em: {lora_weights_path}")
+                else:
+                    # Tentar final_pipeline (pode não ter UNet)
+                    model_path = training_dir / "final_pipeline"
+                    if not model_path.exists():
+                        raise FileNotFoundError(f"Nem lora_weights nem final_pipeline encontrados em: {training_dir}")
+
             elif variant.startswith("checkpoint-"):
                 step = variant.split("-")[1]
                 model_path = MODELS_DIR / base_model_name / "checkpoint_pipelines" / f"checkpoint-{step}"
             else:
                 raise ValueError(f"Variante desconhecida: {variant}")
 
-            if not model_path.exists():
+            if lora_weights_path is None and not model_path.exists():
                 raise FileNotFoundError(f"Modelo não encontrado: {model_path}")
 
         else:
-            # Legado: tentar model_name/final_pipeline
-            model_path = MODELS_DIR / model_name / "final_pipeline"
-            if not model_path.exists():
-                raise FileNotFoundError(f"Modelo não encontrado: {model_path}")
+            # Legado: tentar lora_weights primeiro, depois final_pipeline
+            training_dir = MODELS_DIR / model_name
+            lora_weights_path = training_dir / "lora_weights"
 
-        # Carregar pipeline
+            if lora_weights_path.exists():
+                model_path = "runwayml/stable-diffusion-v1-5"
+                logger.info(f"Detectado modelo LoRA em: {lora_weights_path}")
+            else:
+                model_path = training_dir / "final_pipeline"
+                if not model_path.exists():
+                    raise FileNotFoundError(f"Modelo não encontrado: {model_path}")
+
+        # Carregar pipeline base
+        logger.info(f"Carregando pipeline base: {model_path}")
         pipeline = StableDiffusionPipeline.from_pretrained(
-            str(model_path) if model_name != "base" else model_path,
+            str(model_path) if isinstance(model_path, Path) else model_path,
             torch_dtype=torch.float32,  # MPS requer float32
-            safety_checker=None
+            safety_checker=None,
+            local_files_only=isinstance(model_path, Path)  # Local apenas para caminhos Path
         )
+
+        # Aplicar LoRA weights se disponível
+        if lora_weights_path and lora_weights_path.exists():
+            logger.info(f"Aplicando LoRA weights de: {lora_weights_path}")
+            # Usar pytorch_lora_weights.safetensors (formato Diffusers)
+            # Se não existir, usar adapter_model.safetensors (formato PEFT)
+            weight_file = lora_weights_path / "pytorch_lora_weights.safetensors"
+            if not weight_file.exists():
+                weight_file = lora_weights_path / "adapter_model.safetensors"
+                logger.warning(
+                    f"Arquivo pytorch_lora_weights.safetensors não encontrado. "
+                    f"Usando adapter_model.safetensors (pode causar erros se formato for PEFT). "
+                    f"Execute: python training/scripts/convert_peft_to_diffusers.py {lora_weights_path}"
+                )
+
+            pipeline.load_lora_weights(
+                str(lora_weights_path),
+                weight_name=weight_file.name
+            )
 
         # Mover para device apropriado
         device = "mps" if torch.backends.mps.is_available() else "cpu"
@@ -340,6 +391,28 @@ async def health_check():
         "timestamp": datetime.now().isoformat(),
         "device": "mps" if torch.backends.mps.is_available() else "cpu",
         "models_cached": list(models_cache.keys())
+    }
+
+
+@app.post("/api/cache/clear")
+async def clear_cache():
+    """
+    Limpa o cache de modelos carregados.
+
+    Útil quando há problemas com modelos em cache.
+
+    Returns:
+        Informações sobre a limpeza do cache
+    """
+    cached_models = list(models_cache.keys())
+    models_cache.clear()
+    logger.info(f"Cache limpo. Modelos removidos: {cached_models}")
+
+    return {
+        "success": True,
+        "message": "Cache de modelos limpo com sucesso",
+        "models_cleared": cached_models,
+        "timestamp": datetime.now().isoformat()
     }
 
 
@@ -572,6 +645,11 @@ async def startup_event():
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     logger.info(f"Device: {device}")
 
+    # Mostrar configurações CORS
+    logger.info(f"CORS configurado para as seguintes origens:")
+    for origin in cors_origins:
+        logger.info(f"  - {origin}")
+
     # Listar modelos disponíveis
     models = get_available_models()
     logger.info(f"Modelos disponíveis: {len(models)}")
@@ -596,10 +674,14 @@ async def shutdown_event():
 if __name__ == "__main__":
     import uvicorn
 
+    # Ler configurações do .env
+    api_host = os.getenv("API_HOST", "0.0.0.0")
+    api_port = int(os.getenv("API_PORT", "8011"))
+
     uvicorn.run(
         "main:app",
-        host="0.0.0.0",
-        port=8000,
+        host=api_host,
+        port=api_port,
         reload=True,
         log_level="info"
     )

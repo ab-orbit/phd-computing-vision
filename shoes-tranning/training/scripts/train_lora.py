@@ -612,7 +612,7 @@ def main():
     # Resumir de checkpoint se especificado
     if args.resume_from_checkpoint:
         if args.resume_from_checkpoint != "latest":
-            path = args.resume_from_checkpoint
+            path = Path(args.resume_from_checkpoint)
         else:
             # Pegar último checkpoint
             dirs = os.listdir(checkpoints_dir)
@@ -621,7 +621,7 @@ def main():
             path = checkpoints_dir / dirs[-1] if len(dirs) > 0 else None
 
         if path is not None:
-            accelerator.load_state(path)
+            accelerator.load_state(str(path))
             global_step = int(path.name.split("-")[1])
             first_epoch = global_step // num_update_steps_per_epoch
             logger.info(f"Resumindo de checkpoint: {path}")
@@ -725,6 +725,34 @@ def main():
         unet_lora = accelerator.unwrap_model(unet)
         unet_lora.save_pretrained(output_dir / "lora_weights")
         logger.info(f"Modelo LoRA salvo em: {output_dir / 'lora_weights'}")
+
+        # Converter pesos LoRA de PEFT para Diffusers
+        logger.info("Convertendo pesos LoRA para formato Diffusers...")
+        try:
+            import safetensors.torch
+            peft_weights_path = output_dir / "lora_weights" / "adapter_model.safetensors"
+            diffusers_weights_path = output_dir / "lora_weights" / "pytorch_lora_weights.safetensors"
+
+            if peft_weights_path.exists():
+                # Carregar e converter
+                state_dict = safetensors.torch.load_file(str(peft_weights_path))
+                converted_state_dict = {}
+                prefix_to_remove = "base_model.model."
+
+                for key, value in state_dict.items():
+                    if key.startswith(prefix_to_remove):
+                        new_key = key[len(prefix_to_remove):]
+                        converted_state_dict[new_key] = value
+                    else:
+                        converted_state_dict[key] = value
+
+                # Salvar formato Diffusers
+                safetensors.torch.save_file(converted_state_dict, str(diffusers_weights_path))
+                logger.info(f"Pesos LoRA convertidos para formato Diffusers: {diffusers_weights_path}")
+            else:
+                logger.warning(f"Arquivo {peft_weights_path} não encontrado para conversão")
+        except Exception as e:
+            logger.error(f"Erro ao converter pesos LoRA: {e}")
 
         # Salvar pipeline completo
         pipeline = StableDiffusionPipeline.from_pretrained(
