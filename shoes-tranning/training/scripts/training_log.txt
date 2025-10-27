@@ -1,0 +1,1342 @@
+/Users/jwcunha/.pyenv/versions/3.12.9/lib/python3.12/site-packages/accelerate/accelerator.py:529: UserWarning: `log_with=tensorboard` was passed but no supported trackers are currently installed.
+  warnings.warn(f"`log_with={log_with}` was passed but no supported trackers are currently installed.")
+2025-10-27 04:11:42 - INFO - __main__ - Accelerator state: Distributed environment: DistributedType.NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: mps
+
+Mixed precision type: no
+
+2025-10-27 04:11:42 - INFO - __main__ - Device: mps
+2025-10-27 04:11:42 - INFO - __main__ - Num processes: 1
+2025-10-27 04:11:42 - INFO - __main__ - Mixed precision: no
+2025-10-27 04:11:42 - INFO - __main__ - Carregando tokenizer e text encoder...
+2025-10-27 04:11:44 - INFO - __main__ - Carregando VAE...
+2025-10-27 04:11:45 - INFO - __main__ - Carregando UNet...
+2025-10-27 04:11:46 - INFO - __main__ - Configurando LoRA (rank=8, alpha=16)...
+2025-10-27 04:11:46 - INFO - __main__ - Gradient checkpointing habilitado no UNet
+2025-10-27 04:11:46 - INFO - __main__ - Weight dtype: torch.float32 (float32 para estabilidade MPS)
+2025-10-27 04:11:50 - INFO - __main__ - Carregando dataset...
+2025-10-27 04:11:51 - INFO - __main__ - ***** Configuração de Treinamento *****
+2025-10-27 04:11:51 - INFO - __main__ -   Num examples = 1991
+2025-10-27 04:11:51 - INFO - __main__ -   Num epochs = 1
+2025-10-27 04:11:51 - INFO - __main__ -   Batch size per device = 2
+2025-10-27 04:11:51 - INFO - __main__ -   Gradient accumulation steps = 8
+2025-10-27 04:11:51 - INFO - __main__ -   Total batch size = 16
+2025-10-27 04:11:51 - INFO - __main__ -   Total optimization steps = 3000
+2025-10-27 04:11:51 - INFO - __main__ -   Learning rate = 0.0001
+2025-10-27 04:11:51 - INFO - __main__ -   LoRA rank = 8
+2025-10-27 04:11:51 - INFO - __main__ -   LoRA alpha = 16
+trainable params: 1,594,368 || all params: 861,115,332 || trainable%: 0.1852
+[INFO] Dataset carregado: 1991 amostras válidas
+Steps:   0%|          | 0/3000 [00:00<?, ?it/s]Steps:   0%|          | 1/3000 [00:15<12:32:47, 15.06s/it]Steps:   0%|          | 1/3000 [00:15<12:32:47, 15.06s/it, epoch=0, loss=0.0254, lr=2.5e-8]Steps:   0%|          | 2/3000 [00:28<11:32:11, 13.85s/it, epoch=0, loss=0.0254, lr=2.5e-8]Steps:   0%|          | 2/3000 [00:28<11:32:11, 13.85s/it, epoch=0, loss=0.0154, lr=5e-8]  Steps:   0%|          | 3/3000 [00:41<11:11:05, 13.44s/it, epoch=0, loss=0.0154, lr=5e-8]Steps:   0%|          | 3/3000 [00:41<11:11:05, 13.44s/it, epoch=0, loss=0.00233, lr=7.5e-8]Steps:   0%|          | 4/3000 [00:54<11:08:12, 13.38s/it, epoch=0, loss=0.00233, lr=7.5e-8]Steps:   0%|          | 4/3000 [00:54<11:08:12, 13.38s/it, epoch=0, loss=0.0554, lr=1e-7]   Steps:   0%|          | 5/3000 [01:07<11:01:37, 13.25s/it, epoch=0, loss=0.0554, lr=1e-7]Steps:   0%|          | 5/3000 [01:07<11:01:37, 13.25s/it, epoch=0, loss=0.0461, lr=1.25e-7]Steps:   0%|          | 6/3000 [01:20<11:00:08, 13.23s/it, epoch=0, loss=0.0461, lr=1.25e-7]Steps:   0%|          | 6/3000 [01:20<11:00:08, 13.23s/it, epoch=0, loss=0.0339, lr=1.5e-7] Steps:   0%|          | 7/3000 [01:33<10:57:48, 13.19s/it, epoch=0, loss=0.0339, lr=1.5e-7]Steps:   0%|          | 7/3000 [01:33<10:57:48, 13.19s/it, epoch=0, loss=0.0149, lr=1.75e-7]Steps:   0%|          | 8/3000 [01:46<10:56:44, 13.17s/it, epoch=0, loss=0.0149, lr=1.75e-7]Steps:   0%|          | 8/3000 [01:46<10:56:44, 13.17s/it, epoch=0, loss=0.0201, lr=2e-7]   Steps:   0%|          | 9/3000 [01:59<10:53:21, 13.11s/it, epoch=0, loss=0.0201, lr=2e-7]Steps:   0%|          | 9/3000 [01:59<10:53:21, 13.11s/it, epoch=0, loss=0.0123, lr=2.25e-7]Steps:   0%|          | 10/3000 [02:12<10:50:46, 13.06s/it, epoch=0, loss=0.0123, lr=2.25e-7]Steps:   0%|          | 10/3000 [02:12<10:50:46, 13.06s/it, epoch=0, loss=0.00253, lr=2.5e-7]Steps:   0%|          | 11/3000 [02:25<10:51:50, 13.08s/it, epoch=0, loss=0.00253, lr=2.5e-7]Steps:   0%|          | 11/3000 [02:25<10:51:50, 13.08s/it, epoch=0, loss=0.0525, lr=2.75e-7]Steps:   0%|          | 12/3000 [02:38<10:51:55, 13.09s/it, epoch=0, loss=0.0525, lr=2.75e-7]Steps:   0%|          | 12/3000 [02:38<10:51:55, 13.09s/it, epoch=0, loss=0.0102, lr=3e-7]   Steps:   0%|          | 13/3000 [02:51<10:50:04, 13.06s/it, epoch=0, loss=0.0102, lr=3e-7]Steps:   0%|          | 13/3000 [02:51<10:50:04, 13.06s/it, epoch=0, loss=0.063, lr=3.25e-7]Steps:   0%|          | 14/3000 [03:04<10:46:23, 12.99s/it, epoch=0, loss=0.063, lr=3.25e-7]Steps:   0%|          | 14/3000 [03:04<10:46:23, 12.99s/it, epoch=0, loss=0.00642, lr=3.5e-7]Steps:   0%|          | 15/3000 [03:17<10:45:28, 12.97s/it, epoch=0, loss=0.00642, lr=3.5e-7]Steps:   0%|          | 15/3000 [03:17<10:45:28, 12.97s/it, epoch=0, loss=0.029, lr=3.75e-7] Steps:   1%|          | 16/3000 [03:30<10:44:56, 12.97s/it, epoch=0, loss=0.029, lr=3.75e-7]Steps:   1%|          | 16/3000 [03:30<10:44:56, 12.97s/it, epoch=0, loss=0.0561, lr=4e-7]  Steps:   1%|          | 17/3000 [03:43<10:42:33, 12.92s/it, epoch=0, loss=0.0561, lr=4e-7]Steps:   1%|          | 17/3000 [03:43<10:42:33, 12.92s/it, epoch=0, loss=0.0215, lr=4.25e-7]Steps:   1%|          | 18/3000 [03:56<10:46:38, 13.01s/it, epoch=0, loss=0.0215, lr=4.25e-7]Steps:   1%|          | 18/3000 [03:56<10:46:38, 13.01s/it, epoch=0, loss=0.0525, lr=4.5e-7] Steps:   1%|          | 19/3000 [04:09<10:47:27, 13.03s/it, epoch=0, loss=0.0525, lr=4.5e-7]Steps:   1%|          | 19/3000 [04:09<10:47:27, 13.03s/it, epoch=0, loss=0.024, lr=4.75e-7]Steps:   1%|          | 20/3000 [04:22<10:47:36, 13.04s/it, epoch=0, loss=0.024, lr=4.75e-7]Steps:   1%|          | 20/3000 [04:22<10:47:36, 13.04s/it, epoch=0, loss=0.00506, lr=5e-7] Steps:   1%|          | 21/3000 [04:35<10:48:38, 13.06s/it, epoch=0, loss=0.00506, lr=5e-7]Steps:   1%|          | 21/3000 [04:35<10:48:38, 13.06s/it, epoch=0, loss=0.0515, lr=5.25e-7]Steps:   1%|          | 22/3000 [04:49<10:53:50, 13.17s/it, epoch=0, loss=0.0515, lr=5.25e-7]Steps:   1%|          | 22/3000 [04:49<10:53:50, 13.17s/it, epoch=0, loss=0.0246, lr=5.5e-7] Steps:   1%|          | 23/3000 [05:02<10:53:46, 13.18s/it, epoch=0, loss=0.0246, lr=5.5e-7]Steps:   1%|          | 23/3000 [05:02<10:53:46, 13.18s/it, epoch=0, loss=0.0162, lr=5.75e-7]Steps:   1%|          | 24/3000 [05:15<10:49:53, 13.10s/it, epoch=0, loss=0.0162, lr=5.75e-7]Steps:   1%|          | 24/3000 [05:15<10:49:53, 13.10s/it, epoch=0, loss=0.0313, lr=6e-7]   Steps:   1%|          | 25/3000 [05:29<11:02:28, 13.36s/it, epoch=0, loss=0.0313, lr=6e-7]Steps:   1%|          | 25/3000 [05:29<11:02:28, 13.36s/it, epoch=0, loss=0.0194, lr=6.25e-7]Steps:   1%|          | 26/3000 [05:42<11:02:52, 13.37s/it, epoch=0, loss=0.0194, lr=6.25e-7]Steps:   1%|          | 26/3000 [05:42<11:02:52, 13.37s/it, epoch=0, loss=0.0218, lr=6.5e-7] Steps:   1%|          | 27/3000 [05:55<10:55:25, 13.23s/it, epoch=0, loss=0.0218, lr=6.5e-7]Steps:   1%|          | 27/3000 [05:55<10:55:25, 13.23s/it, epoch=0, loss=0.00229, lr=6.75e-7]Steps:   1%|          | 28/3000 [06:08<10:52:52, 13.18s/it, epoch=0, loss=0.00229, lr=6.75e-7]Steps:   1%|          | 28/3000 [06:08<10:52:52, 13.18s/it, epoch=0, loss=0.0601, lr=7e-7]    Steps:   1%|          | 29/3000 [06:21<10:50:01, 13.13s/it, epoch=0, loss=0.0601, lr=7e-7]Steps:   1%|          | 29/3000 [06:21<10:50:01, 13.13s/it, epoch=0, loss=0.0388, lr=7.25e-7]Steps:   1%|          | 30/3000 [06:34<10:46:11, 13.05s/it, epoch=0, loss=0.0388, lr=7.25e-7]Steps:   1%|          | 30/3000 [06:34<10:46:11, 13.05s/it, epoch=0, loss=0.0283, lr=7.5e-7] Steps:   1%|          | 31/3000 [06:47<10:43:56, 13.01s/it, epoch=0, loss=0.0283, lr=7.5e-7]Steps:   1%|          | 31/3000 [06:47<10:43:56, 13.01s/it, epoch=0, loss=0.00556, lr=7.75e-7]Steps:   1%|          | 32/3000 [07:29<17:49:14, 21.62s/it, epoch=0, loss=0.00556, lr=7.75e-7]Steps:   1%|          | 32/3000 [07:29<17:49:14, 21.62s/it, epoch=0, loss=0.0523, lr=8e-7]    Steps:   1%|          | 33/3000 [07:45<16:25:36, 19.93s/it, epoch=0, loss=0.0523, lr=8e-7]Steps:   1%|          | 33/3000 [07:45<16:25:36, 19.93s/it, epoch=0, loss=0.00508, lr=8.25e-7]Steps:   1%|          | 34/3000 [08:08<17:08:48, 20.81s/it, epoch=0, loss=0.00508, lr=8.25e-7]Steps:   1%|          | 34/3000 [08:08<17:08:48, 20.81s/it, epoch=0, loss=0.0149, lr=8.5e-7]  Steps:   1%|          | 35/3000 [08:24<16:02:33, 19.48s/it, epoch=0, loss=0.0149, lr=8.5e-7]Steps:   1%|          | 35/3000 [08:24<16:02:33, 19.48s/it, epoch=0, loss=0.0469, lr=8.75e-7]Steps:   1%|          | 36/3000 [08:48<17:06:14, 20.77s/it, epoch=0, loss=0.0469, lr=8.75e-7]Steps:   1%|          | 36/3000 [08:48<17:06:14, 20.77s/it, epoch=0, loss=0.0254, lr=9e-7]   Steps:   1%|          | 37/3000 [09:04<15:55:37, 19.35s/it, epoch=0, loss=0.0254, lr=9e-7]Steps:   1%|          | 37/3000 [09:04<15:55:37, 19.35s/it, epoch=0, loss=0.0402, lr=9.25e-7]Steps:   1%|▏         | 38/3000 [09:20<15:04:39, 18.33s/it, epoch=0, loss=0.0402, lr=9.25e-7]Steps:   1%|▏         | 38/3000 [09:20<15:04:39, 18.33s/it, epoch=0, loss=0.0583, lr=9.5e-7] Steps:   1%|▏         | 39/3000 [09:40<15:31:13, 18.87s/it, epoch=0, loss=0.0583, lr=9.5e-7]Steps:   1%|▏         | 39/3000 [09:40<15:31:13, 18.87s/it, epoch=0, loss=0.0214, lr=9.75e-7]Steps:   1%|▏         | 40/3000 [09:54<14:20:59, 17.45s/it, epoch=0, loss=0.0214, lr=9.75e-7]Steps:   1%|▏         | 40/3000 [09:54<14:20:59, 17.45s/it, epoch=0, loss=0.024, lr=1e-6]    Steps:   1%|▏         | 41/3000 [10:10<13:56:58, 16.97s/it, epoch=0, loss=0.024, lr=1e-6]Steps:   1%|▏         | 41/3000 [10:10<13:56:58, 16.97s/it, epoch=0, loss=0.00234, lr=1.03e-6]Steps:   1%|▏         | 42/3000 [10:27<13:59:02, 17.02s/it, epoch=0, loss=0.00234, lr=1.03e-6]Steps:   1%|▏         | 42/3000 [10:27<13:59:02, 17.02s/it, epoch=0, loss=0.0109, lr=1.05e-6] Steps:   1%|▏         | 43/3000 [10:54<16:22:40, 19.94s/it, epoch=0, loss=0.0109, lr=1.05e-6]Steps:   1%|▏         | 43/3000 [10:54<16:22:40, 19.94s/it, epoch=0, loss=0.0387, lr=1.07e-6]Steps:   1%|▏         | 44/3000 [11:19<17:35:26, 21.42s/it, epoch=0, loss=0.0387, lr=1.07e-6]Steps:   1%|▏         | 44/3000 [11:19<17:35:26, 21.42s/it, epoch=0, loss=0.0115, lr=1.1e-6] Steps:   2%|▏         | 45/3000 [11:40<17:27:04, 21.26s/it, epoch=0, loss=0.0115, lr=1.1e-6]Steps:   2%|▏         | 45/3000 [11:40<17:27:04, 21.26s/it, epoch=0, loss=0.0748, lr=1.13e-6]Steps:   2%|▏         | 46/3000 [12:04<18:11:55, 22.18s/it, epoch=0, loss=0.0748, lr=1.13e-6]Steps:   2%|▏         | 46/3000 [12:04<18:11:55, 22.18s/it, epoch=0, loss=0.0235, lr=1.15e-6]Steps:   2%|▏         | 47/3000 [12:19<16:30:24, 20.12s/it, epoch=0, loss=0.0235, lr=1.15e-6]Steps:   2%|▏         | 47/3000 [12:19<16:30:24, 20.12s/it, epoch=0, loss=0.0364, lr=1.17e-6]Steps:   2%|▏         | 48/3000 [12:34<15:10:20, 18.50s/it, epoch=0, loss=0.0364, lr=1.17e-6]Steps:   2%|▏         | 48/3000 [12:34<15:10:20, 18.50s/it, epoch=0, loss=0.003, lr=1.2e-6]  Steps:   2%|▏         | 49/3000 [12:52<15:07:33, 18.45s/it, epoch=0, loss=0.003, lr=1.2e-6]Steps:   2%|▏         | 49/3000 [12:52<15:07:33, 18.45s/it, epoch=0, loss=0.079, lr=1.23e-6]Steps:   2%|▏         | 50/3000 [13:16<16:21:49, 19.97s/it, epoch=0, loss=0.079, lr=1.23e-6]Steps:   2%|▏         | 50/3000 [13:16<16:21:49, 19.97s/it, epoch=0, loss=0.00602, lr=1.25e-6]Steps:   2%|▏         | 51/3000 [13:37<16:33:39, 20.22s/it, epoch=0, loss=0.00602, lr=1.25e-6]Steps:   2%|▏         | 51/3000 [13:37<16:33:39, 20.22s/it, epoch=0, loss=0.0449, lr=1.28e-6] Steps:   2%|▏         | 52/3000 [13:58<16:57:49, 20.72s/it, epoch=0, loss=0.0449, lr=1.28e-6]Steps:   2%|▏         | 52/3000 [13:58<16:57:49, 20.72s/it, epoch=0, loss=0.0325, lr=1.3e-6] Steps:   2%|▏         | 53/3000 [14:21<17:27:13, 21.32s/it, epoch=0, loss=0.0325, lr=1.3e-6]Steps:   2%|▏         | 53/3000 [14:21<17:27:13, 21.32s/it, epoch=0, loss=0.0314, lr=1.33e-6]Steps:   2%|▏         | 54/3000 [14:45<18:05:08, 22.10s/it, epoch=0, loss=0.0314, lr=1.33e-6]Steps:   2%|▏         | 54/3000 [14:45<18:05:08, 22.10s/it, epoch=0, loss=0.0159, lr=1.35e-6]Steps:   2%|▏         | 55/3000 [15:02<16:49:30, 20.57s/it, epoch=0, loss=0.0159, lr=1.35e-6]Steps:   2%|▏         | 55/3000 [15:02<16:49:30, 20.57s/it, epoch=0, loss=0.0559, lr=1.38e-6]Steps:   2%|▏         | 56/3000 [15:23<16:47:53, 20.54s/it, epoch=0, loss=0.0559, lr=1.38e-6]Steps:   2%|▏         | 56/3000 [15:23<16:47:53, 20.54s/it, epoch=0, loss=0.00586, lr=1.4e-6]Steps:   2%|▏         | 57/3000 [15:39<15:44:18, 19.25s/it, epoch=0, loss=0.00586, lr=1.4e-6]Steps:   2%|▏         | 57/3000 [15:39<15:44:18, 19.25s/it, epoch=0, loss=0.0423, lr=1.43e-6]Steps:   2%|▏         | 58/3000 [15:57<15:32:27, 19.02s/it, epoch=0, loss=0.0423, lr=1.43e-6]Steps:   2%|▏         | 58/3000 [15:57<15:32:27, 19.02s/it, epoch=0, loss=0.0144, lr=1.45e-6]Steps:   2%|▏         | 59/3000 [16:20<16:32:40, 20.25s/it, epoch=0, loss=0.0144, lr=1.45e-6]Steps:   2%|▏         | 59/3000 [16:20<16:32:40, 20.25s/it, epoch=0, loss=0.0263, lr=1.48e-6]Steps:   2%|▏         | 60/3000 [16:41<16:43:36, 20.48s/it, epoch=0, loss=0.0263, lr=1.48e-6]Steps:   2%|▏         | 60/3000 [16:41<16:43:36, 20.48s/it, epoch=0, loss=0.00474, lr=1.5e-6]Steps:   2%|▏         | 61/3000 [16:59<16:02:26, 19.65s/it, epoch=0, loss=0.00474, lr=1.5e-6]Steps:   2%|▏         | 61/3000 [16:59<16:02:26, 19.65s/it, epoch=0, loss=0.0542, lr=1.53e-6]Steps:   2%|▏         | 62/3000 [17:13<14:42:26, 18.02s/it, epoch=0, loss=0.0542, lr=1.53e-6]Steps:   2%|▏         | 62/3000 [17:13<14:42:26, 18.02s/it, epoch=0, loss=0.0276, lr=1.55e-6]Steps:   2%|▏         | 63/3000 [17:35<15:39:25, 19.19s/it, epoch=0, loss=0.0276, lr=1.55e-6]Steps:   2%|▏         | 63/3000 [17:35<15:39:25, 19.19s/it, epoch=0, loss=0.0573, lr=1.58e-6]Steps:   2%|▏         | 64/3000 [17:57<16:10:37, 19.84s/it, epoch=0, loss=0.0573, lr=1.58e-6]Steps:   2%|▏         | 64/3000 [17:57<16:10:37, 19.84s/it, epoch=0, loss=0.0237, lr=1.6e-6] Steps:   2%|▏         | 65/3000 [18:11<14:46:32, 18.12s/it, epoch=0, loss=0.0237, lr=1.6e-6]Steps:   2%|▏         | 65/3000 [18:11<14:46:32, 18.12s/it, epoch=0, loss=0.0423, lr=1.63e-6]Steps:   2%|▏         | 66/3000 [18:28<14:29:42, 17.79s/it, epoch=0, loss=0.0423, lr=1.63e-6]Steps:   2%|▏         | 66/3000 [18:28<14:29:42, 17.79s/it, epoch=0, loss=0.0596, lr=1.65e-6]Steps:   2%|▏         | 67/3000 [18:50<15:40:57, 19.25s/it, epoch=0, loss=0.0596, lr=1.65e-6]Steps:   2%|▏         | 67/3000 [18:50<15:40:57, 19.25s/it, epoch=0, loss=0.0214, lr=1.68e-6]Steps:   2%|▏         | 68/3000 [19:04<14:22:13, 17.64s/it, epoch=0, loss=0.0214, lr=1.68e-6]Steps:   2%|▏         | 68/3000 [19:04<14:22:13, 17.64s/it, epoch=0, loss=0.0137, lr=1.7e-6] Steps:   2%|▏         | 69/3000 [19:23<14:40:28, 18.02s/it, epoch=0, loss=0.0137, lr=1.7e-6]Steps:   2%|▏         | 69/3000 [19:23<14:40:28, 18.02s/it, epoch=0, loss=0.0154, lr=1.73e-6]Steps:   2%|▏         | 70/3000 [19:41<14:37:08, 17.96s/it, epoch=0, loss=0.0154, lr=1.73e-6]Steps:   2%|▏         | 70/3000 [19:41<14:37:08, 17.96s/it, epoch=0, loss=0.0401, lr=1.75e-6]Steps:   2%|▏         | 71/3000 [20:11<17:30:29, 21.52s/it, epoch=0, loss=0.0401, lr=1.75e-6]Steps:   2%|▏         | 71/3000 [20:11<17:30:29, 21.52s/it, epoch=0, loss=0.0191, lr=1.77e-6]Steps:   2%|▏         | 72/3000 [20:26<16:01:45, 19.71s/it, epoch=0, loss=0.0191, lr=1.77e-6]Steps:   2%|▏         | 72/3000 [20:26<16:01:45, 19.71s/it, epoch=0, loss=0.0228, lr=1.8e-6] Steps:   2%|▏         | 73/3000 [20:47<16:18:33, 20.06s/it, epoch=0, loss=0.0228, lr=1.8e-6]Steps:   2%|▏         | 73/3000 [20:47<16:18:33, 20.06s/it, epoch=0, loss=0.0299, lr=1.82e-6]Steps:   2%|▏         | 74/3000 [21:09<16:40:56, 20.53s/it, epoch=0, loss=0.0299, lr=1.82e-6]Steps:   2%|▏         | 74/3000 [21:09<16:40:56, 20.53s/it, epoch=0, loss=0.0315, lr=1.85e-6]Steps:   2%|▎         | 75/3000 [21:28<16:27:21, 20.25s/it, epoch=0, loss=0.0315, lr=1.85e-6]Steps:   2%|▎         | 75/3000 [21:28<16:27:21, 20.25s/it, epoch=0, loss=0.0359, lr=1.88e-6]Steps:   3%|▎         | 76/3000 [21:47<15:57:47, 19.65s/it, epoch=0, loss=0.0359, lr=1.88e-6]Steps:   3%|▎         | 76/3000 [21:47<15:57:47, 19.65s/it, epoch=0, loss=0.0459, lr=1.9e-6] Steps:   3%|▎         | 77/3000 [22:03<15:02:45, 18.53s/it, epoch=0, loss=0.0459, lr=1.9e-6]Steps:   3%|▎         | 77/3000 [22:03<15:02:45, 18.53s/it, epoch=0, loss=0.0193, lr=1.93e-6]Steps:   3%|▎         | 78/3000 [22:24<15:37:13, 19.24s/it, epoch=0, loss=0.0193, lr=1.93e-6]Steps:   3%|▎         | 78/3000 [22:24<15:37:13, 19.24s/it, epoch=0, loss=0.0276, lr=1.95e-6]Steps:   3%|▎         | 79/3000 [22:39<14:39:05, 18.06s/it, epoch=0, loss=0.0276, lr=1.95e-6]Steps:   3%|▎         | 79/3000 [22:39<14:39:05, 18.06s/it, epoch=0, loss=0.0625, lr=1.98e-6]Steps:   3%|▎         | 80/3000 [22:59<15:09:58, 18.70s/it, epoch=0, loss=0.0625, lr=1.98e-6]Steps:   3%|▎         | 80/3000 [22:59<15:09:58, 18.70s/it, epoch=0, loss=0.0294, lr=2e-6]   Steps:   3%|▎         | 81/3000 [23:23<16:19:43, 20.14s/it, epoch=0, loss=0.0294, lr=2e-6]Steps:   3%|▎         | 81/3000 [23:23<16:19:43, 20.14s/it, epoch=0, loss=0.026, lr=2.03e-6]Steps:   3%|▎         | 82/3000 [23:46<17:05:29, 21.09s/it, epoch=0, loss=0.026, lr=2.03e-6]Steps:   3%|▎         | 82/3000 [23:46<17:05:29, 21.09s/it, epoch=0, loss=0.0519, lr=2.05e-6]Steps:   3%|▎         | 83/3000 [24:10<17:52:41, 22.06s/it, epoch=0, loss=0.0519, lr=2.05e-6]Steps:   3%|▎         | 83/3000 [24:10<17:52:41, 22.06s/it, epoch=0, loss=0.0252, lr=2.08e-6]Steps:   3%|▎         | 84/3000 [24:28<16:46:38, 20.71s/it, epoch=0, loss=0.0252, lr=2.08e-6]Steps:   3%|▎         | 84/3000 [24:28<16:46:38, 20.71s/it, epoch=0, loss=0.0275, lr=2.1e-6] Steps:   3%|▎         | 85/3000 [24:49<16:53:45, 20.87s/it, epoch=0, loss=0.0275, lr=2.1e-6]Steps:   3%|▎         | 85/3000 [24:49<16:53:45, 20.87s/it, epoch=0, loss=0.00181, lr=2.13e-6]Steps:   3%|▎         | 86/3000 [25:04<15:32:02, 19.19s/it, epoch=0, loss=0.00181, lr=2.13e-6]Steps:   3%|▎         | 86/3000 [25:04<15:32:02, 19.19s/it, epoch=0, loss=0.102, lr=2.15e-6]  Steps:   3%|▎         | 87/3000 [25:19<14:21:03, 17.74s/it, epoch=0, loss=0.102, lr=2.15e-6]Steps:   3%|▎         | 87/3000 [25:19<14:21:03, 17.74s/it, epoch=0, loss=0.00666, lr=2.17e-6]Steps:   3%|▎         | 88/3000 [25:42<15:38:16, 19.33s/it, epoch=0, loss=0.00666, lr=2.17e-6]Steps:   3%|▎         | 88/3000 [25:42<15:38:16, 19.33s/it, epoch=0, loss=0.0116, lr=2.2e-6]  Steps:   3%|▎         | 89/3000 [25:57<14:41:35, 18.17s/it, epoch=0, loss=0.0116, lr=2.2e-6]Steps:   3%|▎         | 89/3000 [25:57<14:41:35, 18.17s/it, epoch=0, loss=0.0135, lr=2.22e-6]Steps:   3%|▎         | 90/3000 [26:11<13:33:12, 16.77s/it, epoch=0, loss=0.0135, lr=2.22e-6]Steps:   3%|▎         | 90/3000 [26:11<13:33:12, 16.77s/it, epoch=0, loss=0.0386, lr=2.25e-6]Steps:   3%|▎         | 91/3000 [26:28<13:48:15, 17.08s/it, epoch=0, loss=0.0386, lr=2.25e-6]Steps:   3%|▎         | 91/3000 [26:28<13:48:15, 17.08s/it, epoch=0, loss=0.0127, lr=2.28e-6]Steps:   3%|▎         | 92/3000 [26:51<15:05:52, 18.69s/it, epoch=0, loss=0.0127, lr=2.28e-6]Steps:   3%|▎         | 92/3000 [26:51<15:05:52, 18.69s/it, epoch=0, loss=0.0633, lr=2.3e-6] Steps:   3%|▎         | 93/3000 [27:11<15:25:37, 19.10s/it, epoch=0, loss=0.0633, lr=2.3e-6]Steps:   3%|▎         | 93/3000 [27:11<15:25:37, 19.10s/it, epoch=0, loss=0.1, lr=2.33e-6]  Steps:   3%|▎         | 94/3000 [27:30<15:20:06, 19.00s/it, epoch=0, loss=0.1, lr=2.33e-6]Steps:   3%|▎         | 94/3000 [27:30<15:20:06, 19.00s/it, epoch=0, loss=0.00364, lr=2.35e-6]Steps:   3%|▎         | 95/3000 [27:50<15:45:57, 19.54s/it, epoch=0, loss=0.00364, lr=2.35e-6]Steps:   3%|▎         | 95/3000 [27:50<15:45:57, 19.54s/it, epoch=0, loss=0.0268, lr=2.38e-6] Steps:   3%|▎         | 96/3000 [28:08<15:19:23, 19.00s/it, epoch=0, loss=0.0268, lr=2.38e-6]Steps:   3%|▎         | 96/3000 [28:08<15:19:23, 19.00s/it, epoch=0, loss=0.0234, lr=2.4e-6] Steps:   3%|▎         | 97/3000 [28:22<14:07:18, 17.51s/it, epoch=0, loss=0.0234, lr=2.4e-6]Steps:   3%|▎         | 97/3000 [28:22<14:07:18, 17.51s/it, epoch=0, loss=0.00517, lr=2.43e-6]Steps:   3%|▎         | 98/3000 [28:41<14:23:12, 17.85s/it, epoch=0, loss=0.00517, lr=2.43e-6]Steps:   3%|▎         | 98/3000 [28:41<14:23:12, 17.85s/it, epoch=0, loss=0.00162, lr=2.45e-6]Steps:   3%|▎         | 99/3000 [29:06<16:12:21, 20.11s/it, epoch=0, loss=0.00162, lr=2.45e-6]Steps:   3%|▎         | 99/3000 [29:06<16:12:21, 20.11s/it, epoch=0, loss=0.0357, lr=2.48e-6] Steps:   3%|▎         | 100/3000 [29:22<15:15:31, 18.94s/it, epoch=0, loss=0.0357, lr=2.48e-6]Steps:   3%|▎         | 100/3000 [29:22<15:15:31, 18.94s/it, epoch=0, loss=0.00309, lr=2.5e-6]Steps:   3%|▎         | 101/3000 [29:41<15:14:05, 18.92s/it, epoch=0, loss=0.00309, lr=2.5e-6]Steps:   3%|▎         | 101/3000 [29:41<15:14:05, 18.92s/it, epoch=0, loss=0.0429, lr=2.53e-6]Steps:   3%|▎         | 102/3000 [29:58<14:42:57, 18.28s/it, epoch=0, loss=0.0429, lr=2.53e-6]Steps:   3%|▎         | 102/3000 [29:58<14:42:57, 18.28s/it, epoch=0, loss=0.0474, lr=2.55e-6]Steps:   3%|▎         | 103/3000 [30:15<14:24:35, 17.91s/it, epoch=0, loss=0.0474, lr=2.55e-6]Steps:   3%|▎         | 103/3000 [30:15<14:24:35, 17.91s/it, epoch=0, loss=0.0327, lr=2.57e-6]Steps:   3%|▎         | 104/3000 [30:36<15:02:42, 18.70s/it, epoch=0, loss=0.0327, lr=2.57e-6]Steps:   3%|▎         | 104/3000 [30:36<15:02:42, 18.70s/it, epoch=0, loss=0.0562, lr=2.6e-6] Steps:   4%|▎         | 105/3000 [30:52<14:31:41, 18.07s/it, epoch=0, loss=0.0562, lr=2.6e-6]Steps:   4%|▎         | 105/3000 [30:52<14:31:41, 18.07s/it, epoch=0, loss=0.0178, lr=2.62e-6]Steps:   4%|▎         | 106/3000 [31:14<15:21:34, 19.11s/it, epoch=0, loss=0.0178, lr=2.62e-6]Steps:   4%|▎         | 106/3000 [31:14<15:21:34, 19.11s/it, epoch=0, loss=0.0091, lr=2.65e-6]Steps:   4%|▎         | 107/3000 [31:34<15:42:33, 19.55s/it, epoch=0, loss=0.0091, lr=2.65e-6]Steps:   4%|▎         | 107/3000 [31:34<15:42:33, 19.55s/it, epoch=0, loss=0.0682, lr=2.68e-6]Steps:   4%|▎         | 108/3000 [31:49<14:30:28, 18.06s/it, epoch=0, loss=0.0682, lr=2.68e-6]Steps:   4%|▎         | 108/3000 [31:49<14:30:28, 18.06s/it, epoch=0, loss=0.0246, lr=2.7e-6] Steps:   4%|▎         | 109/3000 [32:09<15:00:33, 18.69s/it, epoch=0, loss=0.0246, lr=2.7e-6]Steps:   4%|▎         | 109/3000 [32:09<15:00:33, 18.69s/it, epoch=0, loss=0.00363, lr=2.73e-6]Steps:   4%|▎         | 110/3000 [32:30<15:29:28, 19.30s/it, epoch=0, loss=0.00363, lr=2.73e-6]Steps:   4%|▎         | 110/3000 [32:30<15:29:28, 19.30s/it, epoch=0, loss=0.0237, lr=2.75e-6] Steps:   4%|▎         | 111/3000 [32:46<14:48:03, 18.44s/it, epoch=0, loss=0.0237, lr=2.75e-6]Steps:   4%|▎         | 111/3000 [32:46<14:48:03, 18.44s/it, epoch=0, loss=0.00464, lr=2.78e-6]Steps:   4%|▎         | 112/3000 [33:02<14:08:25, 17.63s/it, epoch=0, loss=0.00464, lr=2.78e-6]Steps:   4%|▎         | 112/3000 [33:02<14:08:25, 17.63s/it, epoch=0, loss=0.00524, lr=2.8e-6] Steps:   4%|▍         | 113/3000 [33:19<13:59:11, 17.44s/it, epoch=0, loss=0.00524, lr=2.8e-6]Steps:   4%|▍         | 113/3000 [33:19<13:59:11, 17.44s/it, epoch=0, loss=0.00854, lr=2.83e-6]Steps:   4%|▍         | 114/3000 [33:36<13:51:18, 17.28s/it, epoch=0, loss=0.00854, lr=2.83e-6]Steps:   4%|▍         | 114/3000 [33:36<13:51:18, 17.28s/it, epoch=0, loss=0.00515, lr=2.85e-6]Steps:   4%|▍         | 115/3000 [33:57<14:47:04, 18.45s/it, epoch=0, loss=0.00515, lr=2.85e-6]Steps:   4%|▍         | 115/3000 [33:57<14:47:04, 18.45s/it, epoch=0, loss=0.0618, lr=2.88e-6] Steps:   4%|▍         | 116/3000 [34:14<14:20:33, 17.90s/it, epoch=0, loss=0.0618, lr=2.88e-6]Steps:   4%|▍         | 116/3000 [34:14<14:20:33, 17.90s/it, epoch=0, loss=0.00204, lr=2.9e-6]Steps:   4%|▍         | 117/3000 [34:33<14:32:39, 18.16s/it, epoch=0, loss=0.00204, lr=2.9e-6]Steps:   4%|▍         | 117/3000 [34:33<14:32:39, 18.16s/it, epoch=0, loss=0.0287, lr=2.93e-6]Steps:   4%|▍         | 118/3000 [34:57<16:00:54, 20.00s/it, epoch=0, loss=0.0287, lr=2.93e-6]Steps:   4%|▍         | 118/3000 [34:57<16:00:54, 20.00s/it, epoch=0, loss=0.0502, lr=2.95e-6]Steps:   4%|▍         | 119/3000 [35:15<15:41:03, 19.60s/it, epoch=0, loss=0.0502, lr=2.95e-6]Steps:   4%|▍         | 119/3000 [35:15<15:41:03, 19.60s/it, epoch=0, loss=0.042, lr=2.97e-6] Steps:   4%|▍         | 120/3000 [35:39<16:38:48, 20.81s/it, epoch=0, loss=0.042, lr=2.97e-6]Steps:   4%|▍         | 120/3000 [35:39<16:38:48, 20.81s/it, epoch=0, loss=0.00248, lr=3e-6] Steps:   4%|▍         | 121/3000 [35:53<14:55:29, 18.66s/it, epoch=0, loss=0.00248, lr=3e-6]Steps:   4%|▍         | 121/3000 [35:53<14:55:29, 18.66s/it, epoch=0, loss=0.0144, lr=3.03e-6]Steps:   4%|▍         | 122/3000 [36:11<14:46:22, 18.48s/it, epoch=0, loss=0.0144, lr=3.03e-6]Steps:   4%|▍         | 122/3000 [36:11<14:46:22, 18.48s/it, epoch=0, loss=0.0422, lr=3.05e-6]Steps:   4%|▍         | 123/3000 [36:32<15:26:47, 19.33s/it, epoch=0, loss=0.0422, lr=3.05e-6]Steps:   4%|▍         | 123/3000 [36:32<15:26:47, 19.33s/it, epoch=0, loss=0.0203, lr=3.08e-6]Steps:   4%|▍         | 124/3000 [36:48<14:33:42, 18.23s/it, epoch=0, loss=0.0203, lr=3.08e-6]Steps:   4%|▍         | 124/3000 [36:48<14:33:42, 18.23s/it, epoch=0, loss=0.0216, lr=3.1e-6] Steps:   4%|▍         | 125/3000 [36:57<12:16:58, 15.38s/it, epoch=0, loss=0.0216, lr=3.1e-6]Steps:   4%|▍         | 125/3000 [36:57<12:16:58, 15.38s/it, epoch=0, loss=0.0311, lr=3.13e-6]2025-10-27 04:48:48 - INFO - __main__ - Modelo LoRA salvo em: /Users/jwcunha/Documents/COMPANIES/AB/repos/private/premium/researcher/phd-classes/shoes-tranning/training/outputs/lora_casual_shoes_3000steps/lora_weights
+
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s][ALoading pipeline components...: 100%|██████████| 6/6 [00:00<00:00, 125.71it/s]
+Expected types for unet: (<class 'diffusers.models.unets.unet_2d_condition.UNet2DConditionModel'>,), got <class 'peft.peft_model.PeftModel'>.
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+self.unet=PeftModel(
+  (base_model): LoraModel(
+    (model): UNet2DConditionModel(
+      (conv_in): Conv2d(4, 320, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (time_proj): Timesteps()
+      (time_embedding): TimestepEmbedding(
+        (linear_1): Linear(in_features=320, out_features=1280, bias=True)
+        (act): SiLU()
+        (linear_2): Linear(in_features=1280, out_features=1280, bias=True)
+      )
+      (down_blocks): ModuleList(
+        (0): CrossAttnDownBlock2D(
+          (attentions): ModuleList(
+            (0-1): 2 x Transformer2DModel(
+              (norm): GroupNorm(32, 320, eps=1e-06, affine=True)
+              (proj_in): Conv2d(320, 320, kernel_size=(1, 1), stride=(1, 1))
+              (transformer_blocks): ModuleList(
+                (0): BasicTransformerBlock(
+                  (norm1): LayerNorm((320,), eps=1e-05, elementwise_affine=True)
+                  (attn1): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=320, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=320, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=320, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=320, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=320, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=320, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=320, out_features=320, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=320, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=320, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm2): LayerNorm((320,), eps=1e-05, elementwise_affine=True)
+                  (attn2): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=320, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=320, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=320, out_features=320, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=320, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=320, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm3): LayerNorm((320,), eps=1e-05, elementwise_affine=True)
+                  (ff): FeedForward(
+                    (net): ModuleList(
+                      (0): GEGLU(
+                        (proj): Linear(in_features=320, out_features=2560, bias=True)
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                      (2): Linear(in_features=1280, out_features=320, bias=True)
+                    )
+                  )
+                )
+              )
+              (proj_out): Conv2d(320, 320, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+          (resnets): ModuleList(
+            (0-1): 2 x ResnetBlock2D(
+              (norm1): GroupNorm(32, 320, eps=1e-05, affine=True)
+              (conv1): Conv2d(320, 320, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=320, bias=True)
+              (norm2): GroupNorm(32, 320, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(320, 320, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+            )
+          )
+          (downsamplers): ModuleList(
+            (0): Downsample2D(
+              (conv): Conv2d(320, 320, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+            )
+          )
+        )
+        (1): CrossAttnDownBlock2D(
+          (attentions): ModuleList(
+            (0-1): 2 x Transformer2DModel(
+              (norm): GroupNorm(32, 640, eps=1e-06, affine=True)
+              (proj_in): Conv2d(640, 640, kernel_size=(1, 1), stride=(1, 1))
+              (transformer_blocks): ModuleList(
+                (0): BasicTransformerBlock(
+                  (norm1): LayerNorm((640,), eps=1e-05, elementwise_affine=True)
+                  (attn1): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=640, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=640, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=640, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=640, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=640, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=640, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=640, out_features=640, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=640, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=640, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm2): LayerNorm((640,), eps=1e-05, elementwise_affine=True)
+                  (attn2): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=640, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=640, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=640, out_features=640, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=640, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=640, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm3): LayerNorm((640,), eps=1e-05, elementwise_affine=True)
+                  (ff): FeedForward(
+                    (net): ModuleList(
+                      (0): GEGLU(
+                        (proj): Linear(in_features=640, out_features=5120, bias=True)
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                      (2): Linear(in_features=2560, out_features=640, bias=True)
+                    )
+                  )
+                )
+              )
+              (proj_out): Conv2d(640, 640, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+          (resnets): ModuleList(
+            (0): ResnetBlock2D(
+              (norm1): GroupNorm(32, 320, eps=1e-05, affine=True)
+              (conv1): Conv2d(320, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=640, bias=True)
+              (norm2): GroupNorm(32, 640, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(640, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+              (conv_shortcut): Conv2d(320, 640, kernel_size=(1, 1), stride=(1, 1))
+            )
+            (1): ResnetBlock2D(
+              (norm1): GroupNorm(32, 640, eps=1e-05, affine=True)
+              (conv1): Conv2d(640, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=640, bias=True)
+              (norm2): GroupNorm(32, 640, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(640, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+            )
+          )
+          (downsamplers): ModuleList(
+            (0): Downsample2D(
+              (conv): Conv2d(640, 640, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+            )
+          )
+        )
+        (2): CrossAttnDownBlock2D(
+          (attentions): ModuleList(
+            (0-1): 2 x Transformer2DModel(
+              (norm): GroupNorm(32, 1280, eps=1e-06, affine=True)
+              (proj_in): Conv2d(1280, 1280, kernel_size=(1, 1), stride=(1, 1))
+              (transformer_blocks): ModuleList(
+                (0): BasicTransformerBlock(
+                  (norm1): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+                  (attn1): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=1280, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=1280, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=1280, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=1280, out_features=1280, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=1280, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=1280, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm2): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+                  (attn2): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=1280, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=1280, out_features=1280, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=1280, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=1280, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm3): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+                  (ff): FeedForward(
+                    (net): ModuleList(
+                      (0): GEGLU(
+                        (proj): Linear(in_features=1280, out_features=10240, bias=True)
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                      (2): Linear(in_features=5120, out_features=1280, bias=True)
+                    )
+                  )
+                )
+              )
+              (proj_out): Conv2d(1280, 1280, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+          (resnets): ModuleList(
+            (0): ResnetBlock2D(
+              (norm1): GroupNorm(32, 640, eps=1e-05, affine=True)
+              (conv1): Conv2d(640, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=1280, bias=True)
+              (norm2): GroupNorm(32, 1280, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+              (conv_shortcut): Conv2d(640, 1280, kernel_size=(1, 1), stride=(1, 1))
+            )
+            (1): ResnetBlock2D(
+              (norm1): GroupNorm(32, 1280, eps=1e-05, affine=True)
+              (conv1): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=1280, bias=True)
+              (norm2): GroupNorm(32, 1280, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+            )
+          )
+          (downsamplers): ModuleList(
+            (0): Downsample2D(
+              (conv): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+            )
+          )
+        )
+        (3): DownBlock2D(
+          (resnets): ModuleList(
+            (0-1): 2 x ResnetBlock2D(
+              (norm1): GroupNorm(32, 1280, eps=1e-05, affine=True)
+              (conv1): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=1280, bias=True)
+              (norm2): GroupNorm(32, 1280, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+            )
+          )
+        )
+      )
+      (up_blocks): ModuleList(
+        (0): UpBlock2D(
+          (resnets): ModuleList(
+            (0-2): 3 x ResnetBlock2D(
+              (norm1): GroupNorm(32, 2560, eps=1e-05, affine=True)
+              (conv1): Conv2d(2560, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=1280, bias=True)
+              (norm2): GroupNorm(32, 1280, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+              (conv_shortcut): Conv2d(2560, 1280, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+          (upsamplers): ModuleList(
+            (0): Upsample2D(
+              (conv): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+        (1): CrossAttnUpBlock2D(
+          (attentions): ModuleList(
+            (0-2): 3 x Transformer2DModel(
+              (norm): GroupNorm(32, 1280, eps=1e-06, affine=True)
+              (proj_in): Conv2d(1280, 1280, kernel_size=(1, 1), stride=(1, 1))
+              (transformer_blocks): ModuleList(
+                (0): BasicTransformerBlock(
+                  (norm1): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+                  (attn1): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=1280, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=1280, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=1280, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=1280, out_features=1280, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=1280, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=1280, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm2): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+                  (attn2): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=1280, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=1280, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=1280, out_features=1280, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=1280, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=1280, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm3): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+                  (ff): FeedForward(
+                    (net): ModuleList(
+                      (0): GEGLU(
+                        (proj): Linear(in_features=1280, out_features=10240, bias=True)
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                      (2): Linear(in_features=5120, out_features=1280, bias=True)
+                    )
+                  )
+                )
+              )
+              (proj_out): Conv2d(1280, 1280, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+          (resnets): ModuleList(
+            (0-1): 2 x ResnetBlock2D(
+              (norm1): GroupNorm(32, 2560, eps=1e-05, affine=True)
+              (conv1): Conv2d(2560, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=1280, bias=True)
+              (norm2): GroupNorm(32, 1280, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+              (conv_shortcut): Conv2d(2560, 1280, kernel_size=(1, 1), stride=(1, 1))
+            )
+            (2): ResnetBlock2D(
+              (norm1): GroupNorm(32, 1920, eps=1e-05, affine=True)
+              (conv1): Conv2d(1920, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=1280, bias=True)
+              (norm2): GroupNorm(32, 1280, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+              (conv_shortcut): Conv2d(1920, 1280, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+          (upsamplers): ModuleList(
+            (0): Upsample2D(
+              (conv): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+        (2): CrossAttnUpBlock2D(
+          (attentions): ModuleList(
+            (0-2): 3 x Transformer2DModel(
+              (norm): GroupNorm(32, 640, eps=1e-06, affine=True)
+              (proj_in): Conv2d(640, 640, kernel_size=(1, 1), stride=(1, 1))
+              (transformer_blocks): ModuleList(
+                (0): BasicTransformerBlock(
+                  (norm1): LayerNorm((640,), eps=1e-05, elementwise_affine=True)
+                  (attn1): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=640, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=640, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=640, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=640, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=640, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=640, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=640, out_features=640, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=640, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=640, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm2): LayerNorm((640,), eps=1e-05, elementwise_affine=True)
+                  (attn2): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=640, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=640, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=640, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=640, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=640, out_features=640, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=640, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=640, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm3): LayerNorm((640,), eps=1e-05, elementwise_affine=True)
+                  (ff): FeedForward(
+                    (net): ModuleList(
+                      (0): GEGLU(
+                        (proj): Linear(in_features=640, out_features=5120, bias=True)
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                      (2): Linear(in_features=2560, out_features=640, bias=True)
+                    )
+                  )
+                )
+              )
+              (proj_out): Conv2d(640, 640, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+          (resnets): ModuleList(
+            (0): ResnetBlock2D(
+              (norm1): GroupNorm(32, 1920, eps=1e-05, affine=True)
+              (conv1): Conv2d(1920, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=640, bias=True)
+              (norm2): GroupNorm(32, 640, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(640, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+              (conv_shortcut): Conv2d(1920, 640, kernel_size=(1, 1), stride=(1, 1))
+            )
+            (1): ResnetBlock2D(
+              (norm1): GroupNorm(32, 1280, eps=1e-05, affine=True)
+              (conv1): Conv2d(1280, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=640, bias=True)
+              (norm2): GroupNorm(32, 640, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(640, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+              (conv_shortcut): Conv2d(1280, 640, kernel_size=(1, 1), stride=(1, 1))
+            )
+            (2): ResnetBlock2D(
+              (norm1): GroupNorm(32, 960, eps=1e-05, affine=True)
+              (conv1): Conv2d(960, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=640, bias=True)
+              (norm2): GroupNorm(32, 640, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(640, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+              (conv_shortcut): Conv2d(960, 640, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+          (upsamplers): ModuleList(
+            (0): Upsample2D(
+              (conv): Conv2d(640, 640, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+        (3): CrossAttnUpBlock2D(
+          (attentions): ModuleList(
+            (0-2): 3 x Transformer2DModel(
+              (norm): GroupNorm(32, 320, eps=1e-06, affine=True)
+              (proj_in): Conv2d(320, 320, kernel_size=(1, 1), stride=(1, 1))
+              (transformer_blocks): ModuleList(
+                (0): BasicTransformerBlock(
+                  (norm1): LayerNorm((320,), eps=1e-05, elementwise_affine=True)
+                  (attn1): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=320, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=320, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=320, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=320, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=320, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=320, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=320, out_features=320, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=320, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=320, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm2): LayerNorm((320,), eps=1e-05, elementwise_affine=True)
+                  (attn2): Attention(
+                    (to_q): lora.Linear(
+                      (base_layer): Linear(in_features=320, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=320, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_k): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_v): lora.Linear(
+                      (base_layer): Linear(in_features=768, out_features=320, bias=False)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=768, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=320, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (to_out): ModuleList(
+                      (0): lora.Linear(
+                        (base_layer): Linear(in_features=320, out_features=320, bias=True)
+                        (lora_dropout): ModuleDict(
+                          (default): Identity()
+                        )
+                        (lora_A): ModuleDict(
+                          (default): Linear(in_features=320, out_features=8, bias=False)
+                        )
+                        (lora_B): ModuleDict(
+                          (default): Linear(in_features=8, out_features=320, bias=False)
+                        )
+                        (lora_embedding_A): ParameterDict()
+                        (lora_embedding_B): ParameterDict()
+                        (lora_magnitude_vector): ModuleDict()
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                    )
+                  )
+                  (norm3): LayerNorm((320,), eps=1e-05, elementwise_affine=True)
+                  (ff): FeedForward(
+                    (net): ModuleList(
+                      (0): GEGLU(
+                        (proj): Linear(in_features=320, out_features=2560, bias=True)
+                      )
+                      (1): Dropout(p=0.0, inplace=False)
+                      (2): Linear(in_features=1280, out_features=320, bias=True)
+                    )
+                  )
+                )
+              )
+              (proj_out): Conv2d(320, 320, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+          (resnets): ModuleList(
+            (0): ResnetBlock2D(
+              (norm1): GroupNorm(32, 960, eps=1e-05, affine=True)
+              (conv1): Conv2d(960, 320, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=320, bias=True)
+              (norm2): GroupNorm(32, 320, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(320, 320, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+              (conv_shortcut): Conv2d(960, 320, kernel_size=(1, 1), stride=(1, 1))
+            )
+            (1-2): 2 x ResnetBlock2D(
+              (norm1): GroupNorm(32, 640, eps=1e-05, affine=True)
+              (conv1): Conv2d(640, 320, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (time_emb_proj): Linear(in_features=1280, out_features=320, bias=True)
+              (norm2): GroupNorm(32, 320, eps=1e-05, affine=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (conv2): Conv2d(320, 320, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (nonlinearity): SiLU()
+              (conv_shortcut): Conv2d(640, 320, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+        )
+      )
+      (mid_block): UNetMidBlock2DCrossAttn(
+        (attentions): ModuleList(
+          (0): Transformer2DModel(
+            (norm): GroupNorm(32, 1280, eps=1e-06, affine=True)
+            (proj_in): Conv2d(1280, 1280, kernel_size=(1, 1), stride=(1, 1))
+            (transformer_blocks): ModuleList(
+              (0): BasicTransformerBlock(
+                (norm1): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+                (attn1): Attention(
+                  (to_q): lora.Linear(
+                    (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                    (lora_dropout): ModuleDict(
+                      (default): Identity()
+                    )
+                    (lora_A): ModuleDict(
+                      (default): Linear(in_features=1280, out_features=8, bias=False)
+                    )
+                    (lora_B): ModuleDict(
+                      (default): Linear(in_features=8, out_features=1280, bias=False)
+                    )
+                    (lora_embedding_A): ParameterDict()
+                    (lora_embedding_B): ParameterDict()
+                    (lora_magnitude_vector): ModuleDict()
+                  )
+                  (to_k): lora.Linear(
+                    (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                    (lora_dropout): ModuleDict(
+                      (default): Identity()
+                    )
+                    (lora_A): ModuleDict(
+                      (default): Linear(in_features=1280, out_features=8, bias=False)
+                    )
+                    (lora_B): ModuleDict(
+                      (default): Linear(in_features=8, out_features=1280, bias=False)
+                    )
+                    (lora_embedding_A): ParameterDict()
+                    (lora_embedding_B): ParameterDict()
+                    (lora_magnitude_vector): ModuleDict()
+                  )
+                  (to_v): lora.Linear(
+                    (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                    (lora_dropout): ModuleDict(
+                      (default): Identity()
+                    )
+                    (lora_A): ModuleDict(
+                      (default): Linear(in_features=1280, out_features=8, bias=False)
+                    )
+                    (lora_B): ModuleDict(
+                      (default): Linear(in_features=8, out_features=1280, bias=False)
+                    )
+                    (lora_embedding_A): ParameterDict()
+                    (lora_embedding_B): ParameterDict()
+                    (lora_magnitude_vector): ModuleDict()
+                  )
+                  (to_out): ModuleList(
+                    (0): lora.Linear(
+                      (base_layer): Linear(in_features=1280, out_features=1280, bias=True)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=1280, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (1): Dropout(p=0.0, inplace=False)
+                  )
+                )
+                (norm2): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+                (attn2): Attention(
+                  (to_q): lora.Linear(
+                    (base_layer): Linear(in_features=1280, out_features=1280, bias=False)
+                    (lora_dropout): ModuleDict(
+                      (default): Identity()
+                    )
+                    (lora_A): ModuleDict(
+                      (default): Linear(in_features=1280, out_features=8, bias=False)
+                    )
+                    (lora_B): ModuleDict(
+                      (default): Linear(in_features=8, out_features=1280, bias=False)
+                    )
+                    (lora_embedding_A): ParameterDict()
+                    (lora_embedding_B): ParameterDict()
+                    (lora_magnitude_vector): ModuleDict()
+                  )
+                  (to_k): lora.Linear(
+                    (base_layer): Linear(in_features=768, out_features=1280, bias=False)
+                    (lora_dropout): ModuleDict(
+                      (default): Identity()
+                    )
+                    (lora_A): ModuleDict(
+                      (default): Linear(in_features=768, out_features=8, bias=False)
+                    )
+                    (lora_B): ModuleDict(
+                      (default): Linear(in_features=8, out_features=1280, bias=False)
+                    )
+                    (lora_embedding_A): ParameterDict()
+                    (lora_embedding_B): ParameterDict()
+                    (lora_magnitude_vector): ModuleDict()
+                  )
+                  (to_v): lora.Linear(
+                    (base_layer): Linear(in_features=768, out_features=1280, bias=False)
+                    (lora_dropout): ModuleDict(
+                      (default): Identity()
+                    )
+                    (lora_A): ModuleDict(
+                      (default): Linear(in_features=768, out_features=8, bias=False)
+                    )
+                    (lora_B): ModuleDict(
+                      (default): Linear(in_features=8, out_features=1280, bias=False)
+                    )
+                    (lora_embedding_A): ParameterDict()
+                    (lora_embedding_B): ParameterDict()
+                    (lora_magnitude_vector): ModuleDict()
+                  )
+                  (to_out): ModuleList(
+                    (0): lora.Linear(
+                      (base_layer): Linear(in_features=1280, out_features=1280, bias=True)
+                      (lora_dropout): ModuleDict(
+                        (default): Identity()
+                      )
+                      (lora_A): ModuleDict(
+                        (default): Linear(in_features=1280, out_features=8, bias=False)
+                      )
+                      (lora_B): ModuleDict(
+                        (default): Linear(in_features=8, out_features=1280, bias=False)
+                      )
+                      (lora_embedding_A): ParameterDict()
+                      (lora_embedding_B): ParameterDict()
+                      (lora_magnitude_vector): ModuleDict()
+                    )
+                    (1): Dropout(p=0.0, inplace=False)
+                  )
+                )
+                (norm3): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+                (ff): FeedForward(
+                  (net): ModuleList(
+                    (0): GEGLU(
+                      (proj): Linear(in_features=1280, out_features=10240, bias=True)
+                    )
+                    (1): Dropout(p=0.0, inplace=False)
+                    (2): Linear(in_features=5120, out_features=1280, bias=True)
+                  )
+                )
+              )
+            )
+            (proj_out): Conv2d(1280, 1280, kernel_size=(1, 1), stride=(1, 1))
+          )
+        )
+        (resnets): ModuleList(
+          (0-1): 2 x ResnetBlock2D(
+            (norm1): GroupNorm(32, 1280, eps=1e-05, affine=True)
+            (conv1): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (time_emb_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (norm2): GroupNorm(32, 1280, eps=1e-05, affine=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+            (conv2): Conv2d(1280, 1280, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (nonlinearity): SiLU()
+          )
+        )
+      )
+      (conv_norm_out): GroupNorm(32, 320, eps=1e-05, affine=True)
+      (conv_act): SiLU()
+      (conv_out): Conv2d(320, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+  )
+) of type <class 'peft.peft_model.PeftModel'> cannot be saved.
+2025-10-27 04:48:56 - INFO - __main__ - Pipeline completo salvo em: /Users/jwcunha/Documents/COMPANIES/AB/repos/private/premium/researcher/phd-classes/shoes-tranning/training/outputs/lora_casual_shoes_3000steps/final_pipeline
+2025-10-27 04:48:56 - INFO - __main__ - Treinamento concluído!
+Steps:   4%|▍         | 125/3000 [37:05<14:13:07, 17.80s/it, epoch=0, loss=0.0311, lr=3.13e-6]
