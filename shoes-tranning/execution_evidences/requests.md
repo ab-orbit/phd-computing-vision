@@ -48,3 +48,9 @@ curl -X 'POST' \
 
 
 ![lora_casual_shoes_3000steps_final_20251027_182641_seed2222329215.png](watermelon/lora_casual_shoes_3000steps_final_20251027_182641_seed2222329215.png)
+
+![lora_casual_shoes_3000steps_full_checkpoint-500_20251027_184041_seed2753453725.png](watermelon/lora_casual_shoes_3000steps_full_checkpoint-500_20251027_184041_seed2753453725.png)
+
+![lora_casual_shoes_3000steps_full_checkpoint-500_20251027_184109_seed2753453726.png](watermelon/lora_casual_shoes_3000steps_full_checkpoint-500_20251027_184109_seed2753453726.png)
+
+![lora_casual_shoes_3000steps_full_checkpoint-500_20251027_184136_seed2753453727.png](watermelon/lora_casual_shoes_3000steps_full_checkpoint-500_20251027_184136_seed2753453727.png)
