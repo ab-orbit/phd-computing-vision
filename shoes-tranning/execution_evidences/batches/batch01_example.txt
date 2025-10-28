@@ -1,0 +1,6 @@
+# Exemplo de arquivo de prompts válidos para geração de imagens
+# Cada linha representa um prompt diferente
+
+brown leather casual oxford shoes on white background
+black leather formal dress shoes side view
+casual sneakers white canvas shoes top view

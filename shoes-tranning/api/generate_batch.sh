@@ -343,10 +343,11 @@ cat >> "$HTML_INDEX" <<'HTMLEOF'
 HTMLEOF
 
 # Substituir placeholders
-sed -i.bak "s/MODEL_NAME_PLACEHOLDER/${MODEL_NAME}/g" "$HTML_INDEX"
-sed -i.bak "s/TOTAL_PROMPTS_PLACEHOLDER/${TOTAL_PROMPTS}/g" "$HTML_INDEX"
-sed -i.bak "s/NUM_IMAGES_PLACEHOLDER/${NUM_IMAGES}/g" "$HTML_INDEX"
-sed -i.bak "s/TIMESTAMP_PLACEHOLDER/$(date)/g" "$HTML_INDEX"
+# Usando | como delimitador para evitar conflitos com barras (/) nos nomes de modelos
+sed -i.bak "s|MODEL_NAME_PLACEHOLDER|${MODEL_NAME}|g" "$HTML_INDEX"
+sed -i.bak "s|TOTAL_PROMPTS_PLACEHOLDER|${TOTAL_PROMPTS}|g" "$HTML_INDEX"
+sed -i.bak "s|NUM_IMAGES_PLACEHOLDER|${NUM_IMAGES}|g" "$HTML_INDEX"
+sed -i.bak "s|TIMESTAMP_PLACEHOLDER|$(date)|g" "$HTML_INDEX"
 rm "${HTML_INDEX}.bak"
 
 echo -e "${GREEN}✓ Índice HTML criado: ${HTML_INDEX}${NC}"

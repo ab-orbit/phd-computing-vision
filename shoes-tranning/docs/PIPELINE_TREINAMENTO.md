@@ -513,6 +513,207 @@ Salvos a cada 500 steps, permitem:
 
 Tamanho por checkpoint: ~850 MB
 
+#### Arquivos Gerados em Cada Checkpoint
+
+Cada checkpoint contém 5 arquivos essenciais para retomada completa do treinamento:
+
+**1. model.safetensors (~850 MB)**
+
+Armazena os pesos do modelo UNet com as adaptações LoRA aplicadas.
+
+**O que contém:**
+- Todos os parâmetros treináveis do UNet (1.594.368 parâmetros LoRA)
+- Estado atual das matrizes de baixo rank (B e A)
+- Valores dos pesos em formato safetensors (mais seguro que pickle)
+
+**Por que é importante:**
+Este arquivo representa o conhecimento aprendido até aquele ponto do treinamento. É o arquivo mais crítico, pois contém o modelo em si.
+
+**Formato SafeTensors:**
+Formato desenvolvido pela Hugging Face que oferece:
+- Carregamento mais rápido que PyTorch .pth
+- Segurança contra arbitrary code execution
+- Validação de integridade automática
+- Suporte a lazy loading (carrega apenas o necessário)
+
+**Uso típico:**
+```python
+from safetensors.torch import load_file
+
+# Carregar apenas os pesos do modelo
+state_dict = load_file("checkpoint-2500/model.safetensors")
+model.load_state_dict(state_dict)
+```
+
+**2. optimizer.bin (~400 MB)**
+
+Armazena o estado interno do otimizador AdamW.
+
+**O que contém:**
+- Momentos de primeira ordem (média dos gradientes)
+- Momentos de segunda ordem (média dos gradientes ao quadrado)
+- Contadores de steps para cada parâmetro
+- Estados internos do algoritmo de otimização
+
+**Por que é importante:**
+O AdamW mantém histórico dos gradientes para fazer updates mais inteligentes. Sem este arquivo, o treinamento teria que "reaprender" esses padrões de gradiente, resultando em instabilidade ao retomar.
+
+**Detalhes do AdamW:**
+```
+Para cada parâmetro θ, AdamW mantém:
+- m_t: momento de primeira ordem (média móvel dos gradientes)
+- v_t: momento de segunda ordem (média móvel dos gradientes²)
+- β1, β2: fatores de decay (tipicamente 0.9, 0.999)
+
+Update rule:
+θ_t+1 = θ_t - lr × (m_t / √v_t + ε) - wd × θ_t
+```
+
+**Tamanho explicado:**
+~400 MB porque armazena 2 tensores (m_t e v_t) do mesmo tamanho dos parâmetros treináveis, dobrando o uso de memória.
+
+**3. scheduler.bin (~1 KB)**
+
+Armazena o estado do learning rate scheduler (cosine annealing).
+
+**O que contém:**
+- Step atual do scheduler
+- Learning rate atual
+- Parâmetros do schedule (warmup_steps, max_lr, min_lr)
+- Estado da curva cosine
+
+**Por que é importante:**
+Garante que o learning rate continue decaindo corretamente ao retomar o treinamento. Sem ele, o LR voltaria ao valor inicial, causando instabilidade.
+
+**Estrutura típica:**
+```json
+{
+  "last_epoch": 2500,
+  "last_lr": [2.3e-5],
+  "_step_count": 2501,
+  "base_lrs": [1e-4],
+  "warmup_steps": 500,
+  "total_steps": 3000
+}
+```
+
+**4. sampler.bin (~10 KB)**
+
+Armazena o estado do sampler do DataLoader.
+
+**O que contém:**
+- Ordem de shuffle atual do dataset
+- Índice da próxima amostra a ser processada
+- Seed do gerador aleatório
+- Estado do epoch atual
+
+**Por que é importante:**
+Garante que ao retomar o treinamento, não haja repetição ou pulo de amostras. Mantém a consistência da sequência de dados apresentada ao modelo.
+
+**Funcionamento:**
+```python
+# O sampler decide a ordem das amostras
+# Exemplo de ordem em um mini-dataset:
+Epoch 1: [3, 1, 4, 0, 2]  # Ordem shuffled
+Epoch 2: [2, 4, 1, 3, 0]  # Nova ordem shuffled
+
+# Se interromper no índice 2 do Epoch 1:
+# sampler.bin salva: epoch=1, index=2, próximo=4
+# Ao retomar: continua de onde parou
+```
+
+**5. random_states_0.pkl (~5 KB)**
+
+Armazena os estados dos geradores de números aleatórios.
+
+**O que contém:**
+- Estado do gerador Python random
+- Estado do gerador NumPy random
+- Estado do gerador PyTorch CPU
+- Estado do gerador PyTorch GPU/MPS (se aplicável)
+
+**Por que é importante:**
+Garante reprodutibilidade completa do treinamento. Operações como dropout, data augmentation, inicialização de ruído no diffusion, todos dependem de aleatoriedade controlada.
+
+**Estados salvos:**
+```python
+{
+  'python_state': random.getstate(),     # Módulo random do Python
+  'numpy_state': np.random.get_state(),  # NumPy random
+  'torch_state': torch.get_rng_state(), # PyTorch CPU
+  'torch_mps_state': torch.mps.get_rng_state()  # Apple Silicon
+}
+```
+
+**Exemplo de impacto:**
+```python
+# Sem salvar random state:
+torch.randn(3, 3)  # Gera tensor aleatório A
+# [interrupção]
+torch.randn(3, 3)  # Gera tensor diferente B ❌
+
+# Com random state salvo:
+torch.randn(3, 3)  # Gera tensor aleatório A
+# [interrupção + restaura random state]
+torch.randn(3, 3)  # Gera exatamente o tensor A ✓
+```
+
+#### Resumo Comparativo dos Arquivos
+
+```
+┌─────────────────┬──────────────┬─────────────────────────────────┐
+│ Arquivo         │ Tamanho      │ Propósito Principal             │
+├─────────────────┼──────────────┼─────────────────────────────────┤
+│ model.safetensors│ ~850 MB     │ Pesos do modelo (conhecimento)  │
+│ optimizer.bin   │ ~400 MB      │ Histórico de gradientes (Adam)  │
+│ scheduler.bin   │ ~1 KB        │ Estado do learning rate         │
+│ sampler.bin     │ ~10 KB       │ Ordem do dataset                │
+│ random_states_0.pkl│ ~5 KB    │ Reprodutibilidade aleatória     │
+├─────────────────┼──────────────┼─────────────────────────────────┤
+│ TOTAL           │ ~1.25 GB     │ Checkpoint completo             │
+└─────────────────┴──────────────┴─────────────────────────────────┘
+```
+
+#### Como Retomar o Treinamento
+
+```python
+from accelerate import Accelerator
+
+# Inicializar accelerator
+accelerator = Accelerator()
+
+# Preparar modelo, optimizer, etc.
+model, optimizer, dataloader, lr_scheduler = accelerator.prepare(
+    unet, optimizer, train_dataloader, lr_scheduler
+)
+
+# Carregar checkpoint completo
+accelerator.load_state("checkpoints/checkpoint-2500")
+
+# Continuar treinamento exatamente de onde parou
+for epoch in range(start_epoch, num_epochs):
+    for batch in dataloader:
+        # Training loop continua normalmente
+        ...
+```
+
+#### Diferença Entre Checkpoint e Modelo Final
+
+**Checkpoint (1.25 GB):**
+- Contém TUDO para retomar treinamento
+- Inclui estados do optimizer, scheduler, samplers
+- Uso: Desenvolvimento, debugging, retomada de treino
+
+**Modelo Final (6 MB - apenas LoRA):**
+- Contém APENAS os pesos LoRA treinados
+- Formato compacto para distribuição
+- Uso: Inferência, produção, compartilhamento
+
+**Pipeline Completo (4.2 GB):**
+- Modelo base + LoRA integrado + todos componentes
+- Pronto para uso imediato
+- Uso: Deploy, demonstração, testes
+
 **6.2.2 LoRA Weights**
 
 Arquivo compacto contendo apenas as adaptações LoRA:
