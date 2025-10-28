@@ -499,8 +499,8 @@ Gerados com checkpoint-1500:
 
 Gerados com checkpoint-1500:
 
-![Brown Leather 1](execution_evidences/brown_lether/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230636_seed3101469424.png)
-![Brown Leather 2](execution_evidences/brown_lether/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230706_seed3101469425.png)
+![Brown Leather 1](execution_evidences/brown_leather_oxford/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230636_seed3101469424.png)
+![Brown Leather 2](execution_evidences/brown_leather_oxford/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230706_seed3101469425.png)
 
 ### Sapatos Cinza
 
@@ -521,6 +521,582 @@ Experimentação com designs mais artísticos:
 
 Para ver todos os exemplos gerados durante o desenvolvimento, consulte:
 - [Galeria Completa de Imagens](execution_evidences/gallery.md) - 54 imagens catalogadas
+
+---
+
+## Geração de Imagens Sintéticas com Data Augmentation
+
+### Técnicas de Rotação e Transformação
+
+Além da geração pura via diffusion models, o projeto suporta expansão do dataset através de técnicas de data augmentation aplicadas às imagens geradas.
+
+#### 1. Rotação Geométrica
+
+**Rotações Sutis (±5°, ±10°, ±15°)**
+
+Para manter o contexto de fotografia de produto, rotações sutis são mais apropriadas:
+
+```python
+def generate_subtle_rotations(image_path, output_dir, angles=[-15, -10, -5, 5, 10, 15]):
+    """
+    Gera rotações sutis mantendo o contexto de produto.
+    Usa preenchimento branco para manter fundo consistente.
+    """
+    from PIL import Image
+    import os
+
+    img = Image.open(image_path)
+    base_name = os.path.splitext(os.path.basename(image_path))[0]
+    os.makedirs(output_dir, exist_ok=True)
+
+    generated_paths = []
+
+    for angle in angles:
+        # Rotação com fundo branco
+        rotated = img.rotate(
+            angle,
+            expand=False,  # Não expandir para manter dimensões
+            fillcolor=(255, 255, 255)  # Fundo branco
+        )
+
+        output_path = os.path.join(output_dir, f"{base_name}_rot{angle:+d}.png")
+        rotated.save(output_path)
+        generated_paths.append(output_path)
+
+    return generated_paths
+```
+
+#### 2. Pipeline de Augmentation Completo
+
+```python
+import torchvision.transforms as T
+from PIL import Image
+import os
+
+class ProductImageAugmentation:
+    """
+    Pipeline de augmentation para imagens de produtos.
+    Mantém características de fotografia profissional.
+    """
+
+    def __init__(self, output_size=512):
+        self.output_size = output_size
+
+        # Transformações leves para manter qualidade profissional
+        self.transforms = T.Compose([
+            # Rotação sutil
+            T.RandomRotation(degrees=15, fill=(255, 255, 255)),
+
+            # Ajuste de brilho e contraste
+            T.ColorJitter(
+                brightness=0.1,  # ±10% brilho
+                contrast=0.1,    # ±10% contraste
+                saturation=0.1,  # ±10% saturação
+                hue=0.02         # ±2% matiz
+            ),
+
+            # Flip horizontal (comum em fotografia de produto)
+            T.RandomHorizontalFlip(p=0.5),
+
+            # Resize para garantir dimensões consistentes
+            T.Resize((output_size, output_size)),
+        ])
+
+    def generate_variants(self, image_path, output_dir, num_variants=5):
+        """
+        Gera múltiplas variações de uma imagem.
+
+        Retorna:
+        - Lista de caminhos das variantes geradas
+        """
+        img = Image.open(image_path)
+        base_name = os.path.splitext(os.path.basename(image_path))[0]
+        os.makedirs(output_dir, exist_ok=True)
+
+        generated_paths = []
+
+        for i in range(num_variants):
+            variant = self.transforms(img)
+            output_path = os.path.join(output_dir, f"{base_name}_var{i+1}.png")
+            variant.save(output_path)
+            generated_paths.append(output_path)
+
+        return generated_paths
+```
+
+#### 3. Estratégia de Expansão Híbrida
+
+**Combinando Geração + Augmentation:**
+
+```python
+class DatasetExpansion:
+    """
+    Estratégia completa de expansão de dataset combinando:
+    1. Geração via diffusion model
+    2. Augmentation das imagens geradas
+    """
+
+    def __init__(self, diffusion_pipeline, augmentation_pipeline):
+        self.diffusion = diffusion_pipeline
+        self.augmentation = augmentation_pipeline
+
+    def expand_dataset(
+        self,
+        prompts_list,
+        images_per_prompt=4,
+        augmentations_per_image=5,
+        output_dir="expanded_dataset"
+    ):
+        """
+        Expande dataset usando geração + augmentation.
+
+        Fluxo:
+        1. Gera N imagens por prompt via diffusion
+        2. Para cada imagem gerada, cria M augmentations
+        3. Resultado: N × M imagens por prompt
+
+        Exemplo:
+        - 100 prompts
+        - 4 imagens por prompt = 400 imagens geradas
+        - 5 augmentations por imagem = 2,000 imagens finais
+        - Expansão de 5x sobre as imagens geradas
+        """
+
+        os.makedirs(output_dir, exist_ok=True)
+        generated_dir = os.path.join(output_dir, "generated")
+        augmented_dir = os.path.join(output_dir, "augmented")
+        os.makedirs(generated_dir, exist_ok=True)
+        os.makedirs(augmented_dir, exist_ok=True)
+
+        stats = {
+            'total_prompts': len(prompts_list),
+            'images_generated': 0,
+            'images_augmented': 0,
+            'total_images': 0
+        }
+
+        for idx, prompt in enumerate(prompts_list):
+            print(f"[{idx+1}/{len(prompts_list)}] Processing: {prompt}")
+
+            # Fase 1: Geração via Diffusion
+            generated_images = self.diffusion(
+                prompt,
+                num_images_per_prompt=images_per_prompt,
+                num_inference_steps=50,
+                guidance_scale=7.5
+            ).images
+
+            stats['images_generated'] += len(generated_images)
+
+            # Fase 2: Augmentation de cada imagem gerada
+            for img_idx, img in enumerate(generated_images):
+                # Salvar imagem original gerada
+                gen_path = os.path.join(
+                    generated_dir,
+                    f"prompt{idx:04d}_gen{img_idx}.png"
+                )
+                img.save(gen_path)
+
+                # Criar augmentations
+                augmented_paths = self.augmentation.generate_variants(
+                    gen_path,
+                    augmented_dir,
+                    num_variants=augmentations_per_image
+                )
+
+                stats['images_augmented'] += len(augmented_paths)
+
+        stats['total_images'] = stats['images_generated'] + stats['images_augmented']
+
+        return stats
+
+# Exemplo de uso
+from diffusers import StableDiffusionPipeline
+
+# Inicializar pipelines
+diffusion_pipeline = StableDiffusionPipeline.from_pretrained(
+    "training/outputs/lora_casual_shoes_3000steps_full/final_pipeline"
+)
+
+augmentation_pipeline = ProductImageAugmentation(output_size=512)
+
+# Criar expansor de dataset
+expander = DatasetExpansion(diffusion_pipeline, augmentation_pipeline)
+
+# Prompts para geração
+prompts = [
+    "brown leather casual shoes on white background",
+    "black canvas sneakers on white background",
+    "grey suede loafers on white background",
+]
+
+# Expandir dataset
+stats = expander.expand_dataset(
+    prompts,
+    images_per_prompt=4,
+    augmentations_per_image=5,
+    output_dir="expanded_casual_shoes"
+)
+
+print(f"Dataset expandido:")
+print(f"  Imagens geradas: {stats['images_generated']}")
+print(f"  Imagens augmentadas: {stats['images_augmented']}")
+print(f"  Total: {stats['total_images']}")
+```
+
+#### 4. Considerações Importantes
+
+**O que fazer:**
+- Rotações sutis (±15° máximo) para manter realismo
+- Flip horizontal (comum em fotografia de produto)
+- Ajustes leves de cor/brilho (±10%)
+- Manter sempre fundo branco
+
+**O que evitar:**
+- Rotações extremas (>30°) que quebram contexto
+- Distorções perspectivas agressivas
+- Crops que removem partes do produto
+- Transformações que degradam qualidade
+
+---
+
+## Avaliação e Métricas do Modelo
+
+### Metodologia de Avaliação
+
+Este projeto implementa um sistema completo de avaliação de modelos generativos seguindo as melhores práticas da literatura, conforme definido nas Tasks 2.2 (SPRINT 2) e Task 4.1 (SPRINT 4).
+
+#### 1. Avaliação Inicial (Task 2.2 - SPRINT 2)
+
+**Objetivo**: Validação rápida do modelo protótipo
+
+##### 1.1 CLIP Score
+
+Mede o alinhamento semântico entre imagem gerada e prompt textual.
+
+```python
+import torch
+from transformers import CLIPProcessor, CLIPModel
+from PIL import Image
+import numpy as np
+
+class CLIPEvaluator:
+    """
+    Avaliador usando CLIP para medir alinhamento texto-imagem.
+    """
+
+    def __init__(self, model_name="openai/clip-vit-base-patch32"):
+        self.device = "mps" if torch.backends.mps.is_available() else "cpu"
+        self.model = CLIPModel.from_pretrained(model_name).to(self.device)
+        self.processor = CLIPProcessor.from_pretrained(model_name)
+        self.model.eval()
+
+    def calculate_clip_score(self, image, text):
+        """
+        Calcula CLIP score para uma imagem e texto.
+
+        Retorna:
+        - score (float): Valor entre 0-100 (quanto maior, melhor)
+        """
+        # Preprocessar
+        inputs = self.processor(
+            text=[text],
+            images=image,
+            return_tensors="pt",
+            padding=True
+        ).to(self.device)
+
+        # Calcular similaridade
+        with torch.no_grad():
+            outputs = self.model(**inputs)
+            logits_per_image = outputs.logits_per_image
+            score = logits_per_image.item()
+
+        return score
+
+    def batch_evaluate(self, images, prompts):
+        """
+        Avalia batch de imagens.
+
+        Retorna dict com scores individuais, média e desvio padrão
+        """
+        scores = []
+
+        for img, prompt in zip(images, prompts):
+            score = self.calculate_clip_score(img, prompt)
+            scores.append(score)
+
+        return {
+            'scores': scores,
+            'mean': np.mean(scores),
+            'std': np.std(scores),
+            'min': np.min(scores),
+            'max': np.max(scores)
+        }
+
+# Exemplo de uso
+evaluator = CLIPEvaluator()
+
+test_images = [
+    Image.open("execution_evidences/black/image1.png"),
+    Image.open("execution_evidences/grey/image2.png")
+]
+
+test_prompts = [
+    "black casual shoes on white background",
+    "grey casual shoes on white background"
+]
+
+results = evaluator.batch_evaluate(test_images, test_prompts)
+
+print(f"CLIP Score médio: {results['mean']:.2f} ± {results['std']:.2f}")
+print(f"Range: [{results['min']:.2f}, {results['max']:.2f}]")
+```
+
+**Interpretação CLIP Score:**
+```
+Score > 30:  Excelente alinhamento
+Score 25-30: Bom alinhamento (Meta Sprint 2)
+Score 20-25: Alinhamento aceitável
+Score < 20:  Alinhamento fraco (requer ajustes)
+```
+
+##### 1.2 Inspeção Visual
+
+Script automatizado para criar grade comparativa:
+
+```python
+import matplotlib.pyplot as plt
+
+def create_visual_comparison_grid(
+    generated_images,
+    prompts,
+    clip_scores,
+    output_path="evaluation_grid.png"
+):
+    """
+    Cria grade visual para inspeção qualitativa.
+    """
+    n_images = len(generated_images)
+    cols = 4
+    rows = (n_images + cols - 1) // cols
+
+    fig, axes = plt.subplots(rows, cols, figsize=(20, 5*rows))
+    axes = axes.flatten()
+
+    for idx, (img, prompt, score) in enumerate(zip(generated_images, prompts, clip_scores)):
+        ax = axes[idx]
+        ax.imshow(img)
+        ax.axis('off')
+
+        # Título com prompt e score
+        title = f"{prompt[:40]}...\nCLIP: {score:.2f}"
+        ax.set_title(title, fontsize=10)
+
+        # Borda colorida baseada no score
+        if score > 30:
+            color = 'green'
+        elif score > 25:
+            color = 'yellow'
+        else:
+            color = 'red'
+
+        for spine in ax.spines.values():
+            spine.set_edgecolor(color)
+            spine.set_linewidth(3)
+
+    # Ocultar axes vazios
+    for idx in range(n_images, len(axes)):
+        axes[idx].axis('off')
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
+    print(f"Grid salvo em: {output_path}")
+
+    return output_path
+```
+
+#### 2. Avaliação Completa (Task 4.1 - SPRINT 4)
+
+**Objetivo**: Validação rigorosa do modelo final
+
+##### 2.1 FID Score (Fréchet Inception Distance)
+
+Mede similaridade estatística entre distribuições de imagens reais e geradas.
+
+```python
+from pytorch_fid import fid_score
+
+class FIDEvaluator:
+    """
+    Calculador de FID Score usando pytorch-fid.
+    """
+
+    def calculate_fid(
+        self,
+        real_images_path,
+        generated_images_path,
+        batch_size=50,
+        device="mps"
+    ):
+        """
+        Calcula FID entre imagens reais e geradas.
+
+        Retorna:
+        - fid_value (float): Valor do FID (quanto menor, melhor)
+        """
+
+        print("Calculando FID Score...")
+        print(f"  Real images: {real_images_path}")
+        print(f"  Generated images: {generated_images_path}")
+
+        fid_value = fid_score.calculate_fid_given_paths(
+            paths=[real_images_path, generated_images_path],
+            batch_size=batch_size,
+            device=device,
+            dims=2048  # Dimensão do Inception features
+        )
+
+        return fid_value
+
+    def interpret_fid(self, fid_value):
+        """
+        Interpreta o valor do FID.
+        """
+        if fid_value < 10:
+            return "Excelente - Qualidade indistinguível de imagens reais"
+        elif fid_value < 20:
+            return "Muito Bom - Alta qualidade"
+        elif fid_value < 30:
+            return "Bom - Qualidade aceitável"
+        elif fid_value < 50:
+            return "Regular - Requer melhorias"
+        else:
+            return "Fraco - Modelo precisa ser retreinado"
+
+# Exemplo de uso
+fid_evaluator = FIDEvaluator()
+
+fid_value = fid_evaluator.calculate_fid(
+    real_images_path="data/casual_shoes/train/images",
+    generated_images_path="api/generated_batch/batch_20251027_230241",
+    batch_size=50
+)
+
+print(f"\nFID Score: {fid_value:.2f}")
+print(f"Interpretação: {fid_evaluator.interpret_fid(fid_value)}")
+```
+
+**Interpretação FID Score:**
+```
+FID < 10:  Excelente (quase indistinguível de imagens reais)
+FID 10-20: Muito bom
+FID 20-30: Bom
+FID 30-50: Aceitável (target do projeto - Task 4.1)
+FID > 50:  Requer melhorias
+```
+
+##### 2.2 Inception Score (IS)
+
+Mede qualidade e diversidade das imagens geradas.
+
+```python
+from torchmetrics.image.inception import InceptionScore
+import torch
+
+class ISEvaluator:
+    """
+    Calculador de Inception Score.
+    """
+
+    def __init__(self):
+        self.metric = InceptionScore(normalize=True)
+
+    def calculate_is(self, images_tensor):
+        """
+        Calcula Inception Score.
+
+        Parâmetros:
+        - images_tensor: Tensor (N, 3, H, W) com imagens
+
+        Retorna:
+        - is_mean, is_std: Média e desvio padrão do IS
+        """
+        self.metric.update(images_tensor)
+        is_mean, is_std = self.metric.compute()
+
+        return is_mean.item(), is_std.item()
+
+# Exemplo de uso
+is_evaluator = ISEvaluator()
+# ... carregar imagens como tensor
+# is_mean, is_std = is_evaluator.calculate_is(images_tensor)
+```
+
+**Interpretação Inception Score:**
+```
+IS > 10:   Excelente qualidade e diversidade
+IS 6-10:   Boa qualidade e diversidade (target Task 4.1)
+IS 3-6:    Qualidade moderada
+IS < 3:    Baixa qualidade ou baixa diversidade
+```
+
+#### 3. Script Completo de Avaliação
+
+```bash
+# evaluate_model.py - Script completo disponível no repositório
+
+python training/scripts/evaluate_model.py \
+  --generated api/generated_batch/batch_20251027_230241 \
+  --real data/casual_shoes/train/images \
+  --prompts execution_evidences/batches/batch01.txt \
+  --output evaluation_report.txt
+```
+
+**Saída Exemplo:**
+```
+======================================================================
+RELATÓRIO DE AVALIAÇÃO DO MODELO
+======================================================================
+
+1. CLIP SCORE (Alinhamento Texto-Imagem)
+   Média: 28.45
+   Desvio: 2.31
+   Range: [24.12, 32.78]
+   ✓ BOM - Alinhamento satisfatório
+
+2. FID SCORE (Similaridade com Dataset Real)
+   FID: 35.67
+   Bom - Qualidade aceitável
+   ✓ META ATINGIDA (FID < 50)
+
+3. INCEPTION SCORE (Qualidade e Diversidade)
+   IS: 7.23 ± 0.89
+   ✓ META ATINGIDA (IS > 6)
+
+4. DIVERSIDADE
+   Score: 0.421
+   ✓ BOA DIVERSIDADE
+
+======================================================================
+CONCLUSÃO
+======================================================================
+✓ MODELO APROVADO - Todas as métricas atingidas
+```
+
+#### 4. Metas de Avaliação
+
+**Sprint 2 (Protótipo - Task 2.2):**
+- CLIP Score > 25
+- Inspeção visual satisfatória
+- Validação rápida em 300-500 imagens
+
+**Sprint 4 (Modelo Final - Task 4.1):**
+- CLIP Score > 28
+- FID Score < 40 (target) ou < 50 (aceitável)
+- Inception Score > 6
+- Diversity Score > 0.3
+- Avaliação em 3,000-5,000 imagens
 
 ---
 

@@ -72,13 +72,13 @@ Comparação entre referência (Gemini) e gerações do modelo treinado.
 <tr>
 <td width="50%">
 
-![Brown Reference](brown_lether/Gemini_Generated_Image_ifcgxtifcgxtifcg.png)
+![Brown Reference](brown_leather_oxford/Gemini_Generated_Image_ifcgxtifcgxtifcg.png)
 **Referência (Gemini)**
 
 </td>
 <td width="50%">
 
-![Brown 1](brown_lether/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230636_seed3101469424.png)
+![Brown 1](brown_leather_oxford/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230636_seed3101469424.png)
 **Checkpoint 1500** - Seed: 3101469424
 
 </td>
@@ -86,13 +86,13 @@ Comparação entre referência (Gemini) e gerações do modelo treinado.
 <tr>
 <td width="50%">
 
-![Brown 2](brown_lether/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230706_seed3101469425.png)
+![Brown 2](brown_leather_oxford/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230706_seed3101469425.png)
 **Checkpoint 1500** - Seed: 3101469425
 
 </td>
 <td width="50%">
 
-![Brown 3](brown_lether/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230738_seed3101469426.png)
+![Brown 3](brown_leather_oxford/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230738_seed3101469426.png)
 **Checkpoint 1500** - Seed: 3101469426
 
 </td>
@@ -100,7 +100,7 @@ Comparação entre referência (Gemini) e gerações do modelo treinado.
 <tr>
 <td colspan="2" align="center">
 
-![Brown 4](brown_lether/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230811_seed3101469427.png)
+![Brown 4](brown_leather_oxford/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230811_seed3101469427.png)
 **Checkpoint 1500** - Seed: 3101469427
 
 </td>
