@@ -760,25 +760,92 @@ print(f"  Total: {stats['total_images']}")
 
 ---
 
+## Avaliação de Checkpoints e Modelo Recomendado
+
+### Checkpoint Recomendado para Produção: 1500
+
+Baseado em avaliação formal automatizada com métricas científicas (FID + CLIP Score), o **checkpoint 1500** é unanimemente recomendado para produção.
+
+**Resultados da Avaliação**:
+
+| Checkpoint | FID Score | CLIP Score* | Classificação |
+|------------|-----------|-------------|---------------|
+| 500 | 127.63 | ~29.0 | Ruim |
+| **1500** | **73.08** | **~30.0** | **MELHOR** |
+| 2500 | 74.06 | ~29.5 | Bom |
+| 3000 | 91.98 | ~29.5 | Razoável |
+
+\*CLIP Score das imagens correspondentes ao prompt de validação
+
+**Justificativa**:
+- **Melhor FID Score**: 43% melhor que checkpoint 500, 26% melhor que checkpoint 3000
+- **Melhor CLIP Score**: Excelente alinhamento texto-imagem (~30.0)
+- **Eficiência**: 50% menos steps que checkpoint 3000
+- **Sem Overfitting**: Checkpoint 3000 mostra degradação (overfitting detectado)
+
+**Documentação Completa**:
+- [CHECKPOINT_RECOMMENDATION.md](CHECKPOINT_RECOMMENDATION.md) - Recomendação detalhada
+- [evaluation/RESUMO_EXECUTIVO.md](evaluation/RESUMO_EXECUTIVO.md) - Resumo executivo
+- [evaluation/RESULTADO_AVALIACAO_FINAL.md](evaluation/RESULTADO_AVALIACAO_FINAL.md) - Análise técnica completa
+- [evaluation/METODOLOGIA_AVALIACAO.md](evaluation/METODOLOGIA_AVALIACAO.md) - Fundamentação científica
+
+---
+
 ## Avaliação e Métricas do Modelo
 
-### Metodologia de Avaliação
+### Sistema de Avaliação Implementado
 
-Este projeto implementa um sistema completo de avaliação de modelos generativos seguindo as melhores práticas da literatura, conforme definido nas Tasks 2.2 (SPRINT 2) e Task 4.1 (SPRINT 4).
+Este projeto implementa um sistema completo e automatizado de avaliação de modelos generativos seguindo as melhores práticas da literatura científica.
 
-#### 1. Avaliação Inicial (Task 2.2 - SPRINT 2)
+#### Métricas Utilizadas
 
-**Objetivo**: Validação rápida do modelo protótipo
+##### 1. FID Score (Fréchet Inception Distance)
 
-##### 1.1 CLIP Score
+Mede a qualidade visual e diversidade das imagens geradas comparando distribuições estatísticas.
 
-Mede o alinhamento semântico entre imagem gerada e prompt textual.
+**Interpretação FID Score:**
+```
+FID < 10:   Excelente (quase indistinguível de imagens reais)
+FID 10-20:  Muito bom
+FID 20-50:  Bom
+FID 50-100: Razoável
+FID >= 100: Ruim (requer melhorias)
+```
 
+**Implementação**:
+```python
+from calculate_metrics import FIDCalculator
+
+# Calcular FID
+calculator = FIDCalculator(device='mps')
+fid_score = calculator.calculate_fid(
+    real_images_dir='data/casual_shoes/train/images',
+    generated_images_dir='api/generated_images',
+    batch_size=50
+)
+
+print(f"FID Score: {fid_score:.2f}")
+```
+
+##### 2. CLIP Score
+
+Mede o alinhamento semântico entre imagens geradas e prompts textuais usando o modelo CLIP da OpenAI.
+
+**Interpretação CLIP Score:**
+```
+CLIP > 30:  Excelente alinhamento
+CLIP 27-30: Muito bom alinhamento
+CLIP 25-27: Bom alinhamento
+CLIP 20-25: Alinhamento aceitável
+CLIP < 20:  Alinhamento fraco
+```
+
+**Implementação**:
 ```python
 import torch
-from transformers import CLIPProcessor, CLIPModel
 from PIL import Image
 import numpy as np
+import clip
 
 class CLIPEvaluator:
     """

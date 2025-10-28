@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Outputs de Treinamento (estao no disco externo)
+training/outputs/
+!training/outputs/.gitkeep
+
+# Imagens Geradas pela API
+api/generated_images/*.png
+api/generated_batch/
+!api/generated_images/.gitkeep
+!api/generated_batch/.gitkeep
+
+# Logs
+*.log
+*.txt
+!requirements*.txt
+!README.txt
+
+# Dados e Modelos Grandes
+data/casual_shoes/train/images/*.png
+*.safetensors
+*.bin
+*.ckpt
+*.pth
+model_index.json
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# Environment Variables
+.env
+.env.local
+
+# Node Modules (Frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Evaluation Outputs (manter estrutura mas nao binarios grandes)
+evaluation/checkpoint_results/*.png
+evaluation/checkpoint_results_full/*.png
