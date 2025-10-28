@@ -114,9 +114,19 @@ A professional product photo of gray casual shoes with white sole on white backg
 ![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225647_seed974209927.png](sculptural/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225647_seed974209927.png)
 ![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225720_seed974209928.png](sculptural/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225720_seed974209928.png)
 
+NANO BANANA
+
+![Gemini_Generated_Image_2ovqc82ovqc82ovq.png](sculptural/Gemini_Generated_Image_2ovqc82ovqc82ovq.png)
 
 ```
 A professional product photo of brown leather casual oxford shoes on white background, classic design, product photography
 ```
 
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230636_seed3101469424.png](brown_lether/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230636_seed3101469424.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230706_seed3101469425.png](brown_lether/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230706_seed3101469425.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230738_seed3101469426.png](brown_lether/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230738_seed3101469426.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230811_seed3101469427.png](brown_lether/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_230811_seed3101469427.png)
 
+NANO BANANA
+
+![Gemini_Generated_Image_ifcgxtifcgxtifcg.png](brown_lether/Gemini_Generated_Image_ifcgxtifcgxtifcg.png)
