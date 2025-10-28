@@ -1,0 +1,29 @@
+# Requisitos para avaliação de métricas de qualidade de imagens geradas
+# Instalar com: pip install -r requirements.txt
+
+# PyTorch e dependências core
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+
+# CLIP para cálculo de CLIP Score
+# O pacote 'clip' é o oficial da OpenAI
+git+https://github.com/openai/CLIP.git
+
+# Pillow para manipulação de imagens
+Pillow>=10.0.0
+
+# SciPy para cálculos estatísticos (necessário para FID)
+scipy>=1.10.0
+
+# tqdm para barras de progresso
+tqdm>=4.65.0
+
+# Opcional: clean-fid (alternativa ao cálculo manual de FID)
+# clean-fid>=0.1.35
+
+# Observações:
+# 1. Para Apple Silicon (M1/M2/M3), usar PyTorch com suporte MPS
+# 2. Para CUDA, instalar PyTorch com suporte CUDA apropriado
+# 3. O modelo Inception v3 será baixado automaticamente pelo torchvision
+# 4. Os modelos CLIP serão baixados automaticamente no primeiro uso

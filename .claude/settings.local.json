@@ -3,7 +3,9 @@
     "allow": [
       "Read(//Users/jwcunha/**)",
       "Bash(mkdir:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Read(//Volumes/T9/COMPANIES/AB/repos/private/premium/researcher/phd-classes/computer-vision/shoes-training-outputs/lora_casual_shoes_3000steps_full/**)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []

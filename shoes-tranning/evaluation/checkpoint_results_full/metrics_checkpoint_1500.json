@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "real_images_count": 1991,
+    "generated_images_count": 32,
+    "device": "mps",
+    "real_images_dir": "/Users/jwcunha/Documents/COMPANIES/AB/repos/private/premium/researcher/phd-classes/shoes-tranning/data/casual_shoes/train/images",
+    "generated_images_dir": "/Volumes/T9/COMPANIES/AB/repos/private/premium/researcher/phd-classes/computer-vision/shoes-training-outputs/lora_casual_shoes_3000steps_full/validation/checkpoint-1500"
+  },
+  "fid": {
+    "score": 73.08496619798277,
+    "interpretation": "Razoável (< 100)"
+  },
+  "clip_score": {
+    "mean": 14.917755126953125,
+    "std": 14.929398198489952,
+    "min": 0.0,
+    "max": 31.2744140625,
+    "median": 14.09912109375,
+    "individual_scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      30.078125,
+      29.296875,
+      31.005859375,
+      29.6630859375,
+      28.4423828125,
+      29.6142578125,
+      29.98046875,
+      31.1767578125,
+      31.2744140625,
+      29.8095703125,
+      30.2734375,
+      29.443359375,
+      28.1982421875,
+      30.126953125,
+      29.7607421875,
+      29.2236328125
+    ],
+    "interpretation": "Ruim (<= 20)"
+  }
+}

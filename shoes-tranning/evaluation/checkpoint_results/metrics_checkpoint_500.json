@@ -1,0 +1,13 @@
+{
+  "metadata": {
+    "real_images_count": 1991,
+    "generated_images_count": 32,
+    "device": "mps",
+    "real_images_dir": "/Users/jwcunha/Documents/COMPANIES/AB/repos/private/premium/researcher/phd-classes/shoes-tranning/data/casual_shoes/train/images",
+    "generated_images_dir": "/Volumes/T9/COMPANIES/AB/repos/private/premium/researcher/phd-classes/computer-vision/shoes-training-outputs/lora_casual_shoes_3000steps_full/validation/checkpoint-500"
+  },
+  "fid": {
+    "score": 127.63083584006347,
+    "interpretation": "Ruim (>= 100)"
+  }
+}

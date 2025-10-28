@@ -1,0 +1,222 @@
+{
+  "500": {
+    "metadata": {
+      "real_images_count": 1991,
+      "generated_images_count": 32,
+      "device": "mps",
+      "real_images_dir": "/Users/jwcunha/Documents/COMPANIES/AB/repos/private/premium/researcher/phd-classes/shoes-tranning/data/casual_shoes/train/images",
+      "generated_images_dir": "/Volumes/T9/COMPANIES/AB/repos/private/premium/researcher/phd-classes/computer-vision/shoes-training-outputs/lora_casual_shoes_3000steps_full/validation/checkpoint-500"
+    },
+    "fid": {
+      "score": 127.63083584006347,
+      "interpretation": "Ruim (>= 100)"
+    },
+    "clip_score": {
+      "mean": 14.46990966796875,
+      "std": 14.486405277522488,
+      "min": 0.0,
+      "max": 30.95703125,
+      "median": 13.7939453125,
+      "individual_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        27.734375,
+        28.466796875,
+        28.3203125,
+        29.1748046875,
+        29.7607421875,
+        27.6123046875,
+        28.90625,
+        29.6875,
+        29.4189453125,
+        30.029296875,
+        30.224609375,
+        28.5400390625,
+        28.662109375,
+        30.95703125,
+        27.587890625,
+        27.9541015625
+      ],
+      "interpretation": "Ruim (<= 20)"
+    }
+  },
+  "1500": {
+    "metadata": {
+      "real_images_count": 1991,
+      "generated_images_count": 32,
+      "device": "mps",
+      "real_images_dir": "/Users/jwcunha/Documents/COMPANIES/AB/repos/private/premium/researcher/phd-classes/shoes-tranning/data/casual_shoes/train/images",
+      "generated_images_dir": "/Volumes/T9/COMPANIES/AB/repos/private/premium/researcher/phd-classes/computer-vision/shoes-training-outputs/lora_casual_shoes_3000steps_full/validation/checkpoint-1500"
+    },
+    "fid": {
+      "score": 73.08496619798277,
+      "interpretation": "Razoável (< 100)"
+    },
+    "clip_score": {
+      "mean": 14.917755126953125,
+      "std": 14.929398198489952,
+      "min": 0.0,
+      "max": 31.2744140625,
+      "median": 14.09912109375,
+      "individual_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        30.078125,
+        29.296875,
+        31.005859375,
+        29.6630859375,
+        28.4423828125,
+        29.6142578125,
+        29.98046875,
+        31.1767578125,
+        31.2744140625,
+        29.8095703125,
+        30.2734375,
+        29.443359375,
+        28.1982421875,
+        30.126953125,
+        29.7607421875,
+        29.2236328125
+      ],
+      "interpretation": "Ruim (<= 20)"
+    }
+  },
+  "2500": {
+    "metadata": {
+      "real_images_count": 1991,
+      "generated_images_count": 32,
+      "device": "mps",
+      "real_images_dir": "/Users/jwcunha/Documents/COMPANIES/AB/repos/private/premium/researcher/phd-classes/shoes-tranning/data/casual_shoes/train/images",
+      "generated_images_dir": "/Volumes/T9/COMPANIES/AB/repos/private/premium/researcher/phd-classes/computer-vision/shoes-training-outputs/lora_casual_shoes_3000steps_full/validation/checkpoint-2500"
+    },
+    "fid": {
+      "score": 74.05948920308003,
+      "interpretation": "Razoável (< 100)"
+    },
+    "clip_score": {
+      "mean": 14.720916748046875,
+      "std": 14.733303263157032,
+      "min": 0.0,
+      "max": 30.8349609375,
+      "median": 14.1845703125,
+      "individual_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        29.7607421875,
+        29.931640625,
+        28.80859375,
+        29.7607421875,
+        28.80859375,
+        28.857421875,
+        30.8349609375,
+        28.564453125,
+        29.6630859375,
+        28.4423828125,
+        28.369140625,
+        30.810546875,
+        28.369140625,
+        30.3466796875,
+        30.56640625,
+        29.1748046875
+      ],
+      "interpretation": "Ruim (<= 20)"
+    }
+  },
+  "3000": {
+    "metadata": {
+      "real_images_count": 1991,
+      "generated_images_count": 32,
+      "device": "mps",
+      "real_images_dir": "/Users/jwcunha/Documents/COMPANIES/AB/repos/private/premium/researcher/phd-classes/shoes-tranning/data/casual_shoes/train/images",
+      "generated_images_dir": "/Volumes/T9/COMPANIES/AB/repos/private/premium/researcher/phd-classes/computer-vision/shoes-training-outputs/lora_casual_shoes_3000steps_full/validation/checkpoint-3000"
+    },
+    "fid": {
+      "score": 91.98181940431849,
+      "interpretation": "Razoável (< 100)"
+    },
+    "clip_score": {
+      "mean": 14.68505859375,
+      "std": 14.70616600257435,
+      "min": 0.0,
+      "max": 30.9326171875,
+      "median": 13.58642578125,
+      "individual_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        30.3955078125,
+        29.736328125,
+        28.8818359375,
+        30.029296875,
+        27.880859375,
+        28.3203125,
+        30.615234375,
+        30.9326171875,
+        28.41796875,
+        30.2978515625,
+        27.685546875,
+        29.931640625,
+        30.0048828125,
+        30.078125,
+        29.541015625,
+        27.1728515625
+      ],
+      "interpretation": "Ruim (<= 20)"
+    }
+  }
+}
