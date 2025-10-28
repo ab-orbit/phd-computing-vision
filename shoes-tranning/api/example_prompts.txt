@@ -1,0 +1,8 @@
+# Exemplo de arquivo de prompts
+# Linhas começando com # são ignoradas
+# Um prompt por linha
+
+casual brown leather shoes, product photography, white background, professional lighting
+elegant black oxford shoes, high quality photo, studio lighting
+comfortable white sneakers, modern design, product shot
+stylish loafers, tan leather, side view, commercial photography

@@ -92,5 +92,31 @@ A professional product photo of yellow casual shoes on watermelon background, hi
 ![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_222209_seed3549761584.png](watermelon/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_222209_seed3549761584.png)
 
 
+```
+A professional product photo of gray casual shoes with white sole on white background, modern design, product photography
+```
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224720_seed2784716826.png](grey/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224720_seed2784716826.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224754_seed2784716827.png](grey/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224754_seed2784716827.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224824_seed2784716828.png](grey/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224824_seed2784716828.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224857_seed2784716829.png](grey/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224857_seed2784716829.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224924_seed2784716830.png](grey/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224924_seed2784716830.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224953_seed2784716831.png](grey/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_224953_seed2784716831.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225028_seed2784716832.png](grey/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225028_seed2784716832.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225059_seed2784716833.png](grey/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225059_seed2784716833.png)
+
+
+
+```
+ A professional product photo of sculptural avant-garde heels inspired by organic shapes on white background, conceptual footwear, product photography
+```
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225552_seed974209925.png](sculptural/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225552_seed974209925.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225618_seed974209926.png](sculptural/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225618_seed974209926.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225647_seed974209927.png](sculptural/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225647_seed974209927.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225720_seed974209928.png](sculptural/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_225720_seed974209928.png)
+
+
+```
+A professional product photo of brown leather casual oxford shoes on white background, classic design, product photography
+```
 
 
