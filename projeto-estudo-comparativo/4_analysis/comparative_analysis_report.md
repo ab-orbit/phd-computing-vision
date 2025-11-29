@@ -1,4 +1,7 @@
-# Relatório de Análise Comparativa## Classificadores de Emoções Faciais: Google Vision vs Roboflow
+# Relatório de Análise Comparativa
+
+## Classificadores de Emoções Faciais: Google Vision vs Roboflow (Yolo)
+
 ---
 **Data de geração**: 29 de November de 2025, 14:16
 **Autores**: Análise automatizada
