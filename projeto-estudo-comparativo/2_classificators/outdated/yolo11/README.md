@@ -99,11 +99,11 @@ from YOLO11EmotionClassifier import YOLO11EmotionClassifier
 
 # Inicializa classificador
 classifier = YOLO11EmotionClassifier(
-    model_type='yolov8n-cls.pt',
-    dataset_dir='../../datasets',
-    results_dir='../../3_simulation/results',
-    model_name='yolo11_emotion',
-    device='auto'  # auto-detecta GPU
+   model_type='yolov8n-cls.pt',
+   dataset_dir='../../../datasets',
+   results_dir='../../../3_simulation/results',
+   model_name='yolo11_emotion',
+   device='auto'  # auto-detecta GPU
 )
 
 # Processar uma simulação

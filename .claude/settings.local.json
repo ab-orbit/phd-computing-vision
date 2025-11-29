@@ -5,7 +5,12 @@
       "Bash(mkdir:*)",
       "Bash(python3:*)",
       "Read(//Volumes/T9/COMPANIES/AB/repos/private/premium/researcher/phd-classes/computer-vision/shoes-training-outputs/lora_casual_shoes_3000steps_full/**)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git reset:*)",
+      "Bash(git restore:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdicionar resultados da classificação Gemini e atualizar .gitignore\n\nAdicionado arquivo .gitignore atualizado para prevenir commit de credenciais\ne chaves de API no futuro. Incluídos padrões para arquivos JSON com\ncredenciais do Google Cloud e outros arquivos sensíveis.\n\nArquivos adicionados:\n- Resultados da classificação Gemini\n- Configuração do classificador Gemini2\n- Atualização dos resultados YOLO11\n\nIMPORTANTE: Arquivo de credenciais chave-google-vision.json foi\ndeliberadamente excluído deste commit por questões de segurança.\n\nGenerated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
