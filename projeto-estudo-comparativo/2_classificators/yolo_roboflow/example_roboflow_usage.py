@@ -52,8 +52,8 @@ api_key = os.getenv('ROBOFLOW_API_KEY', 'YOUR_API_KEY_HERE')
 classifier = RoboflowEmotionClassifier(
     api_key=api_key,
     model_id='emotions-dectection/human-face-emotions/1',
-    dataset_dir='../../../datasets',  # Ajuste conforme necessário
-    results_dir='../../../3_simulation/results',
+    dataset_dir='../../datasets',  # Ajuste conforme necessário
+    results_dir='../../3_simulation/results',
     model_name='roboflow_emotion'
 )
 

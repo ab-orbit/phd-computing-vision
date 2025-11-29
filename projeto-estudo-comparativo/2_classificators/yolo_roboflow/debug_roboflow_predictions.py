@@ -36,7 +36,7 @@ model = project_obj.version(version).model
 print(f"Usando versão: {version}")
 
 # Testa em algumas imagens
-dataset_dir = Path("../../../datasets/sim01")
+dataset_dir = Path("../../datasets/sim01")
 
 print("\n" + "="*70)
 print("TESTANDO PREDIÇÕES EM IMAGENS DE RAIVA")
