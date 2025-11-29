@@ -4,7 +4,6 @@
 
 ---
 **Data de geração**: 29 de November de 2025, 14:16
-**Autores**: Análise automatizada
 ---
 
 ## 1. Introdução
