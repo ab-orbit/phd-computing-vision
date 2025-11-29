@@ -187,8 +187,14 @@ pdi/output/*.png
 pdi/output/*.jpg
 !pdi/output/.gitkeep
 
-# Kaggle credentials
+# Credentials and API Keys (NEVER commit these files)
 kaggle.json
+**/chave-google-vision.json
+**/*credentials*.json
+**/*service-account*.json
+.env
+.env.local
+.env.*.local
 
 # Large binary files
 *.zip

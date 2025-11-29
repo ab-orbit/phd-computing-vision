@@ -1,0 +1,27 @@
+# Google Vision Emotion Classifier - Dependencies
+
+# HTTP Requests (para chamadas diretas à API)
+requests>=2.31.0
+
+# Image Processing
+Pillow>=10.0.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Nota: Google Cloud Vision API via REST
+#
+# Este projeto usa a Google Vision API via HTTP REST diretamente,
+# não a biblioteca google-cloud-vision (que requer service account).
+#
+# Configuração:
+# 1. Crie API key no Google Cloud Console
+# 2. Ative Cloud Vision API
+# 3. Adicione GOOGLE_API_KEY ao arquivo .env
+#
+# Free Tier: 1000 requisições/mês grátis
+# Preço: $1.50 por 1000 imagens (após free tier)
