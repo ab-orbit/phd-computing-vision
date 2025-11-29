@@ -1,0 +1,20 @@
+# Requisitos para Classificador YOLO11
+# Instalação: pip install -r requirements.txt
+
+# YOLO11 (Ultralytics)
+ultralytics>=8.0.0
+
+# Processamento de imagens
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Manipulação de dados
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Deep Learning (dependências do YOLO)
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Utilitários
+tqdm>=4.65.0

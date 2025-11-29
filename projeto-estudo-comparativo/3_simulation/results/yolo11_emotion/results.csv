@@ -1,0 +1,2 @@
+numero_simulacao,nome_modelo,qtd_sucesso_alegria,qtd_sucesso_raiva,total_alegria,total_raiva,tempo_total_ms,acuracia_alegria,acuracia_raiva,acuracia_geral
+1,yolo11_emotion,0,0,50,50,2472.504138946533,0.0,0.0,0.0
