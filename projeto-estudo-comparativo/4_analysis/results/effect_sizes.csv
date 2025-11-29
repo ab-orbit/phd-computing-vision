@@ -1,0 +1,5 @@
+Comparação,Métrica,Cohens_d,Interpretação_d,r_Rosenthal,Interpretação_r
+Google Vision vs Roboflow,acuracia_geral,-5.752670250126462,Grande,0.8732336624305539,Grande
+Google Vision vs Roboflow,precisao_macro,-4.732768217068638,Grande,1.0971528346217627,Grande
+Google Vision vs Roboflow,recall_macro,-5.7513701897045495,Grande,0.8732105668153288,Grande
+Google Vision vs Roboflow,f1_macro,-5.05005776030212,Grande,1.0971528346217627,Grande

@@ -1,0 +1,43 @@
+================================================================================
+RELATÓRIO DE VALIDAÇÃO DE DADOS
+Análise Comparativa de Classificadores de Emoções
+================================================================================
+
+
+Google Vision
+-------------
+
+✓ Arquivo encontrado: /Users/jwcunha/Documents/repos/phd-datascience/visao-computacional/projeto-estudo-comparativo/3_simulation/results/google_vision_emotion/results.csv
+✓ CSV carregado com sucesso
+✓ 30 simulações encontradas
+✓ Todas as colunas necessárias presentes
+✓ Sem valores nulos em 'acuracia_geral'
+✓ Sem valores nulos em 'precisao_macro'
+✓ Sem valores nulos em 'recall_macro'
+✓ Sem valores nulos em 'f1_macro'
+⚠️  Totais inconsistentes entre simulações
+
+
+Roboflow
+--------
+
+✓ Arquivo encontrado: /Users/jwcunha/Documents/repos/phd-datascience/visao-computacional/projeto-estudo-comparativo/3_simulation/results/roboflow_emotion/results.csv
+✓ CSV carregado com sucesso
+✓ 30 simulações encontradas
+✓ Todas as colunas necessárias presentes
+✓ Sem valores nulos em 'acuracia_geral'
+✓ Sem valores nulos em 'precisao_macro'
+✓ Sem valores nulos em 'recall_macro'
+✓ Sem valores nulos em 'f1_macro'
+✓ Totais consistentes: 50.0 alegria, 50.0 raiva
+
+
+YOLO11
+------
+
+❌ Arquivo não encontrado: /Users/jwcunha/Documents/repos/phd-datascience/visao-computacional/projeto-estudo-comparativo/3_simulation/results/yolo11_emotion/results.csv
+
+
+================================================================================
+FIM DO RELATÓRIO
+================================================================================

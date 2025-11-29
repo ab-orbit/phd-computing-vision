@@ -1,0 +1,15 @@
+{
+  "modelo": "yolo11_emotion",
+  "model_type": "yolov8n-cls.pt",
+  "device": "mps",
+  "num_simulations": 30,
+  "acuracia_alegria_mean": 0.0,
+  "acuracia_alegria_std": 0.0,
+  "acuracia_raiva_mean": 0.0,
+  "acuracia_raiva_std": 0.0,
+  "acuracia_geral_mean": 0.0,
+  "acuracia_geral_std": 0.0,
+  "tempo_total_segundos": 33.065221,
+  "tempo_medio_por_simulacao": 1.1021740333333334,
+  "timestamp": "2025-11-29T12:03:09.254983"
+}

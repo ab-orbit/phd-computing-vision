@@ -1,0 +1,5 @@
+Comparação,Métrica,Mediana_Modelo1,Mediana_Modelo2,Diferença,Statistic,p_value,Significativo,Tamanho_Efeito_r,Interpretação,Alpha
+Google Vision vs Roboflow,acuracia_geral,0.16,0.38,0.22,0.0,1.7278603148724105e-06,Sim,0.8732336624305539,Grande,0.05
+Google Vision vs Roboflow,precisao_macro,0.14466354723707658,0.33980057993215884,0.19513703269508226,0.0,1.862645149230957e-09,Sim,1.0971528346217627,Grande,0.05
+Google Vision vs Roboflow,recall_macro,0.16,0.38,0.22,0.0,1.7289484360195754e-06,Sim,0.8732105668153288,Grande,0.05
+Google Vision vs Roboflow,f1_macro,0.1530522617479139,0.33857729910361484,0.18552503735570094,0.0,1.862645149230957e-09,Sim,1.0971528346217627,Grande,0.05
