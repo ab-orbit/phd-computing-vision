@@ -475,7 +475,3 @@ Dados consolidados disponíveis em:
 - **Plataforma**: Independente (Windows, macOS, Linux)
 
 ---
-
-**Fim do Relatório**
-
-*Gerado automaticamente em 29/11/2025 às 14:16*
