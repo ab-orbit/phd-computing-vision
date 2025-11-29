@@ -2,10 +2,10 @@
 
 ## Classificadores de Emoções Faciais: Google Vision vs Roboflow (Yolo)
 
----
-**Data de geração**: 29 de November de 2025, 14:16
----
 
+```
+Data de geração: 29 de November de 2025, 14:16
+```
 ## 1. Introdução
 ### 1.1 Contexto
 Este relatório apresenta uma análise comparativa detalhada entre dois classificadores de emoções faciais baseados em APIs de modelos foundation: **Google Cloud Vision API** e **Roboflow**. A análise visa avaliar objetivamente a performance, eficiência e adequação de cada abordagem para a tarefa de classificação binária de emoções (Alegria vs Raiva).
