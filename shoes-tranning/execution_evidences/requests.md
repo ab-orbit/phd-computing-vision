@@ -104,6 +104,20 @@ A professional product photo of yellow casual shoes on watermelon background, hi
 ![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_222142_seed3549761583.png](watermelon/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_222142_seed3549761583.png)
 ![lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_222209_seed3549761584.png](watermelon/lora_casual_shoes_3000steps_full_checkpoint-1500_20251027_222209_seed3549761584.png)
 
+
+```
+Prompt (English):
+
+A high-top casual shoe made of soft genuine leather, featuring light pastel colors and a minimalist, comfortable design. The shoe has clean stitching, flexible sole, and elegant laces that enhance its refined yet relaxed style. Photographed in soft natural lighting on a neutral background, highlighting its craftsmanship, texture, and ergonomic comfort — modern, airy, and effortlessly stylish.
+```
+
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251030_210715_seed2169510052.png](aninha/lora_casual_shoes_3000steps_full_checkpoint-1500_20251030_210715_seed2169510052.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251030_210734_seed2169510053.png](aninha/lora_casual_shoes_3000steps_full_checkpoint-1500_20251030_210734_seed2169510053.png)
+![lora_casual_shoes_3000steps_full_checkpoint-1500_20251030_210753_seed2169510054.png](aninha/lora_casual_shoes_3000steps_full_checkpoint-1500_20251030_210753_seed2169510054.png)
+
+### Gemini
+![Gemini_Generated_Image_5vh7vo5vh7vo5vh7.png](aninha/Gemini_Generated_Image_5vh7vo5vh7vo5vh7.png)
+
 ### 2000
 
 ![lora_casual_shoes_3000steps_full_checkpoint-2000_20251028_062615_seed1610776869.png](watermelon/lora_casual_shoes_3000steps_full_checkpoint-2000_20251028_062615_seed1610776869.png)
